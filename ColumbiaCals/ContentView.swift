@@ -2,20 +2,14 @@
 //  ContentView.swift
 //  ColumbiaCals
 //
-//  Created by Michelle Zhou on 1/19/26.
+//  Main entry point for the app
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        DiningHallsListView()
     }
 }
 

@@ -2,7 +2,7 @@
 //  ColumbiaCalsApp.swift
 //  ColumbiaCals
 //
-//  Created by Michelle Zhou on 1/19/26.
+//  Created by Xcode.
 //
 
 import SwiftUI
