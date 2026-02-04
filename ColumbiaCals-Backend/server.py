@@ -100,14 +100,14 @@ def run_scheduler():
     """Run scheduler in background thread"""
     print("🚀 Scheduler thread starting...")
 
-    # Don't run immediately on startup - use committed fallback data
-    # The scraper can be triggered manually via /api/refresh if needed
+    # Run immediately on startup unless explicitly disabled
+    if os.environ.get("AUTO_REFRESH_ON_START", "true").lower() == "true":
+        trigger_refresh_async()
 
     # Schedule daily updates at 3:00 AM
     schedule.every().day.at("03:00").do(update_menus)
 
     print("⏰ Updates scheduled at 3:00 AM daily\n")
-    print("   Using committed fallback data until next scheduled update")
     
     while True:
         schedule.run_pending()
