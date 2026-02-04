@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# Environment variables
+.env
+*.env
+
+# Generated data files (intermediate only)
+menu_data.json
+*.log
+
+# Note: menu_with_nutrition.json is committed as fallback data for cold starts
+
+# macOS
+.DS_Store
+
+# API Keys (IMPORTANT!)
+config.pyratings.db
