@@ -27,6 +27,8 @@
                   "Soy"
                 ],
                 "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
                   "Vegetarian"
                 ]
               },
@@ -187,14 +189,10 @@
             "station": "Smoothie Bar",
             "items": [
               {
-                "name": "Smoothies",
-                "description": "Frozen Strawberries, Island Oasis Passionfruit, Black Tea",
+                "name": "Hot Chocolate",
+                "description": null,
                 "allergens": [],
-                "dietary_prefs": [
-                  "Gluten Free",
-                  "Halal",
-                  "Vegan"
-                ]
+                "dietary_prefs": []
               }
             ]
           }
@@ -208,39 +206,18 @@
             "station": "Main Station",
             "items": [
               {
-                "name": "BBQ Chicken",
+                "name": "Fried Catfish",
                 "description": null,
-                "allergens": [],
+                "allergens": [
+                  "Fish"
+                ],
                 "dietary_prefs": [
                   "Gluten Free",
                   "Halal"
                 ]
               },
               {
-                "name": "Sweet Mash",
-                "description": null,
-                "allergens": [
-                  "Soy"
-                ],
-                "dietary_prefs": [
-                  "Gluten Free",
-                  "Halal",
-                  "Vegan"
-                ]
-              },
-              {
-                "name": "Couscous",
-                "description": null,
-                "allergens": [
-                  "Wheat"
-                ],
-                "dietary_prefs": [
-                  "Halal",
-                  "Vegan"
-                ]
-              },
-              {
-                "name": "Black Eyed Peas",
+                "name": "Jollof Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -250,7 +227,27 @@
                 ]
               },
               {
-                "name": "Roasted Corn",
+                "name": "Stewed Okra",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Millet",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Red Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -265,20 +262,20 @@
             "station": "Halal Station",
             "items": [
               {
-                "name": "BBQ Chicken",
+                "name": "Fried Catfish",
                 "description": null,
-                "allergens": [],
+                "allergens": [
+                  "Fish"
+                ],
                 "dietary_prefs": [
                   "Gluten Free",
                   "Halal"
                 ]
               },
               {
-                "name": "Sweet Mash",
+                "name": "Jollof Rice",
                 "description": null,
-                "allergens": [
-                  "Soy"
-                ],
+                "allergens": [],
                 "dietary_prefs": [
                   "Gluten Free",
                   "Halal",
@@ -286,7 +283,7 @@
                 ]
               },
               {
-                "name": "Roasted Corn",
+                "name": "Stewed Okra",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -301,20 +298,20 @@
             "station": "Kosher Station",
             "items": [
               {
-                "name": "BBQ Chicken",
+                "name": "Fried Catfish",
                 "description": null,
-                "allergens": [],
+                "allergens": [
+                  "Fish"
+                ],
                 "dietary_prefs": [
                   "Gluten Free",
                   "Halal"
                 ]
               },
               {
-                "name": "Sweet Mash",
+                "name": "Jollof Rice",
                 "description": null,
-                "allergens": [
-                  "Soy"
-                ],
+                "allergens": [],
                 "dietary_prefs": [
                   "Gluten Free",
                   "Halal",
@@ -322,7 +319,7 @@
                 ]
               },
               {
-                "name": "Roasted Corn",
+                "name": "Stewed Okra",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -337,20 +334,21 @@
             "station": "Vegan Station",
             "items": [
               {
-                "name": "BBQ Jackfruit",
+                "name": "Vegan Mealoaf",
                 "description": null,
                 "allergens": [
                   "Coconut",
-                  "Soy"
+                  "Soy",
+                  "Sunflower Oil",
+                  "Wheat"
                 ],
                 "dietary_prefs": [
-                  "Gluten Free",
                   "Halal",
                   "Vegan"
                 ]
               },
               {
-                "name": "Sweet Mash",
+                "name": "Jollof Rice",
                 "description": null,
                 "allergens": [
                   "Soy"
@@ -362,7 +360,7 @@
                 ]
               },
               {
-                "name": "Roasted Corn",
+                "name": "Stewed Okra",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -383,19 +381,17 @@
             "station": "Main Station",
             "items": [
               {
-                "name": "Fried Catfish",
+                "name": "BBQ Ribs",
                 "description": null,
                 "allergens": [
-                  "Eggs",
-                  "Fish"
+                  "Pork"
                 ],
                 "dietary_prefs": [
-                  "Gluten Free",
-                  "Halal"
+                  "Gluten Free"
                 ]
               },
               {
-                "name": "Jollof Rice",
+                "name": "Green Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -405,18 +401,21 @@
                 ]
               },
               {
-                "name": "Bulgar",
+                "name": "Corn Bread",
                 "description": null,
                 "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Soy",
                   "Wheat"
                 ],
                 "dietary_prefs": [
                   "Halal",
-                  "Vegan"
+                  "Vegetarian"
                 ]
               },
               {
-                "name": "Mixed Vegetables",
+                "name": "Rice and Peas",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -426,13 +425,14 @@
                 ]
               },
               {
-                "name": "Black Beans",
+                "name": "Cheddar Mashed Potatoes",
                 "description": null,
-                "allergens": [],
+                "allergens": [
+                  "Dairy"
+                ],
                 "dietary_prefs": [
                   "Gluten Free",
-                  "Halal",
-                  "Vegan"
+                  "Vegetarian"
                 ]
               }
             ]
@@ -441,19 +441,16 @@
             "station": "Halal Station",
             "items": [
               {
-                "name": "Fried Catfish",
+                "name": "BBQ Chicken",
                 "description": null,
-                "allergens": [
-                  "Eggs",
-                  "Fish"
-                ],
+                "allergens": [],
                 "dietary_prefs": [
                   "Gluten Free",
                   "Halal"
                 ]
               },
               {
-                "name": "Jollof Rice",
+                "name": "Herb Mashed Potatoes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -463,7 +460,7 @@
                 ]
               },
               {
-                "name": "Mixed Vegetables",
+                "name": "Green Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -478,19 +475,16 @@
             "station": "Kosher Station",
             "items": [
               {
-                "name": "Fried Catfish",
+                "name": "BBQ Chicken",
                 "description": null,
-                "allergens": [
-                  "Eggs",
-                  "Fish"
-                ],
+                "allergens": [],
                 "dietary_prefs": [
                   "Gluten Free",
                   "Halal"
                 ]
               },
               {
-                "name": "Jollof Rice",
+                "name": "Herb Mashed Potatoes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -500,7 +494,7 @@
                 ]
               },
               {
-                "name": "Mixed Vegetables",
+                "name": "Green Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -515,7 +509,19 @@
             "station": "Vegan Station",
             "items": [
               {
-                "name": "Vegan Meatloaf",
+                "name": "Vegan Tofu \"Ribs\"",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Tuffle Mac and Cheese",
                 "description": null,
                 "allergens": [
                   "Coconut",
@@ -529,17 +535,7 @@
                 ]
               },
               {
-                "name": "Jollof Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": [
-                  "Gluten Free",
-                  "Halal",
-                  "Vegan"
-                ]
-              },
-              {
-                "name": "Mixed Vegetables",
+                "name": "Green Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": [
@@ -557,7 +553,7 @@
     "source": "columbia",
     "operating_hours": "Sunday, Monday, Tuesday, Wednesday, Thursday: 9:30 AM - 9:00 PM",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:21.290729-05:00"
+    "scraped_at": "2026-02-04T09:53:10.292335-05:00"
   },
   {
     "name": "Ferris Booth Commons",
@@ -656,9 +652,11 @@
               {
                 "name": "Roasted Potatoes",
                 "description": null,
-                "allergens": [],
+                "allergens": [
+                  "Soy",
+                  "Sunflower Oil"
+                ],
                 "dietary_prefs": [
-                  "Gluten Free",
                   "Halal",
                   "Vegan"
                 ]
@@ -689,7 +687,7 @@
             "items": [
               {
                 "name": "Grilled Cheese",
-                "description": null,
+                "description": "The Basic (three cheese) The Ferris (pesto, roasted red peppers, mozzarella), The Vegan",
                 "allergens": [],
                 "dietary_prefs": []
               }
@@ -832,7 +830,7 @@
             "items": [
               {
                 "name": "Pho",
-                "description": null,
+                "description": "pho broth, rice noodles, beef, tofu, bean sprouts, sliced onion, lime, cilantro, jalapeno, hoisin sauce",
                 "allergens": [],
                 "dietary_prefs": []
               }
@@ -845,7 +843,7 @@
     "source": "columbia",
     "operating_hours": null,
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:24.070078-05:00"
+    "scraped_at": "2026-02-04T09:53:13.568209-05:00"
   },
   {
     "name": "Grace Dodge",
@@ -854,7 +852,7 @@
     "source": "columbia",
     "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 7:30 PM",
     "is_open": false,
-    "scraped_at": "2026-02-04T09:37:26.468338-05:00"
+    "scraped_at": "2026-02-04T09:53:16.276295-05:00"
   },
   {
     "name": "Faculty House 2nd Floor",
@@ -931,7 +929,7 @@
     "source": "columbia",
     "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 2:30 PM",
     "is_open": false,
-    "scraped_at": "2026-02-04T09:37:28.698941-05:00"
+    "scraped_at": "2026-02-04T09:53:18.395233-05:00"
   },
   {
     "name": "Faculty House Skyline",
@@ -991,7 +989,7 @@
     "source": "columbia",
     "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 2:30 PM",
     "is_open": false,
-    "scraped_at": "2026-02-04T09:37:31.045676-05:00"
+    "scraped_at": "2026-02-04T09:53:20.526973-05:00"
   },
   {
     "name": "Fac Shack",
@@ -1000,7 +998,7 @@
     "source": "columbia",
     "operating_hours": null,
     "is_open": false,
-    "scraped_at": "2026-02-04T09:37:33.553674-05:00"
+    "scraped_at": "2026-02-04T09:53:23.111043-05:00"
   },
   {
     "name": "Chef Mike's",
@@ -1009,7 +1007,7 @@
     "source": "columbia",
     "operating_hours": null,
     "is_open": false,
-    "scraped_at": "2026-02-04T09:37:36.036100-05:00"
+    "scraped_at": "2026-02-04T09:53:25.335585-05:00"
   },
   {
     "name": "Johnny's",
@@ -1061,7 +1059,7 @@
     "source": "columbia",
     "operating_hours": null,
     "is_open": false,
-    "scraped_at": "2026-02-04T09:37:38.230309-05:00"
+    "scraped_at": "2026-02-04T09:53:28.283076-05:00"
   },
   {
     "name": "JJ's Place",
@@ -1179,7 +1177,7 @@
     "source": "columbia",
     "operating_hours": "Open daily 12:00 p.m. - 10:00 a.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:39.233860-05:00"
+    "scraped_at": "2026-02-04T09:53:29.289380-05:00"
   },
   {
     "name": "Blue Java Butler",
@@ -1312,7 +1310,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8 a.m. - 12 a.m. | Friday - Sunday, 9 a.m. - 9 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:39.234063-05:00"
+    "scraped_at": "2026-02-04T09:53:29.289522-05:00"
   },
   {
     "name": "Blue Java Uris",
@@ -1437,7 +1435,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Friday: 8:00 a.m. - 5:30 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:39.234154-05:00"
+    "scraped_at": "2026-02-04T09:53:29.289596-05:00"
   },
   {
     "name": "Blue Java Mudd",
@@ -1562,7 +1560,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Friday: 8 a.m. - 6 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:39.234369-05:00"
+    "scraped_at": "2026-02-04T09:53:29.289652-05:00"
   },
   {
     "name": "Blue Java Everett",
@@ -1687,7 +1685,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8:00 a.m. - 7:30 p.m. | Friday, 8:00 a.m. - 2:30 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:39.234479-05:00"
+    "scraped_at": "2026-02-04T09:53:29.289707-05:00"
   },
   {
     "name": "Lenfest Cafe",
@@ -1774,7 +1772,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday: 8:00 a.m. - 6:30 p.m. | Friday: 8:00 a.m. - 3:00 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:39.234557-05:00"
+    "scraped_at": "2026-02-04T09:53:29.289754-05:00"
   },
   {
     "name": "Robert F. Smith",
@@ -1861,28 +1859,28 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8 a.m. - 4:30 p.m. | Friday, 8 a.m. - 4 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:37:39.234617-05:00"
+    "scraped_at": "2026-02-04T09:53:29.289799-05:00"
   },
   {
     "name": "Hewitt Dining Hall",
     "meals": [],
     "status": "open_no_menu",
     "source": "barnard",
-    "scraped_at": "2026-02-04T09:37:39.409375-05:00"
+    "scraped_at": "2026-02-04T09:53:29.449706-05:00"
   },
   {
     "name": "Diana Center",
     "meals": [],
     "status": "open_no_menu",
     "source": "barnard",
-    "scraped_at": "2026-02-04T09:37:40.588764-05:00"
+    "scraped_at": "2026-02-04T09:53:30.618202-05:00"
   },
   {
     "name": "Liz's Place",
     "meals": [],
     "status": "open_no_menu",
     "source": "barnard",
-    "scraped_at": "2026-02-04T09:37:41.751757-05:00"
+    "scraped_at": "2026-02-04T09:53:31.771217-05:00"
   },
   {
     "name": "104West!",
@@ -2193,7 +2191,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:43.208563-05:00"
+    "scraped_at": "2026-02-04T09:53:33.203215-05:00"
   },
   {
     "name": "Amit Bhatia Libe Caf\u00e9",
@@ -2201,7 +2199,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:43.311769-05:00"
+    "scraped_at": "2026-02-04T09:53:33.308476-05:00"
   },
   {
     "name": "Atrium Caf\u00e9",
@@ -2209,7 +2207,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:43.417764-05:00"
+    "scraped_at": "2026-02-04T09:53:33.409205-05:00"
   },
   {
     "name": "Bear Necessities Grill & C-Store",
@@ -2217,7 +2215,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:43.522520-05:00"
+    "scraped_at": "2026-02-04T09:53:33.514308-05:00"
   },
   {
     "name": "Becker House Dining Room",
@@ -2857,7 +2855,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:43.627810-05:00"
+    "scraped_at": "2026-02-04T09:53:33.617719-05:00"
   },
   {
     "name": "Big Red Barn",
@@ -2865,7 +2863,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:43.732886-05:00"
+    "scraped_at": "2026-02-04T09:53:33.722509-05:00"
   },
   {
     "name": "Bus Stop Bagels",
@@ -2873,7 +2871,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:43.838460-05:00"
+    "scraped_at": "2026-02-04T09:53:33.822774-05:00"
   },
   {
     "name": "Caf\u00e9 Jennie",
@@ -2881,7 +2879,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:43.941369-05:00"
+    "scraped_at": "2026-02-04T09:53:33.927756-05:00"
   },
   {
     "name": "College of Veterinary Medicine Caf\u00e9",
@@ -2889,7 +2887,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.045306-05:00"
+    "scraped_at": "2026-02-04T09:53:34.031211-05:00"
   },
   {
     "name": "Cook House Dining Room",
@@ -3178,7 +3176,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.150587-05:00"
+    "scraped_at": "2026-02-04T09:53:34.136569-05:00"
   },
   {
     "name": "Cornell Dairy Bar",
@@ -3186,7 +3184,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.255094-05:00"
+    "scraped_at": "2026-02-04T09:53:34.240275-05:00"
   },
   {
     "name": "Crossings Caf\u00e9",
@@ -3194,7 +3192,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.359424-05:00"
+    "scraped_at": "2026-02-04T09:53:34.342248-05:00"
   },
   {
     "name": "Franny's",
@@ -3202,7 +3200,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.463953-05:00"
+    "scraped_at": "2026-02-04T09:53:34.445758-05:00"
   },
   {
     "name": "Goldie's Caf\u00e9",
@@ -3210,7 +3208,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.569170-05:00"
+    "scraped_at": "2026-02-04T09:53:34.547601-05:00"
   },
   {
     "name": "Green Dragon",
@@ -3218,7 +3216,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.673963-05:00"
+    "scraped_at": "2026-02-04T09:53:34.650323-05:00"
   },
   {
     "name": "Hot Dog Cart",
@@ -3226,7 +3224,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.779182-05:00"
+    "scraped_at": "2026-02-04T09:53:34.755617-05:00"
   },
   {
     "name": "Ice Cream Bike",
@@ -3234,7 +3232,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.880445-05:00"
+    "scraped_at": "2026-02-04T09:53:34.860987-05:00"
   },
   {
     "name": "Jansen's Dining Room at Bethe House",
@@ -3675,13 +3673,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "White Corn Tortilla Chips",
+                "name": "Mango Ginger Salsa",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Mango Ginger Salsa",
+                "name": "White Corn Tortilla Chips",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3745,7 +3743,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:44.981256-05:00"
+    "scraped_at": "2026-02-04T09:53:34.964513-05:00"
   },
   {
     "name": "Jansen's Market",
@@ -3753,7 +3751,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.083540-05:00"
+    "scraped_at": "2026-02-04T09:53:35.066478-05:00"
   },
   {
     "name": "Keeton House Dining Room",
@@ -3935,7 +3933,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.187100-05:00"
+    "scraped_at": "2026-02-04T09:53:35.171985-05:00"
   },
   {
     "name": "Mann Caf\u00e9",
@@ -3943,7 +3941,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.287964-05:00"
+    "scraped_at": "2026-02-04T09:53:35.275431-05:00"
   },
   {
     "name": "Martha's Caf\u00e9",
@@ -3951,7 +3949,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.393437-05:00"
+    "scraped_at": "2026-02-04T09:53:35.380815-05:00"
   },
   {
     "name": "Mattin's Caf\u00e9",
@@ -3959,7 +3957,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.497101-05:00"
+    "scraped_at": "2026-02-04T09:53:35.486143-05:00"
   },
   {
     "name": "McCormick's Restaurant",
@@ -3967,7 +3965,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.600119-05:00"
+    "scraped_at": "2026-02-04T09:53:35.590303-05:00"
   },
   {
     "name": "Morrison Dining",
@@ -4948,7 +4946,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.706118-05:00"
+    "scraped_at": "2026-02-04T09:53:35.694315-05:00"
   },
   {
     "name": "North Star Dining Room",
@@ -5331,7 +5329,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.810982-05:00"
+    "scraped_at": "2026-02-04T09:53:35.797525-05:00"
   },
   {
     "name": "Novick's Caf\u00e9",
@@ -5339,7 +5337,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:45.914292-05:00"
+    "scraped_at": "2026-02-04T09:53:35.902635-05:00"
   },
   {
     "name": "Okenshields",
@@ -5905,7 +5903,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:46.017899-05:00"
+    "scraped_at": "2026-02-04T09:53:36.003497-05:00"
   },
   {
     "name": "Risley Dining Room",
@@ -6398,7 +6396,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:46.121208-05:00"
+    "scraped_at": "2026-02-04T09:53:36.109297-05:00"
   },
   {
     "name": "Rose House Dining Room",
@@ -6585,7 +6583,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:46.226519-05:00"
+    "scraped_at": "2026-02-04T09:53:36.213649-05:00"
   },
   {
     "name": "Rusty's",
@@ -6593,7 +6591,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:46.331905-05:00"
+    "scraped_at": "2026-02-04T09:53:36.314076-05:00"
   },
   {
     "name": "Straight from the Market",
@@ -6712,7 +6710,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:46.435085-05:00"
+    "scraped_at": "2026-02-04T09:53:36.414590-05:00"
   },
   {
     "name": "Trillium",
@@ -6720,6 +6718,6 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:37:46.540194-05:00"
+    "scraped_at": "2026-02-04T09:53:36.519749-05:00"
   }
 ]
