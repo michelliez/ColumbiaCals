@@ -14,6 +14,19 @@ import time
 # New York timezone
 NY_TZ = ZoneInfo('America/New_York')
 
+# Shared session to preserve cookies and mimic a real browser
+SESSION = requests.Session()
+SESSION.headers.update({
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+})
+
 def now_ny():
     """Get current time in New York timezone"""
     return datetime.now(NY_TZ)
@@ -22,6 +35,14 @@ def parse_date_to_ny_date(date_str):
     """Parse a date string into a NY-local date (YYYY-MM-DD)."""
     if not date_str:
         return None
+
+    # If the string starts with a YYYY-MM-DD date, prefer that date directly
+    # to avoid timezone shifts (e.g., midnight UTC becoming previous day in NY).
+    try:
+        date_part = date_str[:10]
+        return datetime.strptime(date_part, "%Y-%m-%d").date()
+    except ValueError:
+        pass
 
     try:
         # Normalize Zulu time
@@ -47,6 +68,11 @@ def is_today_in_date_range(date_range):
 
     # If no valid dates are present, don't filter out.
     if date_from is None and date_to is None:
+        single_date = parse_date_to_ny_date(
+            date_range.get("date") or date_range.get("menu_date")
+        )
+        if single_date is not None:
+            return single_date == now_ny().date()
         return True
 
     today = now_ny().date()
@@ -611,12 +637,15 @@ def scrape_dynamic_hall(hall):
 
     try:
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
-            'Accept': 'text/html,application/xhtml+xml',
-            'Accept-Language': 'en-US,en;q=0.5',
+            "Referer": "https://dining.columbia.edu/",
+            "Origin": "https://dining.columbia.edu",
         }
 
-        response = requests.get(hall['url'], headers=headers, timeout=30)
+        response = SESSION.get(hall['url'], headers=headers, timeout=30)
+        if response.status_code == 403:
+            # Warm up cookies from homepage and retry once
+            SESSION.get("https://dining.columbia.edu/", headers=headers, timeout=30)
+            response = SESSION.get(hall['url'], headers=headers, timeout=30)
         response.raise_for_status()
 
         menu_data = extract_menu_data(response.text)

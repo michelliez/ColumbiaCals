@@ -38,26 +38,68 @@ def run_all_scrapers():
     print("=" * 60)
     
     all_results = []
+
+    # Load existing data for fallback
+    output_file = os.path.join(os.path.dirname(__file__), 'menu_data.json')
+    existing_data = []
+    if os.path.exists(output_file):
+        try:
+            with open(output_file, 'r') as f:
+                existing_data = json.load(f)
+        except Exception as e:
+            print(f"[run_all_scrapers] Warning: failed to read existing menu_data.json: {e}")
+
+    def _get_source_tag(item):
+        return (item.get('source') or item.get('university') or '').lower()
+
+    def _filter_by_source(data, source):
+        return [r for r in data if _get_source_tag(r) == source]
+
+    def _is_scrape_successful(results, source):
+        if not results:
+            return False
+        src_results = _filter_by_source(results, source)
+        if not src_results:
+            return False
+        return any(r.get('status') != 'error' for r in src_results)
     
     # Run Columbia scraper
     try:
         columbia_results = scrape_columbia()
-        all_results.extend(columbia_results)
     except Exception as e:
         print(f"\n❌ Columbia scraper failed: {e}")
+        columbia_results = []
     
     # Run Cornell scraper
     try:
         cornell_results = scrape_cornell()
-        all_results.extend(cornell_results)
     except Exception as e:
         print(f"\n❌ Cornell scraper failed: {e}")
+        cornell_results = []
+
+    # Merge with fallback data if needed
+    columbia_ok = _is_scrape_successful(columbia_results, 'columbia')
+    cornell_ok = _is_scrape_successful(cornell_results, 'cornell')
+
+    if not columbia_ok:
+        fallback_columbia = _filter_by_source(existing_data, 'columbia')
+        if fallback_columbia:
+            print("⚠️ Columbia scrape failed - using existing menu_data.json for Columbia")
+            columbia_results = fallback_columbia
+
+    if not cornell_ok:
+        fallback_cornell = _filter_by_source(existing_data, 'cornell')
+        if fallback_cornell:
+            print("⚠️ Cornell scrape failed - using existing menu_data.json for Cornell")
+            cornell_results = fallback_cornell
+
+    all_results.extend(columbia_results)
+    all_results.extend(cornell_results)
     
     # Check if data has too many errors (scraping failed)
-    output_file = os.path.join(os.path.dirname(__file__), 'menu_data.json')
     error_count = sum(1 for r in all_results if r.get('status') == 'error')
 
-    if error_count > len(all_results) / 2:
+    if all_results and error_count > len(all_results) / 2:
         print(f"\n⚠️ Skipping save - too many scraping errors ({error_count}/{len(all_results)} halls)")
         print("   Keeping existing menu_data.json")
     else:
@@ -75,7 +117,7 @@ def run_all_scrapers():
     total_items = 0
     
     for result in all_results:
-        uni = result.get('university', 'unknown')
+        uni = (result.get('university') or result.get('source') or 'unknown')
         status = result.get('status', 'unknown')
         
         if uni not in by_university:
