@@ -89,7 +89,8 @@ def is_today_in_date_range(date_range):
 
 HALL_MEAL_TIMES = {
     "John Jay Dining Hall": {
-        "days": ["sunday", "monday", "tuesday", "wednesday", "thursday"],
+        "operating_hours": "Breakfast: 9:30 a.m. - 11:00 a.m. | Lunch: 11:00 a.m. - 2:30 p.m. | Dinner: 5:00 p.m. - 9:00 p.m.",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         "meals": {
             "Breakfast": {"start": (9, 30), "end": (11, 0)},
             "Lunch": {"start": (11, 0), "end": (14, 30)},
@@ -97,11 +98,12 @@ HALL_MEAL_TIMES = {
         }
     },
     "Ferris Booth Commons": {
+        "operating_hours": "Mon - Fri: 7:30 a.m. - 8:00 p.m. | Sat: 9:00 a.m. - 8:00 p.m. | Sun: 10:00 a.m. - 2:00 p.m., 4:00 - 8:00 p.m.",
         "weekday": {  # Mon-Fri
             "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
             "meals": {
-                "Breakfast": {"start": (7, 30), "end": (10, 30)},
-                "Lunch": {"start": (11, 0), "end": (15, 0)},
+                "Breakfast": {"start": (7, 30), "end": (11, 0)},
+                "Lunch": {"start": (11, 0), "end": (17, 0)},
                 "Dinner": {"start": (17, 0), "end": (20, 0)}
             }
         },
@@ -109,7 +111,7 @@ HALL_MEAL_TIMES = {
             "days": ["saturday"],
             "meals": {
                 "Breakfast": {"start": (9, 0), "end": (11, 0)},
-                "Lunch": {"start": (11, 0), "end": (15, 0)},
+                "Lunch": {"start": (11, 0), "end": (17, 0)},
                 "Dinner": {"start": (17, 0), "end": (20, 0)}
             }
         },
@@ -122,41 +124,46 @@ HALL_MEAL_TIMES = {
         }
     },
     "Chef Mike's": {
+        "operating_hours": "Mon - Fri: 10:30 a.m. - 10:00 p.m. | Sat: 11:00 a.m. - 7:00 p.m.",
         "weekday": {
             "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
             "meals": {
-                "Lunch": {"start": (10, 30), "end": (15, 0)},
-                "Dinner": {"start": (17, 0), "end": (22, 0)}
+                "Lunch": {"start": (10, 30), "end": (22, 0)},
+                "Dinner": {"start": (10, 30), "end": (22, 0)}
             }
         },
         "saturday": {
             "days": ["saturday"],
             "meals": {
-                "Lunch": {"start": (11, 0), "end": (15, 0)},
-                "Dinner": {"start": (15, 0), "end": (19, 0)}
+                "Lunch": {"start": (11, 0), "end": (19, 0)},
+                "Dinner": {"start": (11, 0), "end": (19, 0)}
             }
         }
     },
     "Grace Dodge": {
+        "operating_hours": "Mon - Thu: 11:00 a.m. - 7:30 p.m.",
         "days": ["monday", "tuesday", "wednesday", "thursday"],
         "meals": {
-            "Lunch": {"start": (11, 0), "end": (14, 30)},
-            "Dinner": {"start": (14, 30), "end": (19, 30)}
+            "Lunch": {"start": (11, 0), "end": (19, 30)},
+            "Dinner": {"start": (11, 0), "end": (19, 30)}
         }
     },
     "Faculty House 2nd Floor": {
+        "operating_hours": "Mon - Thu: 11:00 a.m. - 2:30 p.m.",
         "days": ["monday", "tuesday", "wednesday", "thursday"],
         "meals": {
             "Lunch": {"start": (11, 0), "end": (14, 30)}
         }
     },
     "Faculty House Skyline": {
+        "operating_hours": "Mon - Thu: 11:00 a.m. - 2:30 p.m.",
         "days": ["monday", "tuesday", "wednesday", "thursday"],
         "meals": {
             "Lunch": {"start": (11, 0), "end": (14, 30)}
         }
     },
     "Johnny's": {
+        "operating_hours": "Mon - Wed: 11:00 a.m. - 2:30 p.m. | Thu - Fri: 11:00 a.m. - 2:30 p.m. & 7:00 p.m. - 11:00 p.m. | Sat: 7:00 p.m. - 11:00 p.m. | Sun: 6:00 p.m. - 10:00 p.m.",
         "mon_wed": {
             "days": ["monday", "tuesday", "wednesday"],
             "meals": {
@@ -184,18 +191,110 @@ HALL_MEAL_TIMES = {
         }
     },
     "Fac Shack": {
+        "operating_hours": "Mon - Thu: 12:00 p.m. - 8:00 p.m. | Sun: 3:00 p.m. - 8:00 p.m.",
         "weekday": {
             "days": ["monday", "tuesday", "wednesday", "thursday"],
             "meals": {
-                "Lunch": {"start": (12, 0), "end": (15, 0)},
-                "Dinner": {"start": (17, 0), "end": (20, 0)}
+                "Lunch": {"start": (12, 0), "end": (20, 0)},
+                "Dinner": {"start": (12, 0), "end": (20, 0)}
             }
         },
         "sunday": {
             "days": ["sunday"],
             "meals": {
+                "Lunch": {"start": (15, 0), "end": (20, 0)},
                 "Dinner": {"start": (15, 0), "end": (20, 0)}
             }
+        }
+    },
+    "JJ's Place": {
+        "operating_hours": "Open daily 12:00 p.m. - 10:00 a.m.",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+        "meals": {
+            "Lunch": {"start": (12, 0), "end": (10, 0)}
+        }
+    },
+    "Blue Java Butler": {
+        "operating_hours": "Monday - Thursday, 8 a.m. - 12 a.m. | Friday - Sunday, 9 a.m. - 9 p.m.",
+        "weekday": {
+            "days": ["monday", "tuesday", "wednesday", "thursday"],
+            "meals": {
+                "Lunch": {"start": (8, 0), "end": (0, 0)}
+            }
+        },
+        "weekend": {
+            "days": ["friday", "saturday", "sunday"],
+            "meals": {
+                "Lunch": {"start": (9, 0), "end": (21, 0)}
+            }
+        }
+    },
+    "Blue Java Uris": {
+        "operating_hours": "Monday - Friday: 8:00 a.m. - 5:30 p.m.",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+        "meals": {
+            "Lunch": {"start": (8, 0), "end": (17, 30)}
+        }
+    },
+    "Blue Java Mudd": {
+        "operating_hours": "Monday - Friday: 8:00 a.m. - 11:00 a.m.",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+        "meals": {
+            "Lunch": {"start": (8, 0), "end": (11, 0)}
+        }
+    },
+    "Blue Java Everett": {
+        "operating_hours": "Monday - Thursday, 8:00 a.m. - 7:30 p.m. | Friday, 8:00 a.m. - 2:30 p.m.",
+        "weekday": {
+            "days": ["monday", "tuesday", "wednesday", "thursday"],
+            "meals": {
+                "Lunch": {"start": (8, 0), "end": (19, 30)}
+            }
+        },
+        "friday": {
+            "days": ["friday"],
+            "meals": {
+                "Lunch": {"start": (8, 0), "end": (14, 30)}
+            }
+        }
+    },
+    "Lenfest Cafe": {
+        "operating_hours": "Monday - Thursday: 8:00 a.m. - 6:30 p.m. | Friday: 8:00 a.m. - 3:00 p.m.",
+        "weekday": {
+            "days": ["monday", "tuesday", "wednesday", "thursday"],
+            "meals": {
+                "Lunch": {"start": (8, 0), "end": (18, 30)}
+            }
+        },
+        "friday": {
+            "days": ["friday"],
+            "meals": {
+                "Lunch": {"start": (8, 0), "end": (15, 0)}
+            }
+        }
+    },
+    "Robert F. Smith": {
+        "operating_hours": "Monday – Thursday, 8:00 a.m. – 4:30 p.m. | Friday, 8:00 a.m. – 4:00 p.m.",
+        "weekday": {
+            "days": ["monday", "tuesday", "wednesday", "thursday"],
+            "meals": {
+                "Breakfast": {"start": (8, 0), "end": (11, 0)},
+                "Lunch": {"start": (11, 0), "end": (16, 30)}
+            }
+        },
+        "friday": {
+            "days": ["friday"],
+            "meals": {
+                "Breakfast": {"start": (8, 0), "end": (11, 0)},
+                "Lunch": {"start": (11, 0), "end": (16, 0)}
+            }
+        }
+    },
+    "Chef Don's Pizza Pi": {
+        "operating_hours": "Monday - Friday, 11:30 a.m. - 7:00 p.m.",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+        "meals": {
+            "Lunch": {"start": (11, 30), "end": (19, 0)}
         }
     }
 }
@@ -268,9 +367,9 @@ STATIC_MENU_LOCATIONS = {
         ]
     },
     "Blue Java Mudd": {
-        "operating_hours": "Monday - Friday: 8 a.m. - 6 p.m.",
+        "operating_hours": "Monday - Friday: 8:00 a.m. - 11:00 a.m.",
         "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
-        "hours": {"start": (8, 0), "end": (18, 0)},
+        "hours": {"start": (8, 0), "end": (11, 0)},
         "menu_items": [
             {"name": "Hot Espresso Beverages", "description": "Lattes, cappuccinos, americanos", "allergens": ["Dairy"], "dietary_prefs": []},
             {"name": "Iced Espresso Beverages", "description": "Iced lattes, iced cappuccinos", "allergens": ["Dairy"], "dietary_prefs": []},
@@ -352,6 +451,15 @@ STATIC_MENU_LOCATIONS = {
             {"name": "Chilled Drinks", "description": "Bottled beverages and juices", "allergens": [], "dietary_prefs": ["Vegan"]},
             {"name": "Assorted Snacks", "description": "Grab and go snacks", "allergens": [], "dietary_prefs": []}
         ]
+    },
+    "Chef Don's Pizza Pi": {
+        "operating_hours": "Monday - Friday, 11:30 a.m. - 7:00 p.m.",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+        "hours": {"start": (11, 30), "end": (19, 0)},
+        "menu_items": [
+            {"name": "Traditional Cheese Pizza", "description": "Classic cheese pizza", "allergens": ["Gluten", "Dairy"], "dietary_prefs": ["Vegetarian"]},
+            {"name": "Vegan Cheese Pizza", "description": "Dairy-free cheese pizza", "allergens": ["Gluten"], "dietary_prefs": ["Vegan"]}
+        ]
     }
 }
 
@@ -377,7 +485,8 @@ COLUMBIA_STATIC_HALLS = [
     {"name": "Blue Java Mudd", "url": "https://dining.columbia.edu/content/blue-java-cafe-mudd-hall-0"},
     {"name": "Blue Java Everett", "url": "https://dining.columbia.edu/content/blue-java-everett-library-cafe"},
     {"name": "Lenfest Cafe", "url": "https://dining.columbia.edu/content/lenfest-cafe-0"},
-    {"name": "Robert F. Smith", "url": "https://dining.columbia.edu/content/robert-f-smith-dining-hall-0"}
+    {"name": "Robert F. Smith", "url": "https://dining.columbia.edu/content/robert-f-smith-dining-hall-0"},
+    {"name": "Chef Don's Pizza Pi", "url": ""}
 ]
 
 # Barnard Dining Halls (DineOnCampus API)
@@ -458,20 +567,22 @@ def is_hall_open_now(hall_name):
     now = now_ny()
     current_minutes = now.hour * 60 + now.minute
 
-    # Treat hall as open for the full span from first meal start to last meal end
-    first_meal = list(meal_times.values())[0]
-    last_meal = list(meal_times.values())[-1]
-    start_h, start_m = first_meal["start"]
-    end_h, end_m = last_meal["end"]
+    for times in meal_times.values():
+        start_h, start_m = times["start"]
+        end_h, end_m = times["end"]
 
-    start_minutes = start_h * 60 + start_m
-    end_minutes = end_h * 60 + end_m
+        start_minutes = start_h * 60 + start_m
+        end_minutes = end_h * 60 + end_m
 
-    # Handle overnight hours
-    if end_minutes < start_minutes:
-        return current_minutes >= start_minutes or current_minutes < end_minutes
+        # Handle overnight hours
+        if end_minutes < start_minutes:
+            if current_minutes >= start_minutes or current_minutes < end_minutes:
+                return True
+        else:
+            if start_minutes <= current_minutes < end_minutes:
+                return True
 
-    return start_minutes <= current_minutes < end_minutes
+    return False
 
 def get_current_meal_for_hall(hall_name):
     """Get the current meal being served at a hall"""
@@ -503,6 +614,9 @@ def is_static_hall_open(hall_name):
     """Check if a static menu hall is currently open"""
     if hall_name not in STATIC_MENU_LOCATIONS:
         return False
+
+    if hall_name in HALL_MEAL_TIMES:
+        return is_hall_open_now(hall_name)
 
     config = STATIC_MENU_LOCATIONS[hall_name]
     now = now_ny()
@@ -573,6 +687,8 @@ def get_operating_hours_display(hall_name):
     # For dynamic halls, build from meal times
     if hall_name in HALL_MEAL_TIMES:
         config = HALL_MEAL_TIMES[hall_name]
+        if isinstance(config, dict) and config.get("operating_hours"):
+            return config.get("operating_hours")
         if "days" in config:
             days = config["days"]
             meals = config.get("meals", {})
@@ -625,17 +741,33 @@ def scrape_static_hall(hall):
     config = STATIC_MENU_LOCATIONS[hall_name]
     is_open = is_static_hall_open(hall_name)
 
-    # Create a single "All Day" meal with the static menu items
-    meals = []
-    if is_open:
-        meals = [{
-            "meal_type": "All Day",
+    def build_static_meals():
+        meal_times = get_meal_times_for_hall(hall_name)
+        if meal_times:
+            meals_out = []
+            for meal_name, times in meal_times.items():
+                start = format_time_tuple(*times["start"])
+                end = format_time_tuple(*times["end"])
+                meals_out.append({
+                    "meal_type": meal_name,
+                    "time": f"{start} - {end}",
+                    "stations": [{
+                        "station": "Menu",
+                        "items": config["menu_items"]
+                    }]
+                })
+            return meals_out
+
+        return [{
+            "meal_type": "Lunch",
             "time": config.get("operating_hours", "Check website for hours"),
             "stations": [{
                 "station": "Menu",
                 "items": config["menu_items"]
             }]
         }]
+
+    meals = build_static_meals() if is_open else []
 
     return {
         "name": hall_name,
