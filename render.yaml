@@ -3,5 +3,10 @@ services:
     name: columbiacals-backend
     env: python
     rootDir: ColumbiaCals-Backend
-    buildCommand: "pip install -r requirements.txt"
+    envVars:
+      - key: AUTO_REFRESH_ON_START
+        value: "true"
+      - key: PLAYWRIGHT_BROWSERS_PATH
+        value: "/opt/render/.cache/ms-playwright"
+    buildCommand: "pip install -r requirements.txt && playwright install chromium && playwright install-deps chromium"
     startCommand: "gunicorn server:app --bind 0.0.0.0:$PORT"

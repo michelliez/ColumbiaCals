@@ -2,6 +2,7 @@
 """
 Columbia & Barnard Dining Scraper - With Exact Meal Times
 Only scrapes Breakfast, Lunch, Dinner (no "All Day")
+Uses Playwright with stealth for anti-bot bypass
 """
 
 import requests
@@ -11,21 +12,117 @@ from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 import time
 
+# Playwright imports (with fallback to requests if not available)
+try:
+    from playwright.sync_api import sync_playwright
+    from playwright_stealth import Stealth
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
+    print("⚠️ Playwright not available, falling back to requests")
+
 # New York timezone
 NY_TZ = ZoneInfo('America/New_York')
 
-# Shared session to preserve cookies and mimic a real browser
+# Shared session for non-Playwright requests (Barnard API, etc.)
 SESSION = requests.Session()
 SESSION.headers.update({
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-User": "?1",
 })
+
+# Global Playwright browser instance (reused across scrapes)
+_playwright_instance = None
+_browser_instance = None
+
+def get_browser():
+    """Get or create a reusable Playwright browser instance"""
+    global _playwright_instance, _browser_instance
+
+    if not PLAYWRIGHT_AVAILABLE:
+        return None
+
+    if _browser_instance is None:
+        _playwright_instance = sync_playwright().start()
+        _browser_instance = _playwright_instance.chromium.launch(
+            headless=True,
+            args=[
+                '--disable-blink-features=AutomationControlled',
+                '--disable-dev-shm-usage',
+                '--no-sandbox',
+            ]
+        )
+
+    return _browser_instance
+
+def fetch_with_playwright(url, timeout=30000):
+    """Fetch a URL using Playwright with stealth mode"""
+    browser = get_browser()
+    if browser is None:
+        return None
+
+    # Create stealth instance with all evasions enabled
+    stealth = Stealth(
+        navigator_webdriver=True,
+        webgl_vendor=True,
+        chrome_app=True,
+        chrome_csi=True,
+        chrome_load_times=True,
+        chrome_runtime=True,
+        navigator_hardware_concurrency=True,
+        navigator_languages=True,
+        navigator_permissions=True,
+        navigator_platform=True,
+        navigator_plugins=True,
+        navigator_user_agent=True,
+        navigator_vendor=True,
+        hairline=True,
+        media_codecs=True,
+    )
+
+    context = browser.new_context(
+        viewport={'width': 1920, 'height': 1080},
+        user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    )
+
+    page = context.new_page()
+
+    # Apply stealth scripts
+    stealth.apply_stealth_sync(page)
+
+    try:
+        # Visit homepage first to get cookies (like a real user)
+        page.goto('https://dining.columbia.edu/', timeout=timeout)
+        page.wait_for_timeout(1000)  # Brief pause
+
+        # Now visit the actual page
+        response = page.goto(url, timeout=timeout)
+
+        if response and response.status == 200:
+            content = page.content()
+            return content
+        else:
+            print(f"   ⚠️ Playwright got status {response.status if response else 'None'}")
+            return None
+
+    except Exception as e:
+        print(f"   ⚠️ Playwright error: {e}")
+        return None
+    finally:
+        context.close()
+
+def cleanup_browser():
+    """Clean up Playwright browser instance"""
+    global _playwright_instance, _browser_instance
+
+    if _browser_instance:
+        _browser_instance.close()
+        _browser_instance = None
+
+    if _playwright_instance:
+        _playwright_instance.stop()
+        _playwright_instance = None
 
 def now_ny():
     """Get current time in New York timezone"""
@@ -799,19 +896,25 @@ def scrape_dynamic_hall(hall):
         }
 
     try:
-        headers = {
-            "Referer": "https://dining.columbia.edu/",
-            "Origin": "https://dining.columbia.edu",
-        }
-
-        response = SESSION.get(hall['url'], headers=headers, timeout=30)
-        if response.status_code == 403:
-            # Warm up cookies from homepage and retry once
-            SESSION.get("https://dining.columbia.edu/", headers=headers, timeout=30)
+        # Use Playwright with stealth if available (bypasses 403 blocks)
+        if PLAYWRIGHT_AVAILABLE:
+            html_content = fetch_with_playwright(hall['url'])
+            if html_content is None:
+                return _fallback_response("Failed to fetch with Playwright")
+        else:
+            # Fallback to requests (may get 403 on cloud servers)
+            headers = {
+                "Referer": "https://dining.columbia.edu/",
+                "Origin": "https://dining.columbia.edu",
+            }
             response = SESSION.get(hall['url'], headers=headers, timeout=30)
-        response.raise_for_status()
+            if response.status_code == 403:
+                SESSION.get("https://dining.columbia.edu/", headers=headers, timeout=30)
+                response = SESSION.get(hall['url'], headers=headers, timeout=30)
+            response.raise_for_status()
+            html_content = response.text
 
-        menu_data = extract_menu_data(response.text)
+        menu_data = extract_menu_data(html_content)
 
         # Get hall-specific meal times
         meal_times = get_meal_times_for_hall(hall_name)
@@ -1063,71 +1166,81 @@ def scrape_all_locations():
     print("🦁 Columbia & Barnard Dining Scraper")
     print("=" * 50)
 
+    if PLAYWRIGHT_AVAILABLE:
+        print("🎭 Using Playwright with stealth mode")
+    else:
+        print("⚠️ Playwright not available, using requests (may get 403)")
+
     results = []
 
-    # Scrape Columbia dynamic halls
-    print("\n📍 Scraping Columbia halls (dynamic menus)...")
-    for hall in COLUMBIA_DYNAMIC_HALLS:
-        print(f"   {hall['name']}...")
-        data = scrape_dynamic_hall(hall)
-        results.append(data)
+    try:
+        # Scrape Columbia dynamic halls
+        print("\n📍 Scraping Columbia halls (dynamic menus)...")
+        for hall in COLUMBIA_DYNAMIC_HALLS:
+            print(f"   {hall['name']}...")
+            data = scrape_dynamic_hall(hall)
+            results.append(data)
 
-        status = data.get('status', 'unknown')
-        meal_count = len(data.get('meals', []))
+            status = data.get('status', 'unknown')
+            meal_count = len(data.get('meals', []))
 
-        if status == 'open' and meal_count > 0:
-            print(f"      ✅ Open - {meal_count} meal(s)")
-        elif status == 'open_no_menu':
-            print(f"      ⚠️  Open but no menu available")
-        elif status == 'closed':
-            print(f"      ⏰ Closed")
-        else:
-            print(f"      ❌ Error: {status}")
+            if status == 'open' and meal_count > 0:
+                print(f"      ✅ Open - {meal_count} meal(s)")
+            elif status == 'open_no_menu':
+                print(f"      ⚠️  Open but no menu available")
+            elif status == 'closed':
+                print(f"      ⏰ Closed")
+            else:
+                print(f"      ❌ Error: {status}")
 
-        time.sleep(1)
+            time.sleep(1)
 
-    # Scrape Columbia static halls
-    print("\n📍 Scraping Columbia cafes (static menus)...")
-    for hall in COLUMBIA_STATIC_HALLS:
-        print(f"   {hall['name']}...")
-        data = scrape_static_hall(hall)
-        results.append(data)
+        # Scrape Columbia static halls
+        print("\n📍 Scraping Columbia cafes (static menus)...")
+        for hall in COLUMBIA_STATIC_HALLS:
+            print(f"   {hall['name']}...")
+            data = scrape_static_hall(hall)
+            results.append(data)
 
-        status = data.get('status', 'unknown')
-        if status == 'open':
-            print(f"      ✅ Open")
-        else:
-            print(f"      ⏰ Closed")
+            status = data.get('status', 'unknown')
+            if status == 'open':
+                print(f"      ✅ Open")
+            else:
+                print(f"      ⏰ Closed")
 
-    # Scrape Barnard halls
-    print("\n📍 Scraping Barnard halls...")
-    for hall in BARNARD_LOCATIONS:
-        print(f"   {hall['name']}...")
-        data = scrape_barnard_hall(hall)
-        results.append(data)
+        # Scrape Barnard halls
+        print("\n📍 Scraping Barnard halls...")
+        for hall in BARNARD_LOCATIONS:
+            print(f"   {hall['name']}...")
+            data = scrape_barnard_hall(hall)
+            results.append(data)
 
-        meal_count = len(data.get('meals', []))
-        if meal_count > 0:
-            print(f"      ✅ {meal_count} meal(s)")
-        else:
-            print(f"      ⏰ Closed or no menu")
+            meal_count = len(data.get('meals', []))
+            if meal_count > 0:
+                print(f"      ✅ {meal_count} meal(s)")
+            else:
+                print(f"      ⏰ Closed or no menu")
 
-        time.sleep(1)
+            time.sleep(1)
 
-    # Save results
-    with open('menu_data.json', 'w') as f:
-        json.dump(results, f, indent=2)
+        # Save results
+        with open('menu_data.json', 'w') as f:
+            json.dump(results, f, indent=2)
 
-    # Summary
-    open_count = sum(1 for r in results if r.get('status') == 'open')
-    closed_count = sum(1 for r in results if r.get('status') == 'closed')
+        # Summary
+        open_count = sum(1 for r in results if r.get('status') == 'open')
+        closed_count = sum(1 for r in results if r.get('status') == 'closed')
 
-    print(f"\n✅ Scraped {len(results)} locations")
-    print(f"   🟢 Open: {open_count}")
-    print(f"   🔴 Closed: {closed_count}")
-    print(f"\n📄 Saved to menu_data.json")
+        print(f"\n✅ Scraped {len(results)} locations")
+        print(f"   🟢 Open: {open_count}")
+        print(f"   🔴 Closed: {closed_count}")
+        print(f"\n📄 Saved to menu_data.json")
 
-    return results
+        return results
+    finally:
+        # Clean up Playwright browser
+        if PLAYWRIGHT_AVAILABLE:
+            cleanup_browser()
 
 if __name__ == "__main__":
     scrape_all_locations()
