@@ -635,6 +635,21 @@ def scrape_dynamic_hall(hall):
     """Scrape a Columbia dining hall with dynamic menu - ONLY Breakfast/Lunch/Dinner"""
     hall_name = hall["name"]
 
+    def _fallback_response(error_message: str, status_override: str = None):
+        operating_hours = get_operating_hours_display(hall_name)
+        is_open = is_hall_open_now(hall_name)
+        status = status_override or ("open_no_menu" if is_open else "closed")
+        return {
+            "name": hall_name,
+            "meals": [],
+            "status": status,
+            "source": "columbia",
+            "operating_hours": operating_hours,
+            "is_open": is_open,
+            "error": error_message,
+            "scraped_at": now_ny().isoformat()
+        }
+
     try:
         headers = {
             "Referer": "https://dining.columbia.edu/",
@@ -795,40 +810,12 @@ def scrape_dynamic_hall(hall):
 
     except requests.exceptions.HTTPError as e:
         if '503' in str(e):
-            return {
-                "name": hall_name,
-                "meals": [],
-                "status": "service_unavailable",
-                "source": "columbia",
-                "error": "Columbia Dining website is temporarily down",
-                "scraped_at": now_ny().isoformat()
-            }
-        return {
-            "name": hall_name,
-            "meals": [],
-            "status": "error",
-            "source": "columbia",
-            "error": str(e),
-            "scraped_at": now_ny().isoformat()
-        }
+            return _fallback_response("Columbia Dining website is temporarily down", status_override="service_unavailable")
+        return _fallback_response(str(e))
     except requests.exceptions.RequestException as e:
-        return {
-            "name": hall_name,
-            "meals": [],
-            "status": "network_error",
-            "source": "columbia",
-            "error": "Unable to reach Columbia Dining website",
-            "scraped_at": now_ny().isoformat()
-        }
+        return _fallback_response("Unable to reach Columbia Dining website")
     except Exception as e:
-        return {
-            "name": hall_name,
-            "meals": [],
-            "status": "error",
-            "source": "columbia",
-            "error": str(e),
-            "scraped_at": now_ny().isoformat()
-        }
+        return _fallback_response(str(e))
 
 def scrape_barnard_hall(hall):
     """Scrape a Barnard dining hall via DineOnCampus API"""
