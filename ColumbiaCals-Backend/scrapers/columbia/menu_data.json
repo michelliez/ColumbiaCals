@@ -1,0 +1,2609 @@
+[
+  {
+    "name": "John Jay Dining Hall",
+    "meals": [
+      {
+        "meal_type": "Breakfast",
+        "time": "9:30 AM - 11:00 AM",
+        "stations": [
+          {
+            "station": "Soup & Oatmeal",
+            "items": [
+              {
+                "name": "Oatmeal",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Chocolate Oatmeal",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Farina",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Main Station",
+            "items": [
+              {
+                "name": "Scramble Eggs",
+                "description": null,
+                "allergens": [
+                  "Eggs"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Egg White Scramble",
+                "description": null,
+                "allergens": [
+                  "Eggs"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Pancakes",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Mixed Vegetables",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hash Brown Patty",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Sunflower Oil"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Sausage",
+                "description": null,
+                "allergens": [
+                  "Pork"
+                ],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Vegan Station",
+            "items": [
+              {
+                "name": "Just Egg",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Mixed Vegetables",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Vegan Sausage Patty",
+                "description": null,
+                "allergens": [
+                  "Coconut",
+                  "Sunflower Oil"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Bakery",
+            "items": [
+              {
+                "name": "Corn Bread",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Waffles",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Smoothie Bar",
+            "items": [
+              {
+                "name": "Hot Chocolate",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Lunch",
+        "time": "11:00 AM - 2:30 PM",
+        "stations": [
+          {
+            "station": "Main Station",
+            "items": [
+              {
+                "name": "Fried Catfish",
+                "description": null,
+                "allergens": [
+                  "Eggs",
+                  "Fish",
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Jollof Rice",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Stewed Okra",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Bulgar",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Red Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Halal Station",
+            "items": [
+              {
+                "name": "Fried Catfish",
+                "description": null,
+                "allergens": [
+                  "Eggs",
+                  "Fish",
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Jollof Rice",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Stewed Okra",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Kosher Station",
+            "items": [
+              {
+                "name": "Fried Catfish",
+                "description": null,
+                "allergens": [
+                  "Eggs",
+                  "Fish",
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Jollof Rice",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Stewed Okra",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Vegan Station",
+            "items": [
+              {
+                "name": "Vegan Jambalaya",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Sunflower Oil",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Jollof Rice",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Stewed Okra",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Pasta Station",
+            "items": [
+              {
+                "name": "Marinara Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Oil",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Pasta",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Whole Wheat Pasta",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Sundried Tomato Pesto",
+                "description": null,
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Turkey Bolognese",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Spinach and Sundried Tomatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Roll",
+                "description": null,
+                "allergens": [
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Soup & Oatmeal",
+            "items": [
+              {
+                "name": "Gumbo",
+                "description": null,
+                "allergens": [
+                  "Pork",
+                  "Soy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chicken Gnocchi",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Seared Salmon",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Asian Station",
+            "items": [
+              {
+                "name": "Bao Buns",
+                "description": "Jerk Chicken, Jerk Tofu, Al Pastor Pork",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "5:00 PM - 9:00 PM",
+        "stations": [
+          {
+            "station": "Main Station",
+            "items": [
+              {
+                "name": "BBQ Ribs",
+                "description": null,
+                "allergens": [
+                  "Pork"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Green Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Corn Bread",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Rice and Peas",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Cheddar Mashed Potatoes",
+                "description": null,
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Vegetarian"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Halal Station",
+            "items": [
+              {
+                "name": "BBQ Chicken",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Herb Mashed Potatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Green Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Kosher Station",
+            "items": [
+              {
+                "name": "BBQ Chicken",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Herb Mashed Potatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Green Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Vegan Station",
+            "items": [
+              {
+                "name": "Vegan Tofu \"Ribs\"",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Tuffle Mac and Cheese",
+                "description": null,
+                "allergens": [
+                  "Coconut",
+                  "Soy",
+                  "Sunflower Oil",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Green Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Pasta Station",
+            "items": [
+              {
+                "name": "Marinara Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Oil",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Pasta",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Whole Wheat Pasta",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Sundried Tomato Pesto",
+                "description": null,
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Turkey Bolognese",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Spinach and Sundried Tomatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Roll",
+                "description": null,
+                "allergens": [
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Soup & Oatmeal",
+            "items": [
+              {
+                "name": "Gumbo",
+                "description": null,
+                "allergens": [
+                  "Pork",
+                  "Soy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chicken Gnocchi",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Seared Salmon",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Asian Station",
+            "items": [
+              {
+                "name": "Bao Buns",
+                "description": "Jerk Chicken, Jerk Tofu, Al Pastor Pork",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Sunday, Monday, Tuesday, Wednesday, Thursday: 9:30 AM - 9:00 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:17:45.392538-05:00"
+  },
+  {
+    "name": "Ferris Booth Commons",
+    "meals": [
+      {
+        "meal_type": "Breakfast",
+        "time": "7:30 AM - 10:30 AM",
+        "stations": [
+          {
+            "station": "Main Station",
+            "items": [
+              {
+                "name": "Apple Pancakes",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Scrambled Eggs",
+                "description": null,
+                "allergens": [
+                  "Eggs"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Roasted Breakfast Potatoes",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Sunflower Oil"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Sliced Ham",
+                "description": null,
+                "allergens": [
+                  "Pork"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Turkey Sausage",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Biscuits and Sausage Gravy",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Pork",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Vegan Station",
+            "items": [
+              {
+                "name": "Tofu Scramble",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Roasted Potatoes",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Sunflower Oil"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Beyond Sausage",
+                "description": null,
+                "allergens": [
+                  "Coconut",
+                  "Sunflower Oil"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Lunch",
+        "time": "11:00 AM - 3:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Grilled Cheese",
+                "description": "The Basic (three cheese) The Ferris (pesto, roasted red peppers, mozzarella), The Vegan",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Quesadilla",
+                "description": "Pork Quesadilla, Cheese Quesadilla, Vegan Chorizo",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Vegan Station",
+            "items": [
+              {
+                "name": "Ratatouille Stuffed Peppers",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Chickpea Stew",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Roasted Broccoli",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "5:00 PM - 8:00 PM",
+        "stations": [
+          {
+            "station": "Main Station",
+            "items": [
+              {
+                "name": "Carne Guisada",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Garlic Bread",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Cous Cous Pilaf",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Black Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Roasted Broccoli",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Vegan Station",
+            "items": [
+              {
+                "name": "Seitan Stew",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Black Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Roasted Broccoli",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Pho",
+                "description": "pho broth, rice noodles, beef, tofu, bean sprouts, sliced onion, lime, cilantro, jalapeno, hoisin sauce",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Quesadilla",
+                "description": "Pork Quesadilla, Cheese Quesadilla, Vegan Chorizo",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday, Friday: 7:30 AM - 8:00 PM | Saturday: 9:00 AM - 8:00 PM | Sunday: 10:00 AM - 8:00 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:17:48.958713-05:00"
+  },
+  {
+    "name": "Grace Dodge",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "11:00 AM - 2:30 PM",
+        "stations": [
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Deluxe Grilled Cheese",
+                "description": "pepper jack, provolone, american, bacon, tomato, sourdough",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Tomato Soup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Ginger Soy Chicken",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Ramen Noodles",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Broth",
+                "description": null,
+                "allergens": [
+                  "Pork",
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Marinated Egg",
+                "description": null,
+                "allergens": [
+                  "Eggs",
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Toppings",
+                "description": "scallions, tofu, kim chi, corn",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "2:30 PM - 7:30 PM",
+        "stations": [
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Deluxe Grilled Cheese",
+                "description": "pepper jack, provolone, american, bacon, tomato, sourdough",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Tomato Soup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Ginger Soy Chicken",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Ramen Noodles",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Broth",
+                "description": null,
+                "allergens": [
+                  "Pork",
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Marinated Egg",
+                "description": null,
+                "allergens": [
+                  "Eggs",
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Toppings",
+                "description": "scallions, tofu, kim chi, corn",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 7:30 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:17:52.297441-05:00"
+  },
+  {
+    "name": "Faculty House 2nd Floor",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "11:00 AM - 2:30 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Beef Bolognese",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Black Eyed Pea Stew",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Linguini with Garlic and Oil",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Mixed Grain Pilaf",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Broccoli with Garlic",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Toast",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegetarian"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 2:30 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:17:55.472987-05:00"
+  },
+  {
+    "name": "Faculty House Skyline",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "11:00 AM - 2:30 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Chicken Ajillo",
+                "description": "Garlic and Pepper",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Eggplant a la Diablo",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Spanish Rice with Red Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Wax and Green Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 2:30 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:17:58.569520-05:00"
+  },
+  {
+    "name": "Fac Shack",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "12:00 PM - 3:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Chicken Ajillo",
+                "description": "Garlic and Pepper Chicken",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Spanish Rice with Red Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Green and Wax Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Eggplant a la Diablo",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "5:00 PM - 8:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Chicken Ajillo",
+                "description": "Garlic and Pepper Chicken",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Spanish Rice with Red Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Green and Wax Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Eggplant a la Diablo",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 12:00 PM - 8:00 PM | Sunday: 3:00 PM - 8:00 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:01.795826-05:00"
+  },
+  {
+    "name": "Chef Mike's",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "10:30 AM - 3:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Protein",
+                "description": "Turkey, Roast beef, Tuna, Ham, Buffalo Chicken, Grilled Vegetables, Chipotle Tofu, Italian Tofu",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cheese",
+                "description": "Swiss, American, Pepper Jack, Provolone, Cheddar",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Toppings",
+                "description": "Lettuce, Tomato, Red Onion, Banana Peppers, Roasted Red Peppers, Guacamole, Jalape\u00f1os, Hummus",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Dressings",
+                "description": "Red Wine Vinegar, Balsamic Vinegar, Olive Oil, Mayo, Mustard",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Turkey and Swiss",
+                "description": "Smoked Turkey, Swiss, Bacon, Lettuce & Tomato",
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Pork",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Roasted Cauliflower",
+                "description": "Roasted Cauliflower, Red Onion, Mango, Arugula & Guacamole",
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Honey Chicken with Fresh Mozzarella",
+                "description": "Breaded Chicken, Mike\u2019s Hot Honey & Fresh Mozzarella",
+                "allergens": [
+                  "Dairy",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Vegan Buffalo Meatball Sub",
+                "description": "Vegan Meatball, Vegan Provolone & Franks Hot Sauce",
+                "allergens": [
+                  "Coconut",
+                  "Soy",
+                  "Sunflower Oil",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "5:00 PM - 10:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Protein",
+                "description": "Turkey, Roast beef, Tuna, Ham, Buffalo Chicken, Grilled Vegetables, Chipotle Tofu, Italian Tofu",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cheese",
+                "description": "Swiss, American, Pepper Jack, Provolone, Cheddar",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Toppings",
+                "description": "Lettuce, Tomato, Red Onion, Banana Peppers, Roasted Red Peppers, Guacamole, Jalape\u00f1os, Hummus",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Dressings",
+                "description": "Red Wine Vinegar, Balsamic Vinegar, Olive Oil, Mayo, Mustard",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Turkey and Swiss",
+                "description": "Smoked Turkey, Swiss, Bacon, Lettuce & Tomato",
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Pork",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Roasted Cauliflower",
+                "description": "Roasted Cauliflower, Red Onion, Mango, Arugula & Guacamole",
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Honey Chicken with Fresh Mozzarella",
+                "description": "Breaded Chicken, Mike\u2019s Hot Honey & Fresh Mozzarella",
+                "allergens": [
+                  "Dairy",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Vegan Buffalo Meatball Sub",
+                "description": "Vegan Meatball, Vegan Provolone & Franks Hot Sauce",
+                "allergens": [
+                  "Coconut",
+                  "Soy",
+                  "Sunflower Oil",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday, Friday: 10:30 AM - 10:00 PM | Saturday: 11:00 AM - 7:00 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:05.190260-05:00"
+  },
+  {
+    "name": "Johnny's",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "11:00 AM - 2:30 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Spicy Dan Dan Pork Bowl",
+                "description": "Spicy Dan Dan pork, jasmine rice, bok choy and shredded carrots",
+                "allergens": [
+                  "Pork",
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Spicy Dan Dan Impossible Bowl",
+                "description": "Spicy Dan Dan Impossible beef, jasmine rice, bok choy and shredded carrots",
+                "allergens": [
+                  "Coconut",
+                  "Sesame",
+                  "Soy",
+                  "Sunflower Oil",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Served with a Side of",
+                "description": "fresh fruit and assorted cookie",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday, Tuesday, Wednesday: 11:00 AM - 2:30 PM | Thursday, Friday: 11:00 AM - 11:00 PM | Saturday: 7:00 PM - 11:00 PM | Sunday: 6:00 PM - 10:00 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:08.265745-05:00"
+  },
+  {
+    "name": "JJ's Place",
+    "meals": [
+      {
+        "meal_type": "All Day",
+        "time": "Open daily 12:00 p.m. - 10:00 a.m.",
+        "stations": [
+          {
+            "station": "Menu",
+            "items": [
+              {
+                "name": "Hamburger",
+                "description": "Classic beef burger",
+                "allergens": [
+                  "Gluten"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cheeseburger",
+                "description": "Beef burger with cheese",
+                "allergens": [
+                  "Gluten",
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Fried Chicken Burger",
+                "description": "Crispy fried chicken sandwich",
+                "allergens": [
+                  "Gluten"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chicken Nuggets",
+                "description": "Breaded chicken nuggets",
+                "allergens": [
+                  "Gluten"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chicken Tenders",
+                "description": "Breaded chicken tenders",
+                "allergens": [
+                  "Gluten"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "French Fries",
+                "description": "Crispy golden fries",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan",
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Quesadilla",
+                "description": "Cheese quesadilla",
+                "allergens": [
+                  "Dairy",
+                  "Gluten"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Pancakes",
+                "description": "Fluffy pancakes",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Chocolate Chip Pancakes",
+                "description": "Pancakes with chocolate chips",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "French Toast",
+                "description": "Classic french toast",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Open daily 12:00 p.m. - 10:00 a.m.",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:09.267925-05:00"
+  },
+  {
+    "name": "Blue Java Butler",
+    "meals": [
+      {
+        "meal_type": "All Day",
+        "time": "Monday - Thursday, 8 a.m. - 12 a.m. | Friday - Sunday, 9 a.m. - 9 p.m.",
+        "stations": [
+          {
+            "station": "Menu",
+            "items": [
+              {
+                "name": "Hot Espresso Beverages",
+                "description": "Lattes, cappuccinos, americanos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Espresso Beverages",
+                "description": "Iced lattes, iced cappuccinos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Coffee",
+                "description": "Cold brewed iced coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Brewed Coffee",
+                "description": "Fresh hot coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Cold Brew Coffee",
+                "description": "Slow-steeped cold brew",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Paninis",
+                "description": "Assorted grilled paninis",
+                "allergens": [
+                  "Gluten",
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Republic of Tea",
+                "description": "Premium tea selection",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Specialty Teas",
+                "description": "Assorted specialty teas",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Muffins",
+                "description": "Various muffin flavors",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Assorted Pastries",
+                "description": "Fresh baked pastries",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Chilled Drinks",
+                "description": "Bottled beverages and juices",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Fruit",
+                "description": "Fresh fruit cups",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan",
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Assorted Snacks",
+                "description": "Grab and go snacks",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday - Thursday, 8 a.m. - 12 a.m. | Friday - Sunday, 9 a.m. - 9 p.m.",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:09.267994-05:00"
+  },
+  {
+    "name": "Blue Java Uris",
+    "meals": [
+      {
+        "meal_type": "All Day",
+        "time": "Monday - Friday: 8:00 a.m. - 5:30 p.m.",
+        "stations": [
+          {
+            "station": "Menu",
+            "items": [
+              {
+                "name": "Hot Espresso Beverages",
+                "description": "Lattes, cappuccinos, americanos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Espresso Beverages",
+                "description": "Iced lattes, iced cappuccinos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Coffee",
+                "description": "Cold brewed iced coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Brewed Coffee",
+                "description": "Fresh hot coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Cold Brew Coffee",
+                "description": "Slow-steeped cold brew",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Paninis",
+                "description": "Assorted grilled paninis",
+                "allergens": [
+                  "Gluten",
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Republic of Tea",
+                "description": "Premium tea selection",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Muffins",
+                "description": "Various muffin flavors",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Assorted Pastries",
+                "description": "Fresh baked pastries",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Chilled Drinks",
+                "description": "Bottled beverages and juices",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Fruit",
+                "description": "Fresh fruit cups",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan",
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Assorted Snacks",
+                "description": "Grab and go snacks",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday - Friday: 8:00 a.m. - 5:30 p.m.",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:09.268031-05:00"
+  },
+  {
+    "name": "Blue Java Mudd",
+    "meals": [
+      {
+        "meal_type": "All Day",
+        "time": "Monday - Friday: 8 a.m. - 6 p.m.",
+        "stations": [
+          {
+            "station": "Menu",
+            "items": [
+              {
+                "name": "Hot Espresso Beverages",
+                "description": "Lattes, cappuccinos, americanos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Espresso Beverages",
+                "description": "Iced lattes, iced cappuccinos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Coffee",
+                "description": "Cold brewed iced coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Brewed Coffee",
+                "description": "Fresh hot coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Cold Brew Coffee",
+                "description": "Slow-steeped cold brew",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Paninis",
+                "description": "Assorted grilled paninis",
+                "allergens": [
+                  "Gluten",
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Republic of Tea",
+                "description": "Premium tea selection",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Muffins",
+                "description": "Various muffin flavors",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Assorted Pastries",
+                "description": "Fresh baked pastries",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Chilled Drinks",
+                "description": "Bottled beverages and juices",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Fruit",
+                "description": "Fresh fruit cups",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan",
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Assorted Snacks",
+                "description": "Grab and go snacks",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday - Friday: 8 a.m. - 6 p.m.",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:09.268056-05:00"
+  },
+  {
+    "name": "Blue Java Everett",
+    "meals": [
+      {
+        "meal_type": "All Day",
+        "time": "Monday - Thursday, 8:00 a.m. - 7:30 p.m. | Friday, 8:00 a.m. - 2:30 p.m.",
+        "stations": [
+          {
+            "station": "Menu",
+            "items": [
+              {
+                "name": "Hot Espresso Beverages",
+                "description": "Lattes, cappuccinos, americanos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Espresso Beverages",
+                "description": "Iced lattes, iced cappuccinos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Coffee",
+                "description": "Cold brewed iced coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Brewed Coffee",
+                "description": "Fresh hot coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Cold Brew Coffee",
+                "description": "Slow-steeped cold brew",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Paninis",
+                "description": "Assorted grilled paninis",
+                "allergens": [
+                  "Gluten",
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Republic of Tea",
+                "description": "Premium tea selection",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Muffins",
+                "description": "Various muffin flavors",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Assorted Pastries",
+                "description": "Fresh baked pastries",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Chilled Drinks",
+                "description": "Bottled beverages and juices",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Fruit",
+                "description": "Fresh fruit cups",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan",
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Assorted Snacks",
+                "description": "Grab and go snacks",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday - Thursday, 8:00 a.m. - 7:30 p.m. | Friday, 8:00 a.m. - 2:30 p.m.",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:09.268080-05:00"
+  },
+  {
+    "name": "Lenfest Cafe",
+    "meals": [
+      {
+        "meal_type": "All Day",
+        "time": "Monday - Thursday: 8:00 a.m. - 6:30 p.m. | Friday: 8:00 a.m. - 3:00 p.m.",
+        "stations": [
+          {
+            "station": "Menu",
+            "items": [
+              {
+                "name": "Hot Espresso Beverages",
+                "description": "Lattes, cappuccinos, americanos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Coffee",
+                "description": "Cold brewed iced coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Brewed Coffee",
+                "description": "Fresh hot coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Sandwiches",
+                "description": "Fresh made sandwiches",
+                "allergens": [
+                  "Gluten"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Salads",
+                "description": "Fresh salads",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Assorted Pastries",
+                "description": "Fresh baked pastries",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Chilled Drinks",
+                "description": "Bottled beverages and juices",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Snacks",
+                "description": "Grab and go snacks",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday - Thursday: 8:00 a.m. - 6:30 p.m. | Friday: 8:00 a.m. - 3:00 p.m.",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:09.268102-05:00"
+  },
+  {
+    "name": "Robert F. Smith",
+    "meals": [
+      {
+        "meal_type": "All Day",
+        "time": "Monday - Thursday, 8 a.m. - 4:30 p.m. | Friday, 8 a.m. - 4 p.m.",
+        "stations": [
+          {
+            "station": "Menu",
+            "items": [
+              {
+                "name": "Hot Espresso Beverages",
+                "description": "Lattes, cappuccinos, americanos",
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Iced Coffee",
+                "description": "Cold brewed iced coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Brewed Coffee",
+                "description": "Fresh hot coffee",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Sandwiches",
+                "description": "Fresh made sandwiches",
+                "allergens": [
+                  "Gluten"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Salads",
+                "description": "Fresh salads",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Assorted Pastries",
+                "description": "Fresh baked pastries",
+                "allergens": [
+                  "Gluten",
+                  "Eggs",
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Chilled Drinks",
+                "description": "Bottled beverages and juices",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Assorted Snacks",
+                "description": "Grab and go snacks",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
+    "source": "columbia",
+    "operating_hours": "Monday - Thursday, 8 a.m. - 4:30 p.m. | Friday, 8 a.m. - 4 p.m.",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:18:09.268120-05:00"
+  },
+  {
+    "name": "Hewitt Dining Hall",
+    "meals": [],
+    "status": "open_no_menu",
+    "source": "barnard",
+    "scraped_at": "2026-02-04T12:18:09.435478-05:00"
+  },
+  {
+    "name": "Diana Center",
+    "meals": [],
+    "status": "open_no_menu",
+    "source": "barnard",
+    "scraped_at": "2026-02-04T12:18:10.633054-05:00"
+  },
+  {
+    "name": "Liz's Place",
+    "meals": [],
+    "status": "open_no_menu",
+    "source": "barnard",
+    "scraped_at": "2026-02-04T12:18:11.826345-05:00"
+  }
+]

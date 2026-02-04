@@ -458,23 +458,20 @@ def is_hall_open_now(hall_name):
     now = now_ny()
     current_minutes = now.hour * 60 + now.minute
 
-    for meal_name, times in meal_times.items():
-        start_h, start_m = times["start"]
-        end_h, end_m = times["end"]
+    # Treat hall as open for the full span from first meal start to last meal end
+    first_meal = list(meal_times.values())[0]
+    last_meal = list(meal_times.values())[-1]
+    start_h, start_m = first_meal["start"]
+    end_h, end_m = last_meal["end"]
 
-        start_minutes = start_h * 60 + start_m
-        end_minutes = end_h * 60 + end_m
+    start_minutes = start_h * 60 + start_m
+    end_minutes = end_h * 60 + end_m
 
-        # Handle overnight hours
-        if end_minutes < start_minutes:
-            # Crosses midnight
-            if current_minutes >= start_minutes or current_minutes < end_minutes:
-                return True
-        else:
-            if start_minutes <= current_minutes < end_minutes:
-                return True
+    # Handle overnight hours
+    if end_minutes < start_minutes:
+        return current_minutes >= start_minutes or current_minutes < end_minutes
 
-    return False
+    return start_minutes <= current_minutes < end_minutes
 
 def get_current_meal_for_hall(hall_name):
     """Get the current meal being served at a hall"""
@@ -586,6 +583,25 @@ def get_operating_hours_display(hall_name):
                 end = format_time_tuple(*last_meal["end"])
                 day_str = ", ".join([d.capitalize() for d in days])
                 return f"{day_str}: {start} - {end}"
+        else:
+            # Complex configuration with multiple day groupings
+            schedule_parts = []
+            for schedule in config.values():
+                if not isinstance(schedule, dict) or "days" not in schedule:
+                    continue
+                days = schedule.get("days", [])
+                meals = schedule.get("meals", {})
+                if not meals:
+                    continue
+                first_meal = list(meals.values())[0]
+                last_meal = list(meals.values())[-1]
+                start = format_time_tuple(*first_meal["start"])
+                end = format_time_tuple(*last_meal["end"])
+                day_str = ", ".join([d.capitalize() for d in days])
+                schedule_parts.append(f"{day_str}: {start} - {end}")
+
+            if schedule_parts:
+                return " | ".join(schedule_parts)
 
     return None
 
@@ -695,8 +711,13 @@ def scrape_dynamic_hall(hall):
             "159": "Pasta Station"
         }
 
-        # Meal type mapping - ONLY these three
-        VALID_MEAL_TYPES = {"6": "Breakfast", "7": "Lunch", "8": "Dinner"}
+        # Meal type mapping - ONLY these three (plus combined Lunch & Dinner)
+        VALID_MEAL_TYPES = {
+            "6": ["Breakfast"],
+            "7": ["Lunch"],
+            "8": ["Dinner"],
+            "61": ["Lunch", "Dinner"]
+        }
 
         # Collect all items by meal type
         meals_by_type = {}
@@ -714,11 +735,13 @@ def scrape_dynamic_hall(hall):
                 if not menu_types or menu_types[0] not in VALID_MEAL_TYPES:
                     continue
 
-                meal_type = VALID_MEAL_TYPES[menu_types[0]]
+                mapped_meal_types = VALID_MEAL_TYPES[menu_types[0]]
 
                 # Check if this meal type is served at this hall
-                if meal_times and meal_type not in meal_times:
-                    continue
+                if meal_times:
+                    mapped_meal_types = [mt for mt in mapped_meal_types if mt in meal_times]
+                    if not mapped_meal_types:
+                        continue
 
                 # Extract stations with items
                 stations_data = []
@@ -748,27 +771,28 @@ def scrape_dynamic_hall(hall):
                             "items": items
                         })
 
-                # Add to meals by type
+                # Add to meals by type (supports combined Lunch & Dinner)
                 if stations_data:
-                    if meal_type not in meals_by_type:
-                        meals_by_type[meal_type] = {"stations": []}
+                    for meal_type in mapped_meal_types:
+                        if meal_type not in meals_by_type:
+                            meals_by_type[meal_type] = {"stations": []}
 
-                    # Merge stations
-                    existing_stations = meals_by_type[meal_type]["stations"]
-                    for new_station in stations_data:
-                        found = False
-                        for existing in existing_stations:
-                            if existing["station"] == new_station["station"]:
-                                # Merge items
-                                existing_names = {it["name"] for it in existing["items"]}
-                                for item in new_station["items"]:
-                                    if item["name"] not in existing_names:
-                                        existing["items"].append(item)
-                                        existing_names.add(item["name"])
-                                found = True
-                                break
-                        if not found:
-                            existing_stations.append(new_station)
+                        # Merge stations
+                        existing_stations = meals_by_type[meal_type]["stations"]
+                        for new_station in stations_data:
+                            found = False
+                            for existing in existing_stations:
+                                if existing["station"] == new_station["station"]:
+                                    # Merge items
+                                    existing_names = {it["name"] for it in existing["items"]}
+                                    for item in new_station["items"]:
+                                        if item["name"] not in existing_names:
+                                            existing["items"].append(item)
+                                            existing_names.add(item["name"])
+                                    found = True
+                                    break
+                            if not found:
+                                existing_stations.append(new_station)
 
         # Build final meals list with proper times
         meals = []
