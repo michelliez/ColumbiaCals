@@ -183,13 +183,22 @@ def _normalize_legacy_hall(hall):
         "is_open": hall.get('is_open')
     }
 
+# Startup diagnostics
+print(f"[SERVER] Starting up...", flush=True)
+print(f"[SERVER] BASE_DIR: {BASE_DIR}", flush=True)
+print(f"[SERVER] MENU_FILE: {MENU_FILE}", flush=True)
+print(f"[SERVER] MENU_FILE exists: {os.path.exists(MENU_FILE)}", flush=True)
+
 # Start scheduler in background thread
 scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
 scheduler_thread.start()
 
 # Ensure menu data exists on startup (Render cold start)
 if not os.path.exists(MENU_FILE):
+    print(f"[SERVER] Menu file not found, triggering refresh...", flush=True)
     trigger_refresh_async()
+else:
+    print(f"[SERVER] Menu file exists, using fallback data", flush=True)
 
 @app.route('/api/dining-halls', methods=['GET'])
 def get_dining_halls():
