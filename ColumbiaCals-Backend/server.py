@@ -100,14 +100,17 @@ def run_scheduler():
     """Run scheduler in background thread"""
     print("🚀 Scheduler thread starting...")
 
-    # Run immediately on startup unless explicitly disabled
-    if os.environ.get("AUTO_REFRESH_ON_START", "true").lower() == "true":
+    auto_refresh = os.environ.get("AUTO_REFRESH_ON_START", "false").lower() == "true"
+
+    if auto_refresh:
+        # Run immediately on startup
         trigger_refresh_async()
 
-    # Schedule daily updates at 3:00 AM
-    schedule.every().day.at("03:00").do(update_menus)
-
-    print("⏰ Updates scheduled at 3:00 AM daily\n")
+        # Schedule daily updates at 3:00 AM
+        schedule.every().day.at("03:00").do(update_menus)
+        print("⏰ Updates scheduled at 3:00 AM daily\n")
+    else:
+        print("⏸️ Auto-refresh disabled (using local JSON data)\n")
     
     while True:
         schedule.run_pending()
