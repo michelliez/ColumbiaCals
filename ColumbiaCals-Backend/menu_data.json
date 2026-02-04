@@ -172,15 +172,16 @@
                 ]
               },
               {
-                "name": "French Toast Sticks",
+                "name": "Waffles",
                 "description": null,
                 "allergens": [
+                  "Dairy",
+                  "Eggs",
                   "Soy",
                   "Wheat"
                 ],
                 "dietary_prefs": [
-                  "Halal",
-                  "Vegan"
+                  "Vegetarian"
                 ]
               }
             ]
@@ -209,7 +210,9 @@
                 "name": "Fried Catfish",
                 "description": null,
                 "allergens": [
-                  "Fish"
+                  "Eggs",
+                  "Fish",
+                  "Soy"
                 ],
                 "dietary_prefs": [
                   "Gluten Free",
@@ -237,11 +240,12 @@
                 ]
               },
               {
-                "name": "Millet",
+                "name": "Bulgar",
                 "description": null,
-                "allergens": [],
+                "allergens": [
+                  "Wheat"
+                ],
                 "dietary_prefs": [
-                  "Gluten Free",
                   "Halal",
                   "Vegan"
                 ]
@@ -265,7 +269,9 @@
                 "name": "Fried Catfish",
                 "description": null,
                 "allergens": [
-                  "Fish"
+                  "Eggs",
+                  "Fish",
+                  "Soy"
                 ],
                 "dietary_prefs": [
                   "Gluten Free",
@@ -301,7 +307,9 @@
                 "name": "Fried Catfish",
                 "description": null,
                 "allergens": [
-                  "Fish"
+                  "Eggs",
+                  "Fish",
+                  "Soy"
                 ],
                 "dietary_prefs": [
                   "Gluten Free",
@@ -334,10 +342,9 @@
             "station": "Vegan Station",
             "items": [
               {
-                "name": "Vegan Mealoaf",
+                "name": "Vegan Jambalaya",
                 "description": null,
                 "allergens": [
-                  "Coconut",
                   "Soy",
                   "Sunflower Oil",
                   "Wheat"
@@ -368,6 +375,143 @@
                   "Halal",
                   "Vegan"
                 ]
+              }
+            ]
+          },
+          {
+            "station": "Pasta Station",
+            "items": [
+              {
+                "name": "Marinara Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Oil",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Pasta",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Whole Wheat Pasta",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Sundried Tomato Pesto",
+                "description": null,
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Turkey Bolognese",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Spinach and Sundried Tomatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Roll",
+                "description": null,
+                "allergens": [
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Soup & Oatmeal",
+            "items": [
+              {
+                "name": "Gumbo",
+                "description": null,
+                "allergens": [
+                  "Pork",
+                  "Soy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chicken Gnocchi",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Seared Salmon",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Asian Station",
+            "items": [
+              {
+                "name": "Bao Buns",
+                "description": "Jerk Chicken, Jerk Tofu, Al Pastor Pork",
+                "allergens": [],
+                "dietary_prefs": []
               }
             ]
           }
@@ -545,6 +689,143 @@
                 ]
               }
             ]
+          },
+          {
+            "station": "Pasta Station",
+            "items": [
+              {
+                "name": "Marinara Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Oil",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Pasta",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Whole Wheat Pasta",
+                "description": null,
+                "allergens": [
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Sundried Tomato Pesto",
+                "description": null,
+                "allergens": [
+                  "Dairy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Turkey Bolognese",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free"
+                ]
+              },
+              {
+                "name": "Spinach and Sundried Tomatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Garlic Roll",
+                "description": null,
+                "allergens": [
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Soup & Oatmeal",
+            "items": [
+              {
+                "name": "Gumbo",
+                "description": null,
+                "allergens": [
+                  "Pork",
+                  "Soy"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chicken Gnocchi",
+                "description": null,
+                "allergens": [
+                  "Dairy",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal"
+                ]
+              }
+            ]
+          },
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Seared Salmon",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Asian Station",
+            "items": [
+              {
+                "name": "Bao Buns",
+                "description": "Jerk Chicken, Jerk Tofu, Al Pastor Pork",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
           }
         ]
       }
@@ -553,7 +834,7 @@
     "source": "columbia",
     "operating_hours": "Sunday, Monday, Tuesday, Wednesday, Thursday: 9:30 AM - 9:00 PM",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:10.292335-05:00"
+    "scraped_at": "2026-02-04T12:39:24.342605-05:00"
   },
   {
     "name": "Ferris Booth Commons",
@@ -688,6 +969,12 @@
               {
                 "name": "Grilled Cheese",
                 "description": "The Basic (three cheese) The Ferris (pesto, roasted red peppers, mozzarella), The Vegan",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Quesadilla",
+                "description": "Pork Quesadilla, Cheese Quesadilla, Vegan Chorizo",
                 "allergens": [],
                 "dietary_prefs": []
               }
@@ -833,6 +1120,12 @@
                 "description": "pho broth, rice noodles, beef, tofu, bean sprouts, sliced onion, lime, cilantro, jalapeno, hoisin sauce",
                 "allergens": [],
                 "dietary_prefs": []
+              },
+              {
+                "name": "Quesadilla",
+                "description": "Pork Quesadilla, Cheese Quesadilla, Vegan Chorizo",
+                "allergens": [],
+                "dietary_prefs": []
               }
             ]
           }
@@ -841,18 +1134,181 @@
     ],
     "status": "open",
     "source": "columbia",
-    "operating_hours": null,
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday, Friday: 7:30 AM - 8:00 PM | Saturday: 9:00 AM - 8:00 PM | Sunday: 10:00 AM - 8:00 PM",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:13.568209-05:00"
+    "scraped_at": "2026-02-04T12:39:29.419050-05:00"
   },
   {
     "name": "Grace Dodge",
-    "meals": [],
-    "status": "closed",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "11:00 AM - 2:30 PM",
+        "stations": [
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Deluxe Grilled Cheese",
+                "description": "pepper jack, provolone, american, bacon, tomato, sourdough",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Tomato Soup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Ginger Soy Chicken",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Ramen Noodles",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Broth",
+                "description": null,
+                "allergens": [
+                  "Pork",
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Marinated Egg",
+                "description": null,
+                "allergens": [
+                  "Eggs",
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Toppings",
+                "description": "scallions, tofu, kim chi, corn",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "2:30 PM - 7:30 PM",
+        "stations": [
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Deluxe Grilled Cheese",
+                "description": "pepper jack, provolone, american, bacon, tomato, sourdough",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Tomato Soup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Ginger Soy Chicken",
+                "description": null,
+                "allergens": [
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Ramen Noodles",
+                "description": null,
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Broth",
+                "description": null,
+                "allergens": [
+                  "Pork",
+                  "Sesame",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Marinated Egg",
+                "description": null,
+                "allergens": [
+                  "Eggs",
+                  "Soy"
+                ],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegetarian"
+                ]
+              },
+              {
+                "name": "Toppings",
+                "description": "scallions, tofu, kim chi, corn",
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
     "source": "columbia",
     "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 7:30 PM",
-    "is_open": false,
-    "scraped_at": "2026-02-04T09:53:16.276295-05:00"
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:39:34.323295-05:00"
   },
   {
     "name": "Faculty House 2nd Floor",
@@ -928,8 +1384,8 @@
     "status": "open",
     "source": "columbia",
     "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 2:30 PM",
-    "is_open": false,
-    "scraped_at": "2026-02-04T09:53:18.395233-05:00"
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:39:36.876374-05:00"
   },
   {
     "name": "Faculty House Skyline",
@@ -988,26 +1444,294 @@
     "status": "open",
     "source": "columbia",
     "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 11:00 AM - 2:30 PM",
-    "is_open": false,
-    "scraped_at": "2026-02-04T09:53:20.526973-05:00"
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:39:39.072876-05:00"
   },
   {
     "name": "Fac Shack",
-    "meals": [],
-    "status": "closed",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "12:00 PM - 3:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Chicken Ajillo",
+                "description": "Garlic and Pepper Chicken",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Spanish Rice with Red Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Green and Wax Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Eggplant a la Diablo",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "5:00 PM - 8:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Chicken Ajillo",
+                "description": "Garlic and Pepper Chicken",
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal"
+                ]
+              },
+              {
+                "name": "Spanish Rice with Red Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Green and Wax Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Eggplant a la Diablo",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": [
+                  "Gluten Free",
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
     "source": "columbia",
-    "operating_hours": null,
-    "is_open": false,
-    "scraped_at": "2026-02-04T09:53:23.111043-05:00"
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday: 12:00 PM - 8:00 PM | Sunday: 3:00 PM - 8:00 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:39:42.696378-05:00"
   },
   {
     "name": "Chef Mike's",
-    "meals": [],
-    "status": "closed",
+    "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "10:30 AM - 3:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Protein",
+                "description": "Turkey, Roast beef, Tuna, Ham, Buffalo Chicken, Grilled Vegetables, Chipotle Tofu, Italian Tofu",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cheese",
+                "description": "Swiss, American, Pepper Jack, Provolone, Cheddar",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Toppings",
+                "description": "Lettuce, Tomato, Red Onion, Banana Peppers, Roasted Red Peppers, Guacamole, Jalape\u00f1os, Hummus",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Dressings",
+                "description": "Red Wine Vinegar, Balsamic Vinegar, Olive Oil, Mayo, Mustard",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Turkey and Swiss",
+                "description": "Smoked Turkey, Swiss, Bacon, Lettuce & Tomato",
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Pork",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Roasted Cauliflower",
+                "description": "Roasted Cauliflower, Red Onion, Mango, Arugula & Guacamole",
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Honey Chicken with Fresh Mozzarella",
+                "description": "Breaded Chicken, Mike\u2019s Hot Honey & Fresh Mozzarella",
+                "allergens": [
+                  "Dairy",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Vegan Buffalo Meatball Sub",
+                "description": "Vegan Meatball, Vegan Provolone & Franks Hot Sauce",
+                "allergens": [
+                  "Coconut",
+                  "Soy",
+                  "Sunflower Oil",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "5:00 PM - 10:00 PM",
+        "stations": [
+          {
+            "station": "Station",
+            "items": [
+              {
+                "name": "Protein",
+                "description": "Turkey, Roast beef, Tuna, Ham, Buffalo Chicken, Grilled Vegetables, Chipotle Tofu, Italian Tofu",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cheese",
+                "description": "Swiss, American, Pepper Jack, Provolone, Cheddar",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Toppings",
+                "description": "Lettuce, Tomato, Red Onion, Banana Peppers, Roasted Red Peppers, Guacamole, Jalape\u00f1os, Hummus",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Dressings",
+                "description": "Red Wine Vinegar, Balsamic Vinegar, Olive Oil, Mayo, Mustard",
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Turkey and Swiss",
+                "description": "Smoked Turkey, Swiss, Bacon, Lettuce & Tomato",
+                "allergens": [
+                  "Dairy",
+                  "Eggs",
+                  "Pork",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Roasted Cauliflower",
+                "description": "Roasted Cauliflower, Red Onion, Mango, Arugula & Guacamole",
+                "allergens": [
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              },
+              {
+                "name": "Hot Honey Chicken with Fresh Mozzarella",
+                "description": "Breaded Chicken, Mike\u2019s Hot Honey & Fresh Mozzarella",
+                "allergens": [
+                  "Dairy",
+                  "Soy",
+                  "Wheat"
+                ],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Vegan Buffalo Meatball Sub",
+                "description": "Vegan Meatball, Vegan Provolone & Franks Hot Sauce",
+                "allergens": [
+                  "Coconut",
+                  "Soy",
+                  "Sunflower Oil",
+                  "Wheat"
+                ],
+                "dietary_prefs": [
+                  "Halal",
+                  "Vegan"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "open",
     "source": "columbia",
-    "operating_hours": null,
-    "is_open": false,
-    "scraped_at": "2026-02-04T09:53:25.335585-05:00"
+    "operating_hours": "Monday, Tuesday, Wednesday, Thursday, Friday: 10:30 AM - 10:00 PM | Saturday: 11:00 AM - 7:00 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:39:45.326660-05:00"
   },
   {
     "name": "Johnny's",
@@ -1057,9 +1781,9 @@
     ],
     "status": "open",
     "source": "columbia",
-    "operating_hours": null,
-    "is_open": false,
-    "scraped_at": "2026-02-04T09:53:28.283076-05:00"
+    "operating_hours": "Monday, Tuesday, Wednesday: 11:00 AM - 2:30 PM | Thursday, Friday: 11:00 AM - 11:00 PM | Saturday: 7:00 PM - 11:00 PM | Sunday: 6:00 PM - 10:00 PM",
+    "is_open": true,
+    "scraped_at": "2026-02-04T12:39:48.361338-05:00"
   },
   {
     "name": "JJ's Place",
@@ -1177,7 +1901,7 @@
     "source": "columbia",
     "operating_hours": "Open daily 12:00 p.m. - 10:00 a.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:29.289380-05:00"
+    "scraped_at": "2026-02-04T12:39:49.363384-05:00"
   },
   {
     "name": "Blue Java Butler",
@@ -1310,7 +2034,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8 a.m. - 12 a.m. | Friday - Sunday, 9 a.m. - 9 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:29.289522-05:00"
+    "scraped_at": "2026-02-04T12:39:49.363437-05:00"
   },
   {
     "name": "Blue Java Uris",
@@ -1435,7 +2159,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Friday: 8:00 a.m. - 5:30 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:29.289596-05:00"
+    "scraped_at": "2026-02-04T12:39:49.365688-05:00"
   },
   {
     "name": "Blue Java Mudd",
@@ -1560,7 +2284,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Friday: 8 a.m. - 6 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:29.289652-05:00"
+    "scraped_at": "2026-02-04T12:39:49.365907-05:00"
   },
   {
     "name": "Blue Java Everett",
@@ -1685,7 +2409,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8:00 a.m. - 7:30 p.m. | Friday, 8:00 a.m. - 2:30 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:29.289707-05:00"
+    "scraped_at": "2026-02-04T12:39:49.366036-05:00"
   },
   {
     "name": "Lenfest Cafe",
@@ -1772,7 +2496,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday: 8:00 a.m. - 6:30 p.m. | Friday: 8:00 a.m. - 3:00 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:29.289754-05:00"
+    "scraped_at": "2026-02-04T12:39:49.366059-05:00"
   },
   {
     "name": "Robert F. Smith",
@@ -1859,28 +2583,28 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8 a.m. - 4:30 p.m. | Friday, 8 a.m. - 4 p.m.",
     "is_open": true,
-    "scraped_at": "2026-02-04T09:53:29.289799-05:00"
+    "scraped_at": "2026-02-04T12:39:49.366075-05:00"
   },
   {
     "name": "Hewitt Dining Hall",
     "meals": [],
     "status": "open_no_menu",
     "source": "barnard",
-    "scraped_at": "2026-02-04T09:53:29.449706-05:00"
+    "scraped_at": "2026-02-04T12:39:53.769937-05:00"
   },
   {
     "name": "Diana Center",
     "meals": [],
     "status": "open_no_menu",
     "source": "barnard",
-    "scraped_at": "2026-02-04T09:53:30.618202-05:00"
+    "scraped_at": "2026-02-04T12:41:01.232146-05:00"
   },
   {
     "name": "Liz's Place",
     "meals": [],
     "status": "open_no_menu",
     "source": "barnard",
-    "scraped_at": "2026-02-04T09:53:31.771217-05:00"
+    "scraped_at": "2026-02-04T12:41:02.738526-05:00"
   },
   {
     "name": "104West!",
@@ -2191,7 +2915,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:33.203215-05:00"
+    "scraped_at": "2026-02-04T12:41:05.717526-05:00"
   },
   {
     "name": "Amit Bhatia Libe Caf\u00e9",
@@ -2199,7 +2923,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:33.308476-05:00"
+    "scraped_at": "2026-02-04T12:41:05.822621-05:00"
   },
   {
     "name": "Atrium Caf\u00e9",
@@ -2207,7 +2931,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:33.409205-05:00"
+    "scraped_at": "2026-02-04T12:41:05.927753-05:00"
   },
   {
     "name": "Bear Necessities Grill & C-Store",
@@ -2215,7 +2939,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:33.514308-05:00"
+    "scraped_at": "2026-02-04T12:41:06.032148-05:00"
   },
   {
     "name": "Becker House Dining Room",
@@ -2855,7 +3579,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:33.617719-05:00"
+    "scraped_at": "2026-02-04T12:41:06.135612-05:00"
   },
   {
     "name": "Big Red Barn",
@@ -2863,7 +3587,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:33.722509-05:00"
+    "scraped_at": "2026-02-04T12:41:06.238913-05:00"
   },
   {
     "name": "Bus Stop Bagels",
@@ -2871,7 +3595,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:33.822774-05:00"
+    "scraped_at": "2026-02-04T12:41:06.344021-05:00"
   },
   {
     "name": "Caf\u00e9 Jennie",
@@ -2879,7 +3603,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:33.927756-05:00"
+    "scraped_at": "2026-02-04T12:41:06.447476-05:00"
   },
   {
     "name": "College of Veterinary Medicine Caf\u00e9",
@@ -2887,7 +3611,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.031211-05:00"
+    "scraped_at": "2026-02-04T12:41:06.551301-05:00"
   },
   {
     "name": "Cook House Dining Room",
@@ -3176,7 +3900,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.136569-05:00"
+    "scraped_at": "2026-02-04T12:41:06.654319-05:00"
   },
   {
     "name": "Cornell Dairy Bar",
@@ -3184,7 +3908,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.240275-05:00"
+    "scraped_at": "2026-02-04T12:41:06.759464-05:00"
   },
   {
     "name": "Crossings Caf\u00e9",
@@ -3192,7 +3916,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.342248-05:00"
+    "scraped_at": "2026-02-04T12:41:06.863482-05:00"
   },
   {
     "name": "Franny's",
@@ -3200,7 +3924,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.445758-05:00"
+    "scraped_at": "2026-02-04T12:41:06.968564-05:00"
   },
   {
     "name": "Goldie's Caf\u00e9",
@@ -3208,7 +3932,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.547601-05:00"
+    "scraped_at": "2026-02-04T12:41:07.073728-05:00"
   },
   {
     "name": "Green Dragon",
@@ -3216,7 +3940,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.650323-05:00"
+    "scraped_at": "2026-02-04T12:41:07.173987-05:00"
   },
   {
     "name": "Hot Dog Cart",
@@ -3224,7 +3948,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.755617-05:00"
+    "scraped_at": "2026-02-04T12:41:07.276057-05:00"
   },
   {
     "name": "Ice Cream Bike",
@@ -3232,7 +3956,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.860987-05:00"
+    "scraped_at": "2026-02-04T12:41:07.381144-05:00"
   },
   {
     "name": "Jansen's Dining Room at Bethe House",
@@ -3673,13 +4397,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Mango Ginger Salsa",
+                "name": "White Corn Tortilla Chips",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "White Corn Tortilla Chips",
+                "name": "Mango Ginger Salsa",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3743,15 +4467,15 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:34.964513-05:00"
+    "scraped_at": "2026-02-04T12:41:07.486286-05:00"
   },
   {
     "name": "Jansen's Market",
     "meals": [],
-    "status": "closed",
+    "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.066478-05:00"
+    "scraped_at": "2026-02-04T12:41:07.591373-05:00"
   },
   {
     "name": "Keeton House Dining Room",
@@ -3933,7 +4657,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.171985-05:00"
+    "scraped_at": "2026-02-04T12:41:07.696515-05:00"
   },
   {
     "name": "Mann Caf\u00e9",
@@ -3941,7 +4665,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.275431-05:00"
+    "scraped_at": "2026-02-04T12:41:07.801864-05:00"
   },
   {
     "name": "Martha's Caf\u00e9",
@@ -3949,7 +4673,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.380815-05:00"
+    "scraped_at": "2026-02-04T12:41:07.905088-05:00"
   },
   {
     "name": "Mattin's Caf\u00e9",
@@ -3957,7 +4681,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.486143-05:00"
+    "scraped_at": "2026-02-04T12:41:08.006599-05:00"
   },
   {
     "name": "McCormick's Restaurant",
@@ -3965,7 +4689,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.590303-05:00"
+    "scraped_at": "2026-02-04T12:41:08.111682-05:00"
   },
   {
     "name": "Morrison Dining",
@@ -4336,13 +5060,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Chicken Vindaloo",
+                "name": "Beef Stroganoff",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Basmati Rice",
+                "name": "Buttered Egg Noodles",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4946,7 +5670,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.694315-05:00"
+    "scraped_at": "2026-02-04T12:41:08.216848-05:00"
   },
   {
     "name": "North Star Dining Room",
@@ -5329,7 +6053,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.797525-05:00"
+    "scraped_at": "2026-02-04T12:41:08.322516-05:00"
   },
   {
     "name": "Novick's Caf\u00e9",
@@ -5337,7 +6061,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:35.902635-05:00"
+    "scraped_at": "2026-02-04T12:41:08.425409-05:00"
   },
   {
     "name": "Okenshields",
@@ -5903,7 +6627,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:36.003497-05:00"
+    "scraped_at": "2026-02-04T12:41:08.530626-05:00"
   },
   {
     "name": "Risley Dining Room",
@@ -6353,12 +7077,6 @@
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
-              },
-              {
-                "name": "Waffle Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
               }
             ]
           },
@@ -6396,7 +7114,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:36.109297-05:00"
+    "scraped_at": "2026-02-04T12:41:08.632722-05:00"
   },
   {
     "name": "Rose House Dining Room",
@@ -6583,7 +7301,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:36.213649-05:00"
+    "scraped_at": "2026-02-04T12:41:08.735425-05:00"
   },
   {
     "name": "Rusty's",
@@ -6591,7 +7309,7 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:36.314076-05:00"
+    "scraped_at": "2026-02-04T12:41:08.835746-05:00"
   },
   {
     "name": "Straight from the Market",
@@ -6710,7 +7428,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:36.414590-05:00"
+    "scraped_at": "2026-02-04T12:41:08.941031-05:00"
   },
   {
     "name": "Trillium",
@@ -6718,6 +7436,6 @@
     "status": "open_no_menu",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-02-04T09:53:36.519749-05:00"
+    "scraped_at": "2026-02-04T12:41:09.042963-05:00"
   }
 ]
