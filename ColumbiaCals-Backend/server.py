@@ -193,12 +193,9 @@ print(f"[SERVER] MENU_FILE exists: {os.path.exists(MENU_FILE)}", flush=True)
 scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
 scheduler_thread.start()
 
-# Ensure menu data exists on startup (Render cold start)
-if not os.path.exists(MENU_FILE):
-    print(f"[SERVER] Menu file not found, triggering refresh...", flush=True)
-    trigger_refresh_async()
-else:
-    print(f"[SERVER] Menu file exists, using fallback data", flush=True)
+# Don't auto-refresh on startup - just use committed fallback data
+# Refresh can be triggered manually via /api/refresh if needed
+print(f"[SERVER] Using committed fallback data (no auto-refresh)", flush=True)
 
 @app.route('/api/dining-halls', methods=['GET'])
 def get_dining_halls():
