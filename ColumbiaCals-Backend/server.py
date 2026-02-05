@@ -59,18 +59,11 @@ def update_menus():
 
         result1 = subprocess.run(
             [sys.executable, scraper_path],
-            capture_output=True,
-            text=True,
             timeout=300,
             cwd=BASE_DIR
         )
 
-        # Always print all output for debugging (flush to ensure visibility in logs)
         print(f"   Return code: {result1.returncode}", flush=True)
-        if result1.stdout:
-            print(f"   STDOUT:\n{result1.stdout}", flush=True)
-        if result1.stderr:
-            print(f"   STDERR:\n{result1.stderr}", flush=True)
 
         if result1.returncode == 0:
             LAST_SCRAPER_OK = True
@@ -90,18 +83,11 @@ def update_menus():
         try:
             result2 = subprocess.run(
                 [sys.executable, nutrition_path],
-                capture_output=True,
-                text=True,
                 timeout=900,
                 cwd=BASE_DIR
             )
 
-            # Always print all output for debugging (flush to ensure visibility in logs)
             print(f"   Return code: {result2.returncode}", flush=True)
-            if result2.stdout:
-                print(f"   STDOUT:\n{result2.stdout}", flush=True)
-            if result2.stderr:
-                print(f"   STDERR:\n{result2.stderr}", flush=True)
 
             if result2.returncode == 0:
                 nutrition_ok = True
