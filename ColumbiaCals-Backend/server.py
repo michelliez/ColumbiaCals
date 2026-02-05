@@ -71,29 +71,36 @@ def update_menus():
         print(f"   Script: {nutrition_path}", flush=True)
         print(f"   Exists: {os.path.exists(nutrition_path)}", flush=True)
 
-        result2 = subprocess.run(
-            [sys.executable, nutrition_path],
-            capture_output=True,
-            text=True,
-            timeout=300,
-            cwd=BASE_DIR
-        )
+        nutrition_ok = False
+        try:
+            result2 = subprocess.run(
+                [sys.executable, nutrition_path],
+                capture_output=True,
+                text=True,
+                timeout=900,
+                cwd=BASE_DIR
+            )
 
-        # Always print all output for debugging (flush to ensure visibility in logs)
-        print(f"   Return code: {result2.returncode}", flush=True)
-        if result2.stdout:
-            print(f"   STDOUT:\n{result2.stdout}", flush=True)
-        if result2.stderr:
-            print(f"   STDERR:\n{result2.stderr}", flush=True)
+            # Always print all output for debugging (flush to ensure visibility in logs)
+            print(f"   Return code: {result2.returncode}", flush=True)
+            if result2.stdout:
+                print(f"   STDOUT:\n{result2.stdout}", flush=True)
+            if result2.stderr:
+                print(f"   STDERR:\n{result2.stderr}", flush=True)
 
-        if result2.returncode == 0:
-            print("✅ Nutrition data added!")
-        else:
-            print(f"❌ Nutrition API failed with code {result2.returncode}")
-            return
+            if result2.returncode == 0:
+                nutrition_ok = True
+                print("✅ Nutrition data added!")
+            else:
+                print(f"❌ Nutrition API failed with code {result2.returncode}")
+        except subprocess.TimeoutExpired:
+            print("❌ Nutrition API timed out after 900 seconds", flush=True)
         
         print(f"\n{'='*60}")
-        print(f"🎉 Update complete at {datetime.now().strftime('%I:%M %p')}")
+        if nutrition_ok:
+            print(f"🎉 Update complete at {datetime.now().strftime('%I:%M %p')}")
+        else:
+            print(f"⚠️  Update complete at {datetime.now().strftime('%I:%M %p')} (nutrition skipped)")
         print(f"{'='*60}\n")
         
     except Exception as e:
