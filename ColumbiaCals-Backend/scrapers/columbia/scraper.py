@@ -302,9 +302,9 @@ HALL_MEAL_TIMES = {
 
 STATIC_MENU_LOCATIONS = {
     "JJ's Place": {
-        "operating_hours": "Open daily 12:00 p.m. - 10:00 a.m.",
+        "operating_hours": "Open daily 12:00 p.m. - 12:00 a.m.",
         "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
-        "hours": {"start": (12, 0), "end": (10, 0)},  # Crosses midnight
+        "hours": {"start": (12, 0), "end": (0, 0)},  # Midnight
         "menu_items": [
             {"name": "Hamburger", "description": "Classic beef burger", "allergens": ["Gluten"], "dietary_prefs": []},
             {"name": "Cheeseburger", "description": "Beef burger with cheese", "allergens": ["Gluten", "Dairy"], "dietary_prefs": []},
@@ -469,7 +469,6 @@ COLUMBIA_DYNAMIC_HALLS = [
     {"name": "Ferris Booth Commons", "url": "https://dining.columbia.edu/content/ferris-booth-commons-0"},
     {"name": "Grace Dodge", "url": "https://dining.columbia.edu/content/grace-dodge-dining-hall-0"},
     {"name": "Faculty House 2nd Floor", "url": "https://dining.columbia.edu/content/faculty-house-2nd-floor-0"},
-    {"name": "Faculty House Skyline", "url": "https://dining.columbia.edu/content/faculty-house-4th-floor-skyline-room"},
     {"name": "Fac Shack", "url": "https://dining.columbia.edu/content/fac-shack-0"},
     {"name": "Chef Mike's", "url": "https://dining.columbia.edu/chef-mikes"},
     {"name": "Johnny's", "url": "https://dining.columbia.edu/johnnys"}
@@ -500,15 +499,6 @@ BARNARD_LOCATIONS = [
     {
         "name": "Diana Center",
         "location_id": "5d27a073e5be796ca46a93f9",
-        "periods": {
-            "Breakfast": "697fa33a771598a5a6eb2f01",
-            "Lunch": "697fb150771598a5a6ebea1b",
-            "Dinner": "697fa349771598a5a6eb2f3e"
-        }
-    },
-    {
-        "name": "Liz's Place",
-        "location_id": "5d27a0c31ca48e0aca2a104d",
         "periods": {
             "Breakfast": "697fa33a771598a5a6eb2f01",
             "Lunch": "697fb150771598a5a6ebea1b",
@@ -1239,6 +1229,12 @@ def scrape_all_locations():
 
             time.sleep(1)
 
+        # Add Hewitt/Diana from LionDine when available
+        for extra_hall in ["Hewitt Dining Hall", "Diana Center"]:
+            data = liondine_results.get(extra_hall) if liondine_results else None
+            if data:
+                results.append(data)
+
         # Scrape Columbia static halls
         print("\n📍 Scraping Columbia cafes (static menus)...")
         for hall in COLUMBIA_STATIC_HALLS:
@@ -1255,6 +1251,8 @@ def scrape_all_locations():
         # Scrape Barnard halls
         print("\n📍 Scraping Barnard halls...")
         for hall in BARNARD_LOCATIONS:
+            if hall["name"] in {"Hewitt Dining Hall", "Diana Center"}:
+                continue
             print(f"   {hall['name']}...")
             data = scrape_barnard_hall(hall)
             results.append(data)
