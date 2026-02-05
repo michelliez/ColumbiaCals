@@ -477,37 +477,31 @@ def get_averages():
     if university:
         university = university.lower()
 
-    meal_period = _get_hall_period_for_request(hall_name, university)
+    meal_period = get_current_meal_period()
     current_date = get_current_date()
 
     try:
-            hall_periods = {}
-            menu_data = _load_menu_data()
-            for hall in menu_data:
-                source = (hall.get("source") or hall.get("university") or "").lower()
-                if university:
-                    if university == "columbia":
-                        if source not in {"columbia", "barnard"}:
-                            continue
-                    elif source != university:
+        hall_periods = {}
+        menu_data = _load_menu_data()
+        for hall in menu_data:
+            source = (hall.get("source") or hall.get("university") or "").lower()
+            if university:
+                if university == "columbia":
+                    if source not in {"columbia", "barnard"}:
                         continue
+                elif source != university:
+                    continue
 
-                key = hall["name"] if university else f"{source}:{hall['name']}"
-                hall_periods[key] = _get_hall_current_period(hall)
+            key = hall["name"] if university else f"{source}:{hall['name']}"
+            hall_periods[key] = _get_hall_current_period(hall)
 
-            all_ratings = get_all_rating_averages(date=current_date, university=university)
-            ratings = {}
+        all_ratings = get_all_rating_averages(date=current_date, university=university)
+        ratings = {}
 
-            for key, period in hall_periods.items():
-                period_ratings = all_ratings.get(key, {})
-                if period in period_ratings:
-                    ratings[key] = period_ratings[period]
-
-            return jsonify({
-                "meal_period": meal_period,
-                "date": current_date,
-                "ratings": ratings
-            })
+        for key, period in hall_periods.items():
+            period_ratings = all_ratings.get(key, {})
+            if period in period_ratings:
+                ratings[key] = period_ratings[period]
 
         return jsonify({
             "meal_period": meal_period,
