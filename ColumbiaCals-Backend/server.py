@@ -454,6 +454,14 @@ def status():
 @app.route('/api/menu-meta', methods=['GET'])
 def menu_meta():
     """Diagnostics for menu file freshness and last refresh status"""
+    refresh_in_progress = _refresh_in_progress.is_set()
+    refresh_started_ago_seconds = None
+    if LAST_REFRESH_STARTED:
+        try:
+            started_dt = datetime.fromisoformat(LAST_REFRESH_STARTED)
+            refresh_started_ago_seconds = int((datetime.now(NY_TZ) - started_dt).total_seconds())
+        except Exception:
+            refresh_started_ago_seconds = None
     return jsonify({
         "menu_with_nutrition": _get_file_meta(MENU_FILE),
         "menu_data": _get_file_meta(MENU_DATA_FILE),
@@ -461,7 +469,9 @@ def menu_meta():
         "last_refresh_completed": LAST_REFRESH_COMPLETED,
         "last_scraper_ok": LAST_SCRAPER_OK,
         "last_nutrition_ok": LAST_NUTRITION_OK,
-        "last_nutrition_error": LAST_NUTRITION_ERROR
+        "last_nutrition_error": LAST_NUTRITION_ERROR,
+        "refresh_in_progress": refresh_in_progress,
+        "refresh_started_ago_seconds": refresh_started_ago_seconds
     })
 
 @app.route('/api/usda-search', methods=['GET'])

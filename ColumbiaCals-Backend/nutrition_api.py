@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Improved USDA API Integration with Better Matching
+Improved USDA API Integration with Better Matching + PERSISTENT CACHING
 Filters unrealistic results and prioritizes quality matches
 """
 
@@ -29,8 +29,41 @@ if not USDA_API_KEY:
 
 USDA_BASE_URL = "https://api.nal.usda.gov/fdc/v1"
 
-# Simple in-memory cache for USDA lookups during a run
-USDA_SEARCH_CACHE = {}
+# ============================================================
+# PERSISTENT CACHE - Survives between runs!
+# ============================================================
+CACHE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "nutrition_cache.json")
+PERSISTENT_CACHE = {}
+
+def load_persistent_cache():
+    """Load nutrition cache from file"""
+    global PERSISTENT_CACHE
+    try:
+        if os.path.exists(CACHE_FILE):
+            with open(CACHE_FILE, 'r') as f:
+                PERSISTENT_CACHE = json.load(f)
+                print(f"📦 Loaded {len(PERSISTENT_CACHE)} items from persistent cache")
+        else:
+            PERSISTENT_CACHE = {}
+            print("📦 No existing cache found, starting fresh")
+    except Exception as e:
+        print(f"⚠️ Could not load cache: {e}")
+        PERSISTENT_CACHE = {}
+
+def save_persistent_cache():
+    """Save nutrition cache to file"""
+    try:
+        with open(CACHE_FILE, 'w') as f:
+            json.dump(PERSISTENT_CACHE, f, indent=2)
+        print(f"💾 Saved {len(PERSISTENT_CACHE)} items to persistent cache")
+    except Exception as e:
+        print(f"⚠️ Could not save cache: {e}")
+
+def get_cache_key(food_name):
+    """Normalize food name for consistent cache keys"""
+    return food_name.lower().strip()
+
+# ============================================================
 
 # Manual overrides for common problematic foods
 NUTRITION_OVERRIDES = {
@@ -227,12 +260,14 @@ def search_usda_food(food_name):
     """
     print(f"   Searching USDA for: {food_name}")
     
-    cache_key = food_name.lower().strip()
-    if cache_key in USDA_SEARCH_CACHE:
-        print(f"   ✅ Cache hit for '{food_name}'")
-        return USDA_SEARCH_CACHE[cache_key]
+    cache_key = get_cache_key(food_name)
     
-    # Check manual overrides first
+    # Check PERSISTENT cache first
+    if cache_key in PERSISTENT_CACHE:
+        print(f"   ✅ Persistent cache hit for '{food_name}'")
+        return PERSISTENT_CACHE[cache_key]
+    
+    # Check manual overrides
     food_lower = food_name.lower().strip()
     for override_key, override_data in NUTRITION_OVERRIDES.items():
         if override_key in food_lower:
@@ -244,9 +279,10 @@ def search_usda_food(food_name):
                 "carbs": override_data["carbs"],
                 "fat": override_data["fat"],
                 "sodium": override_data["sodium"],
-                "serving_size": "1 serving"
+                "serving_size": "1 serving",
+                "estimated": False
             }
-            USDA_SEARCH_CACHE[cache_key] = result
+            PERSISTENT_CACHE[cache_key] = result
             return result
     
     url = f"{USDA_BASE_URL}/foods/search"
@@ -267,7 +303,7 @@ def search_usda_food(food_name):
             if not foods:
                 print(f"   ⚠️  No USDA results for '{food_name}', using keyword estimate")
                 result = get_keyword_estimate(food_name)
-                USDA_SEARCH_CACHE[cache_key] = result
+                PERSISTENT_CACHE[cache_key] = result
                 return result
             
             # Score and filter results
@@ -364,7 +400,7 @@ def search_usda_food(food_name):
             if not scored_results:
                 print(f"   ⚠️  No realistic matches for '{food_name}', using keyword estimate")
                 result = get_keyword_estimate(food_name)
-                USDA_SEARCH_CACHE[cache_key] = result
+                PERSISTENT_CACHE[cache_key] = result
                 return result
             
             # Sort by score and return best match
@@ -388,25 +424,25 @@ def search_usda_food(food_name):
                 # Similarity very low — use keyword estimate instead
                 print(f"   ⚠️  Very low similarity ({similarity:.2f}) for '{food_name}', using keyword estimate")
                 result = get_keyword_estimate(food_name)
-                USDA_SEARCH_CACHE[cache_key] = result
+                PERSISTENT_CACHE[cache_key] = result
                 return result
 
             best_match['estimated'] = is_estimated
             print(f"   ✅ Best match: {best_match['description']} ({best_match['calories']} cal, score: {best_match['score']}, estimated: {is_estimated})")
             
-            USDA_SEARCH_CACHE[cache_key] = best_match
+            PERSISTENT_CACHE[cache_key] = best_match
             return best_match
             
         else:
             print(f"   ❌ USDA API error: {response.status_code}, using keyword estimate")
             result = get_keyword_estimate(food_name)
-            USDA_SEARCH_CACHE[cache_key] = result
+            PERSISTENT_CACHE[cache_key] = result
             return result
 
     except Exception as e:
         print(f"   ❌ Error searching USDA: {e}, using keyword estimate")
         result = get_keyword_estimate(food_name)
-        USDA_SEARCH_CACHE[cache_key] = result
+        PERSISTENT_CACHE[cache_key] = result
         return result
 
 def enrich_menu_with_nutrition():
@@ -414,8 +450,11 @@ def enrich_menu_with_nutrition():
     Main function to add nutrition data to menu
     """
     print("\n" + "=" * 60)
-    print("🥗 Adding Nutrition Data (Improved Matching)")
+    print("🥗 Adding Nutrition Data (With Persistent Caching)")
     print("=" * 60)
+
+    # Load persistent cache at start
+    load_persistent_cache()
 
     # Use absolute paths based on this script's location
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -432,21 +471,51 @@ def enrich_menu_with_nutrition():
             dining_halls = json.load(f)
         print(f"   Loaded {len(dining_halls)} dining halls from menu_data.json")
     except FileNotFoundError:
-        print("❌ menu_data.json not found. Run scraper.py first.")
+        print("❌ menu_data.json not found. Run scraper first.")
         return
+    
+    # ============================================================
+    # Pre-scan: Count how many items need USDA lookup vs cache hits
+    # ============================================================
+    all_food_names = set()
+    for hall in dining_halls:
+        if hall.get('food_items'):
+            for item in hall.get('food_items', []):
+                if item.get('name'):
+                    all_food_names.add(item.get('name'))
+        if hall.get('meals'):
+            for meal in hall.get('meals', []):
+                for station in meal.get('stations', []):
+                    for it in station.get('items', []):
+                        if it.get('name'):
+                            all_food_names.add(it.get('name'))
+    
+    cached_count = sum(1 for name in all_food_names if get_cache_key(name) in PERSISTENT_CACHE)
+    need_lookup = len(all_food_names) - cached_count
+    
+    print(f"\n📊 Pre-scan results:")
+    print(f"   Unique food items: {len(all_food_names)}")
+    print(f"   Already in cache: {cached_count}")
+    print(f"   Need USDA lookup: {need_lookup}")
+    
+    if need_lookup > 0:
+        estimated_time = need_lookup * 0.15  # ~0.15 sec per lookup with rate limiting
+        print(f"   Estimated time: {estimated_time:.0f} seconds ({estimated_time/60:.1f} minutes)")
+    else:
+        print(f"   ⚡ All items cached! This will be fast.")
+    # ============================================================
     
     total_items = 0
     enriched_items = 0
     failed_items = 0
+    cache_hits = 0
+    new_lookups = 0
     
     # Process each dining hall
     for hall in dining_halls:
         hall_name = hall['name']
-        # Build a unified list of items to process from either flat 'food_items'
-        # or nested meals->stations->items so we enrich whatever structure the scraper produced.
         items_to_process = []
 
-        # If there's a flat list (older scrapers), include those
         if hall.get('food_items'):
             for item in hall.get('food_items', []):
                 items_to_process.append({
@@ -456,7 +525,6 @@ def enrich_menu_with_nutrition():
                     'ref': item
                 })
 
-        # If there's a nested meals structure, include those with references for merging
         if hall.get('meals'):
             for m_idx, meal in enumerate(hall.get('meals', [])):
                 for s_idx, station in enumerate(meal.get('stations', [])):
@@ -482,9 +550,18 @@ def enrich_menu_with_nutrition():
         for entry in items_to_process:
             total_items += 1
             food_name = entry['name']
+            
+            # Track cache hits vs new lookups
+            cache_key = get_cache_key(food_name)
+            was_cached = cache_key in PERSISTENT_CACHE
 
-            # Search USDA
+            # Search USDA (will use cache if available)
             nutrition = search_usda_food(food_name)
+            
+            if was_cached:
+                cache_hits += 1
+            else:
+                new_lookups += 1
 
             if nutrition:
                 enriched_food = {
@@ -527,14 +604,17 @@ def enrich_menu_with_nutrition():
                     print(f"   ⚠️ Failed to merge nutrition into meals structure: {e}")
 
             else:
-                # No realistic match found — do NOT insert mock data. Leave menu item unchanged.
                 failed_items += 1
                 print(f"   ⚠️  No USDA match for '{food_name}', skipping enrichment.")
             
-            # Rate limiting
-            time.sleep(0.1)
+            # Rate limiting (only for new lookups)
+            if not was_cached:
+                time.sleep(0.1)
         
         hall['food_items_with_nutrition'] = enriched_foods
+    
+    # Save persistent cache after processing
+    save_persistent_cache()
     
     # Save enriched data
     with open(output_path, 'w') as f:
@@ -543,8 +623,11 @@ def enrich_menu_with_nutrition():
     print("\n" + "=" * 60)
     print(f"✅ Nutrition enrichment complete!")
     print(f"   Total items: {total_items}")
-    print(f"   Enriched with USDA: {enriched_items}")
-    print(f"   Using placeholders: {failed_items}")
+    print(f"   Cache hits: {cache_hits}")
+    print(f"   New USDA lookups: {new_lookups}")
+    print(f"   Enriched: {enriched_items}")
+    print(f"   Failed: {failed_items}")
+    print(f"   Total items in cache: {len(PERSISTENT_CACHE)}")
     if total_items > 0:
         print(f"   Success rate: {int(enriched_items/total_items*100)}%")
     print("=" * 60)
@@ -555,8 +638,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.search:
+        load_persistent_cache()
         result = search_usda_food(args.search)
-        # Always returns a result now (USDA match or keyword estimate)
+        save_persistent_cache()
         print(json.dumps(result))
         exit(0)
     else:
