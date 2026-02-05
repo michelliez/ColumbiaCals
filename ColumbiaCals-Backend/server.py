@@ -27,11 +27,24 @@ MENU_FILE = os.path.join(BASE_DIR, 'menu_with_nutrition.json')
 MENU_DATA_FILE = os.path.join(BASE_DIR, 'menu_data.json')
 NY_TZ = ZoneInfo('America/New_York')
 
+# Refresh diagnostics
+LAST_REFRESH_STARTED = None
+LAST_REFRESH_COMPLETED = None
+LAST_SCRAPER_OK = None
+LAST_NUTRITION_OK = None
+LAST_NUTRITION_ERROR = None
+
 # Initialize ratings database on startup
 init_db()
 
 def update_menus():
     """Run all scrapers (Columbia, Cornell) and nutrition API"""
+    global LAST_REFRESH_STARTED, LAST_REFRESH_COMPLETED, LAST_SCRAPER_OK, LAST_NUTRITION_OK, LAST_NUTRITION_ERROR
+    LAST_REFRESH_STARTED = datetime.now(NY_TZ).isoformat()
+    LAST_REFRESH_COMPLETED = None
+    LAST_SCRAPER_OK = None
+    LAST_NUTRITION_OK = None
+    LAST_NUTRITION_ERROR = None
     print(f"\n{'='*60}")
     print(f"🕐 Scheduled update at {datetime.now().strftime('%I:%M %p')}")
     print(f"{'='*60}\n")
@@ -60,8 +73,10 @@ def update_menus():
             print(f"   STDERR:\n{result1.stderr}", flush=True)
 
         if result1.returncode == 0:
+            LAST_SCRAPER_OK = True
             print("✅ All scrapers complete!")
         else:
+            LAST_SCRAPER_OK = False
             print(f"❌ Scrapers failed with code {result1.returncode}")
             return
 
@@ -90,12 +105,18 @@ def update_menus():
 
             if result2.returncode == 0:
                 nutrition_ok = True
+                LAST_NUTRITION_OK = True
                 print("✅ Nutrition data added!")
             else:
+                LAST_NUTRITION_OK = False
+                LAST_NUTRITION_ERROR = f"exit_code:{result2.returncode}"
                 print(f"❌ Nutrition API failed with code {result2.returncode}")
         except subprocess.TimeoutExpired:
+            LAST_NUTRITION_OK = False
+            LAST_NUTRITION_ERROR = "timeout"
             print("❌ Nutrition API timed out after 900 seconds", flush=True)
         
+        LAST_REFRESH_COMPLETED = datetime.now(NY_TZ).isoformat()
         print(f"\n{'='*60}")
         if nutrition_ok:
             print(f"🎉 Update complete at {datetime.now().strftime('%I:%M %p')}")
@@ -104,6 +125,7 @@ def update_menus():
         print(f"{'='*60}\n")
         
     except Exception as e:
+        LAST_NUTRITION_ERROR = str(e)
         print(f"❌ Error: {e}")
 
 
@@ -186,6 +208,22 @@ def _get_menu_file_mtime(path: str) -> float:
         return os.path.getmtime(path)
     except OSError:
         return 0.0
+
+
+def _get_file_meta(path: str):
+    if not path:
+        return {"exists": False}
+    if not os.path.exists(path):
+        return {"exists": False, "path": path}
+    try:
+        return {
+            "exists": True,
+            "path": path,
+            "mtime": datetime.fromtimestamp(os.path.getmtime(path), NY_TZ).isoformat(),
+            "size": os.path.getsize(path)
+        }
+    except OSError:
+        return {"exists": True, "path": path}
 
 
 def _get_preferred_menu_file() -> str | None:
@@ -411,6 +449,20 @@ def home():
 def status():
     """Health check endpoint"""
     return jsonify({"status": "running", "timestamp": datetime.now().isoformat()})
+
+
+@app.route('/api/menu-meta', methods=['GET'])
+def menu_meta():
+    """Diagnostics for menu file freshness and last refresh status"""
+    return jsonify({
+        "menu_with_nutrition": _get_file_meta(MENU_FILE),
+        "menu_data": _get_file_meta(MENU_DATA_FILE),
+        "last_refresh_started": LAST_REFRESH_STARTED,
+        "last_refresh_completed": LAST_REFRESH_COMPLETED,
+        "last_scraper_ok": LAST_SCRAPER_OK,
+        "last_nutrition_ok": LAST_NUTRITION_OK,
+        "last_nutrition_error": LAST_NUTRITION_ERROR
+    })
 
 @app.route('/api/usda-search', methods=['GET'])
 def usda_search():
