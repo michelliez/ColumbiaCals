@@ -302,9 +302,9 @@ HALL_MEAL_TIMES = {
 
 STATIC_MENU_LOCATIONS = {
     "JJ's Place": {
-        "operating_hours": "Open daily 12:00 p.m. - 12:00 a.m.",
+        "operating_hours": "Open daily 12:00 p.m. - 10:00 a.m. (next day)",
         "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
-        "hours": {"start": (12, 0), "end": (0, 0)},  # Midnight
+        "hours": {"start": (12, 0), "end": (10, 0)},  # Overnight
         "menu_items": [
             {"name": "Hamburger", "description": "Classic beef burger", "allergens": ["Gluten"], "dietary_prefs": []},
             {"name": "Cheeseburger", "description": "Beef burger with cheese", "allergens": ["Gluten", "Dairy"], "dietary_prefs": []},
