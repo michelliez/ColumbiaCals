@@ -1,0 +1,48 @@
+name: Refresh menus
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r ColumbiaCals-Backend/requirements.txt
+
+      - name: Run scrapers
+        env:
+          USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
+        run: python ColumbiaCals-Backend/run_all_scrapers.py
+
+      - name: Add nutrition
+        env:
+          USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
+        run: python ColumbiaCals-Backend/nutrition_api.py
+
+      - name: Commit updated menus
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ColumbiaCals-Backend/menu_data.json ColumbiaCals-Backend/menu_with_nutrition.json
+          if git diff --cached --quiet; then
+            echo "No menu changes to commit."
+            exit 0
+          fi
+          git commit -m "Update menu data"
+          git push
