@@ -7,7 +7,7 @@ services:
       - key: PYTHON_VERSION
         value: "3.11.8"
       - key: AUTO_REFRESH_ON_START
-        value: "true"
+        value: "false"
       - key: TZ
         value: "America/New_York"
       - key: DATABASE_PATH
@@ -18,3 +18,15 @@ services:
       name: ratings-data
       mountPath: /var/data
       sizeGB: 1
+  - type: cron
+    name: columbiacals-refresh
+    env: python
+    rootDir: ColumbiaCals-Backend
+    schedule: "0 3 * * *"
+    buildCommand: "pip install -r requirements.txt"
+    command: "python run_all_scrapers.py && python nutrition_api.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.8"
+      - key: TZ
+        value: "America/New_York"
