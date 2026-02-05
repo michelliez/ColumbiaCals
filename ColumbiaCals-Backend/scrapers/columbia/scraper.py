@@ -2,127 +2,27 @@
 """
 Columbia & Barnard Dining Scraper - With Exact Meal Times
 Only scrapes Breakfast, Lunch, Dinner (no "All Day")
-Uses Playwright with stealth for anti-bot bypass
+Uses LionDine for Columbia dynamic halls
 """
 
 import requests
 import json
 import re
 from datetime import datetime, timedelta
+from bs4 import BeautifulSoup
 from zoneinfo import ZoneInfo
 import time
-
-# Playwright imports (with fallback to requests if not available)
-try:
-    from playwright.sync_api import sync_playwright
-    from playwright_stealth import Stealth
-    PLAYWRIGHT_AVAILABLE = True
-except ImportError:
-    PLAYWRIGHT_AVAILABLE = False
-    print("⚠️ Playwright not available, falling back to requests")
 
 # New York timezone
 NY_TZ = ZoneInfo('America/New_York')
 
-# Shared session for non-Playwright requests (Barnard API, etc.)
+# Shared session for requests (Barnard API, etc.)
 SESSION = requests.Session()
 SESSION.headers.update({
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
 })
-
-# Global Playwright browser instance (reused across scrapes)
-_playwright_instance = None
-_browser_instance = None
-
-def get_browser():
-    """Get or create a reusable Playwright browser instance"""
-    global _playwright_instance, _browser_instance
-
-    if not PLAYWRIGHT_AVAILABLE:
-        return None
-
-    if _browser_instance is None:
-        _playwright_instance = sync_playwright().start()
-        _browser_instance = _playwright_instance.chromium.launch(
-            headless=True,
-            args=[
-                '--disable-blink-features=AutomationControlled',
-                '--disable-dev-shm-usage',
-                '--no-sandbox',
-            ]
-        )
-
-    return _browser_instance
-
-def fetch_with_playwright(url, timeout=30000):
-    """Fetch a URL using Playwright with stealth mode"""
-    browser = get_browser()
-    if browser is None:
-        return None
-
-    # Create stealth instance with all evasions enabled
-    stealth = Stealth(
-        navigator_webdriver=True,
-        webgl_vendor=True,
-        chrome_app=True,
-        chrome_csi=True,
-        chrome_load_times=True,
-        chrome_runtime=True,
-        navigator_hardware_concurrency=True,
-        navigator_languages=True,
-        navigator_permissions=True,
-        navigator_platform=True,
-        navigator_plugins=True,
-        navigator_user_agent=True,
-        navigator_vendor=True,
-        hairline=True,
-        media_codecs=True,
-    )
-
-    context = browser.new_context(
-        viewport={'width': 1920, 'height': 1080},
-        user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    )
-
-    page = context.new_page()
-
-    # Apply stealth scripts
-    stealth.apply_stealth_sync(page)
-
-    try:
-        # Visit homepage first to get cookies (like a real user)
-        page.goto('https://dining.columbia.edu/', timeout=timeout)
-        page.wait_for_timeout(1000)  # Brief pause
-
-        # Now visit the actual page
-        response = page.goto(url, timeout=timeout)
-
-        if response and response.status == 200:
-            content = page.content()
-            return content
-        else:
-            print(f"   ⚠️ Playwright got status {response.status if response else 'None'}")
-            return None
-
-    except Exception as e:
-        print(f"   ⚠️ Playwright error: {e}")
-        return None
-    finally:
-        context.close()
-
-def cleanup_browser():
-    """Clean up Playwright browser instance"""
-    global _playwright_instance, _browser_instance
-
-    if _browser_instance:
-        _browser_instance.close()
-        _browser_instance = None
-
-    if _playwright_instance:
-        _playwright_instance.stop()
-        _playwright_instance = None
 
 def now_ny():
     """Get current time in New York timezone"""
@@ -621,6 +521,21 @@ BARNARD_LOCATIONS = [
 # HELPER FUNCTIONS
 # ==============================================================================
 
+LIONDINE_HALL_NAME_MAP = {
+    "Ferris": "Ferris Booth Commons",
+    "John Jay": "John Jay Dining Hall",
+    "JJ's": "JJ's Place",
+    "JJ’s": "JJ's Place",
+    "Hewitt": "Hewitt Dining Hall",
+    "Diana": "Diana Center",
+    "Chef Don's": "Chef Don's Pizza Pi",
+    "Fac Shack": "Fac Shack",
+    "Johnny's": "Johnny's",
+    "Grace Dodge": "Grace Dodge",
+    "Faculty House": "Faculty House 2nd Floor",
+    "Chef Mike's": "Chef Mike's",
+}
+
 def format_time_tuple(hour, minute):
     """Format (hour, minute) tuple to readable string like '9:30 AM'"""
     if hour == 0:
@@ -644,8 +559,8 @@ def _liondine_meal_time_for_hall(hall_name, meal_type, fallback_hours=None):
 
 def _fetch_liondine_soup(meal_code):
     urls_to_try = [
-        f"https://liondine.com/?meal={meal_code}",
         f"https://liondine.com/{meal_code}",
+        f"https://liondine.com/?meal={meal_code}",
         "https://liondine.com/"
     ]
 
@@ -684,6 +599,7 @@ def _parse_liondine_meal(soup, meal_code):
         if not name_tag:
             continue
         hall_name = name_tag.text.strip()
+        hall_name = LIONDINE_HALL_NAME_MAP.get(hall_name, hall_name)
 
         hours_tag = hall.find('div', class_='hours')
         hours = hours_tag.text.strip() if hours_tag else None
@@ -722,11 +638,12 @@ def _parse_liondine_meal(soup, meal_code):
     return dining_halls
 
 def scrape_liondine_all_meals():
-    """Scrape LionDine for breakfast/lunch/dinner and group items by meal."""
+    """Scrape LionDine for breakfast/lunch/dinner/latenight and group items by meal."""
     meal_codes = {
         "Breakfast": "breakfast",
         "Lunch": "lunch",
-        "Dinner": "dinner"
+        "Dinner": "dinner",
+        "Late Night": "latenight"
     }
 
     results_by_hall = {}
@@ -1038,23 +955,17 @@ def scrape_dynamic_hall(hall):
         }
 
     try:
-        # Use Playwright with stealth if available (bypasses 403 blocks)
-        if PLAYWRIGHT_AVAILABLE:
-            html_content = fetch_with_playwright(hall['url'])
-            if html_content is None:
-                return _fallback_response("Failed to fetch with Playwright")
-        else:
-            # Fallback to requests (may get 403 on cloud servers)
-            headers = {
-                "Referer": "https://dining.columbia.edu/",
-                "Origin": "https://dining.columbia.edu",
-            }
+        # Requests-only fetch (LionDine is used for dynamic halls by default)
+        headers = {
+            "Referer": "https://dining.columbia.edu/",
+            "Origin": "https://dining.columbia.edu",
+        }
+        response = SESSION.get(hall['url'], headers=headers, timeout=30)
+        if response.status_code == 403:
+            SESSION.get("https://dining.columbia.edu/", headers=headers, timeout=30)
             response = SESSION.get(hall['url'], headers=headers, timeout=30)
-            if response.status_code == 403:
-                SESSION.get("https://dining.columbia.edu/", headers=headers, timeout=30)
-                response = SESSION.get(hall['url'], headers=headers, timeout=30)
-            response.raise_for_status()
-            html_content = response.text
+        response.raise_for_status()
+        html_content = response.text
 
         menu_data = extract_menu_data(html_content)
 
@@ -1308,11 +1219,6 @@ def scrape_all_locations():
     print("🦁 Columbia & Barnard Dining Scraper")
     print("=" * 50)
 
-    if PLAYWRIGHT_AVAILABLE:
-        print("🎭 Using Playwright with stealth mode")
-    else:
-        print("⚠️ Playwright not available, using requests (may get 403)")
-
     results = []
 
     try:
@@ -1325,8 +1231,16 @@ def scrape_all_locations():
             data = liondine_results.get(hall["name"]) if liondine_results else None
 
             if data is None:
-                # Fallback to the Columbia Dining scraper if LionDine fails
-                data = scrape_dynamic_hall(hall)
+                is_open = is_hall_open_now(hall["name"])
+                data = {
+                    "name": hall["name"],
+                    "meals": [],
+                    "status": "open_no_menu" if is_open else "closed",
+                    "source": "columbia",
+                    "operating_hours": get_operating_hours_display(hall["name"]),
+                    "is_open": is_open,
+                    "scraped_at": now_ny().isoformat()
+                }
 
             results.append(data)
 
@@ -1387,9 +1301,7 @@ def scrape_all_locations():
 
         return results
     finally:
-        # Clean up Playwright browser
-        if PLAYWRIGHT_AVAILABLE:
-            cleanup_browser()
+        pass
 
 if __name__ == "__main__":
     scrape_all_locations()
