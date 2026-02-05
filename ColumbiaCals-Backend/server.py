@@ -100,6 +100,14 @@ def run_scheduler():
     """Run scheduler in background thread"""
     print("🚀 Scheduler thread starting...")
 
+    # Ensure scheduler uses New York time for 3 AM EST/EDT
+    os.environ.setdefault("TZ", "America/New_York")
+    try:
+        time.tzset()
+    except AttributeError:
+        # tzset not available on all platforms
+        pass
+
     auto_refresh_raw = os.environ.get("AUTO_REFRESH_ON_START")
     auto_refresh = (auto_refresh_raw or "true").lower() == "true"
     print(f"[SERVER] AUTO_REFRESH_ON_START={auto_refresh_raw!r} (resolved={auto_refresh})", flush=True)
