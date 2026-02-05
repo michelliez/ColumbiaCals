@@ -537,6 +537,66 @@ def format_time_tuple(hour, minute):
     else:
         return f"{hour-12}:{minute:02d} PM"
 
+def _normalize_time_range(range_str: str) -> str:
+    if not range_str:
+        return ""
+    return range_str.replace(" to ", " - ").replace("–", "-").replace("—", "-")
+
+def _parse_time_to_minutes(time_str: str):
+    if not time_str:
+        return None
+    parts = time_str.strip().split()
+    if len(parts) != 2:
+        return None
+    time_part, ampm = parts
+    if ":" not in time_part:
+        return None
+    hour_str, minute_str = time_part.split(":", 1)
+    try:
+        hour = int(hour_str)
+        minute = int(minute_str)
+    except ValueError:
+        return None
+    is_pm = ampm.upper() == "PM"
+    if is_pm and hour != 12:
+        hour += 12
+    if not is_pm and hour == 12:
+        hour = 0
+    return hour * 60 + minute
+
+def _parse_time_range(range_str: str):
+    if not range_str:
+        return None
+    normalized = _normalize_time_range(range_str)
+    if " - " not in normalized:
+        return None
+    start_str, end_str = [s.strip() for s in normalized.split(" - ", 1)]
+    start = _parse_time_to_minutes(start_str)
+    end = _parse_time_to_minutes(end_str)
+    if start is None or end is None:
+        return None
+    return start, end
+
+def _is_open_from_meals(meals):
+    if not meals:
+        return False
+    now = now_ny()
+    current_minutes = now.hour * 60 + now.minute
+
+    for meal in meals:
+        time_range = _parse_time_range(meal.get("time", ""))
+        if not time_range:
+            continue
+        start, end = time_range
+        if end < start:
+            if current_minutes >= start or current_minutes < end:
+                return True
+        else:
+            if start <= current_minutes < end:
+                return True
+
+    return False
+
 def _liondine_meal_time_for_hall(hall_name, meal_type, fallback_hours=None):
     meal_times = get_meal_times_for_hall(hall_name)
     if meal_times and meal_type in meal_times:
@@ -545,7 +605,7 @@ def _liondine_meal_time_for_hall(hall_name, meal_type, fallback_hours=None):
         start = format_time_tuple(start_h, start_m)
         end = format_time_tuple(end_h, end_m)
         return f"{start} - {end}"
-    return fallback_hours or "Check hours"
+    return _normalize_time_range(fallback_hours) or "Check hours"
 
 def _fetch_liondine_soup(meal_code):
     urls_to_try = [
@@ -672,6 +732,8 @@ def scrape_liondine_all_meals():
 
     # Finalize status per hall
     for hall in results_by_hall.values():
+        hall["is_open"] = _is_open_from_meals(hall.get("meals", []))
+
         if hall["meals"]:
             hall["status"] = "open"
         elif hall.get("is_open"):
