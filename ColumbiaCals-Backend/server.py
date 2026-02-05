@@ -24,6 +24,7 @@ CORS(app)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MENU_FILE = os.path.join(BASE_DIR, 'menu_with_nutrition.json')
+MENU_DATA_FILE = os.path.join(BASE_DIR, 'menu_data.json')
 NY_TZ = ZoneInfo('America/New_York')
 
 # Initialize ratings database on startup
@@ -173,9 +174,40 @@ def _get_hall_current_period(hall):
     return _normalize_meal_type(meals[0].get("meal_type"))
 
 
-def _load_menu_data():
+def _get_menu_file_mtime(path: str) -> float:
     try:
-        with open(MENU_FILE, 'r') as f:
+        return os.path.getmtime(path)
+    except OSError:
+        return 0.0
+
+
+def _get_preferred_menu_file() -> str | None:
+    has_nutrition = os.path.exists(MENU_FILE)
+    has_menu_data = os.path.exists(MENU_DATA_FILE)
+
+    if has_nutrition and has_menu_data:
+        nutrition_mtime = _get_menu_file_mtime(MENU_FILE)
+        menu_data_mtime = _get_menu_file_mtime(MENU_DATA_FILE)
+        # If menu_data.json is newer by more than 60 seconds, prefer it.
+        if menu_data_mtime > nutrition_mtime + 60:
+            return MENU_DATA_FILE
+        return MENU_FILE
+
+    if has_nutrition:
+        return MENU_FILE
+
+    if has_menu_data:
+        return MENU_DATA_FILE
+
+    return None
+
+
+def _load_menu_data():
+    path = _get_preferred_menu_file()
+    if not path:
+        return []
+    try:
+        with open(path, 'r') as f:
             return json.load(f)
     except Exception:
         return []
@@ -325,7 +357,10 @@ scheduler_thread.start()
 def get_dining_halls():
     """Return menu data with nutrition"""
     try:
-        with open(MENU_FILE, 'r') as f:
+        menu_path = _get_preferred_menu_file()
+        if not menu_path:
+            raise FileNotFoundError
+        with open(menu_path, 'r') as f:
             data = json.load(f)
         normalized = [_normalize_legacy_hall(hall) for hall in data]
         return jsonify(normalized)
@@ -333,8 +368,9 @@ def get_dining_halls():
         # Trigger a refresh and wait briefly for first-time generation
         trigger_refresh_async()
         for _ in range(15):
-            if os.path.exists(MENU_FILE):
-                with open(MENU_FILE, 'r') as f:
+            menu_path = _get_preferred_menu_file()
+            if menu_path:
+                with open(menu_path, 'r') as f:
                     data = json.load(f)
                 normalized = [_normalize_legacy_hall(hall) for hall in data]
                 return jsonify(normalized)
