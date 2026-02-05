@@ -632,148 +632,6 @@ def format_time_tuple(hour, minute):
     else:
         return f"{hour-12}:{minute:02d} PM"
 
-def _liondine_meal_time_for_hall(hall_name, meal_type, fallback_hours=None):
-    meal_times = get_meal_times_for_hall(hall_name)
-    if meal_times and meal_type in meal_times:
-        start_h, start_m = meal_times[meal_type]["start"]
-        end_h, end_m = meal_times[meal_type]["end"]
-        start = format_time_tuple(start_h, start_m)
-        end = format_time_tuple(end_h, end_m)
-        return f"{start} - {end}"
-    return fallback_hours or "Check hours"
-
-def _fetch_liondine_soup(meal_code):
-    urls_to_try = [
-        f"https://liondine.com/?meal={meal_code}",
-        f"https://liondine.com/{meal_code}",
-        "https://liondine.com/"
-    ]
-
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-    }
-
-    for url in urls_to_try:
-        try:
-            response = requests.get(url, headers=headers, timeout=15)
-            if response.status_code != 200:
-                continue
-
-            soup = BeautifulSoup(response.text, 'html.parser')
-            halls = soup.find_all('div', class_='col')
-            if not halls:
-                continue
-
-            # Confirm page has menu data
-            for hall in halls:
-                menu_div = hall.find('div', class_='menu')
-                if menu_div and "No data available" not in menu_div.text:
-                    if menu_div.find_all('div', class_='food-name'):
-                        return soup
-        except Exception:
-            continue
-
-    return None
-
-def _parse_liondine_meal(soup, meal_code):
-    dining_halls = {}
-    halls = soup.find_all('div', class_='col')
-
-    for hall in halls:
-        name_tag = hall.find('h3')
-        if not name_tag:
-            continue
-        hall_name = name_tag.text.strip()
-
-        hours_tag = hall.find('div', class_='hours')
-        hours = hours_tag.text.strip() if hours_tag else None
-
-        menu_div = hall.find('div', class_='menu')
-        if not menu_div or "No data available" in menu_div.text:
-            continue
-
-        stations_map = {}
-        current_category = "Menu"
-
-        for food_tag in menu_div.find_all('div', class_='food-name'):
-            food_name = food_tag.text.strip()
-            if not food_name:
-                continue
-
-            prev_category = food_tag.find_previous_sibling('div', class_='food-type')
-            if prev_category and prev_category.text.strip():
-                current_category = prev_category.text.strip()
-
-            stations_map.setdefault(current_category, []).append({
-                "name": food_name,
-                "description": None,
-                "allergens": [],
-                "dietary_prefs": []
-            })
-
-        if not stations_map:
-            continue
-
-        dining_halls[hall_name] = {
-            "hours": hours,
-            "stations": stations_map
-        }
-
-    return dining_halls
-
-def scrape_liondine_all_meals():
-    """Scrape LionDine for breakfast/lunch/dinner and group items by meal."""
-    meal_codes = {
-        "Breakfast": "breakfast",
-        "Lunch": "lunch",
-        "Dinner": "dinner"
-    }
-
-    results_by_hall = {}
-
-    for meal_type, meal_code in meal_codes.items():
-        soup = _fetch_liondine_soup(meal_code)
-        if soup is None:
-            continue
-
-        parsed = _parse_liondine_meal(soup, meal_code)
-        for hall_name, data in parsed.items():
-            hall_entry = results_by_hall.setdefault(hall_name, {
-                "name": hall_name,
-                "meals": [],
-                "status": "closed",
-                "source": "columbia",
-                "operating_hours": get_operating_hours_display(hall_name) or data.get("hours"),
-                "is_open": is_hall_open_now(hall_name),
-                "scraped_at": now_ny().isoformat()
-            })
-
-            stations = [
-                {"station": station_name, "items": items}
-                for station_name, items in data["stations"].items()
-                if items
-            ]
-
-            if not stations:
-                continue
-
-            hall_entry["meals"].append({
-                "meal_type": meal_type,
-                "time": _liondine_meal_time_for_hall(hall_name, meal_type, data.get("hours")),
-                "stations": stations
-            })
-
-    # Finalize status per hall
-    for hall in results_by_hall.values():
-        if hall["meals"]:
-            hall["status"] = "open"
-        elif hall.get("is_open"):
-            hall["status"] = "open_no_menu"
-        else:
-            hall["status"] = "closed"
-
-    return results_by_hall
-
 def get_meal_times_for_hall(hall_name):
     """Get the meal times configuration for a specific hall"""
     if hall_name not in HALL_MEAL_TIMES:
@@ -1316,18 +1174,11 @@ def scrape_all_locations():
     results = []
 
     try:
-        # Scrape Columbia dynamic halls (LionDine full-day)
-        print("\n📍 Scraping Columbia halls (LionDine full-day menus)...")
-        liondine_results = scrape_liondine_all_meals()
-
+        # Scrape Columbia dynamic halls
+        print("\n📍 Scraping Columbia halls (dynamic menus)...")
         for hall in COLUMBIA_DYNAMIC_HALLS:
             print(f"   {hall['name']}...")
-            data = liondine_results.get(hall["name"]) if liondine_results else None
-
-            if data is None:
-                # Fallback to the Columbia Dining scraper if LionDine fails
-                data = scrape_dynamic_hall(hall)
-
+            data = scrape_dynamic_hall(hall)
             results.append(data)
 
             status = data.get('status', 'unknown')
