@@ -5,7 +5,12 @@ database.py - SQLite database setup and management for ratings
 import sqlite3
 import os
 
-DATABASE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ratings.db')
+DEFAULT_DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ratings.db')
+DATABASE_PATH = os.environ.get('DATABASE_PATH', DEFAULT_DB_PATH)
+
+db_dir = os.path.dirname(DATABASE_PATH)
+if db_dir and not os.path.exists(db_dir):
+    os.makedirs(db_dir, exist_ok=True)
 
 
 def get_db_connection():
@@ -92,6 +97,49 @@ def get_rating_averages(university=None, meal_period=None, date=None):
         else:
             key = f"{row['university']}:{row['hall_name']}"
         ratings[key] = {
+            "average": round(row['average'], 1),
+            "count": row['count']
+        }
+
+    return ratings
+
+
+def get_all_rating_averages(date, university=None):
+    """
+    Get average ratings for all halls by meal period for a date.
+
+    Returns:
+        Dict mapping keys (hall or university:hall) to {meal_period: {average, count}}
+    """
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    if university:
+        cursor.execute('''
+            SELECT hall_name, meal_period, AVG(rating) as average, COUNT(*) as count
+            FROM ratings
+            WHERE university = ? AND date = ?
+            GROUP BY hall_name, meal_period
+        ''', (university, date))
+    else:
+        cursor.execute('''
+            SELECT hall_name, university, meal_period, AVG(rating) as average, COUNT(*) as count
+            FROM ratings
+            WHERE date = ?
+            GROUP BY hall_name, university, meal_period
+        ''', (date,))
+
+    rows = cursor.fetchall()
+    conn.close()
+
+    ratings = {}
+    for row in rows:
+        if university:
+            key = row['hall_name']
+        else:
+            key = f"{row['university']}:{row['hall_name']}"
+
+        ratings.setdefault(key, {})[row['meal_period']] = {
             "average": round(row['average'], 1),
             "count": row['count']
         }

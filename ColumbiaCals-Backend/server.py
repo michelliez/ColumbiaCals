@@ -15,14 +15,16 @@ import os
 from datetime import datetime
 
 # Import rating modules
-from database import init_db, get_rating_averages, submit_rating, get_user_rating
+from database import init_db, get_rating_averages, get_all_rating_averages, submit_rating, get_user_rating
 from meal_periods import get_current_meal_period, get_current_date
+from zoneinfo import ZoneInfo
 
 app = Flask(__name__)
 CORS(app)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MENU_FILE = os.path.join(BASE_DIR, 'menu_with_nutrition.json')
+NY_TZ = ZoneInfo('America/New_York')
 
 # Initialize ratings database on startup
 init_db()
@@ -95,6 +97,117 @@ def update_menus():
         
     except Exception as e:
         print(f"❌ Error: {e}")
+
+
+def _normalize_meal_type(meal_type: str) -> str:
+    if not meal_type:
+        return "unknown"
+    value = meal_type.strip().lower().replace(" ", "_")
+    if value.startswith("late"):
+        return "late_night"
+    if value == "all_day":
+        return "all_day"
+    return value
+
+
+def _parse_time_to_minutes(time_str: str):
+    if not time_str:
+        return None
+    parts = time_str.strip().split()
+    if len(parts) != 2:
+        return None
+    time_part, ampm = parts
+    if ":" not in time_part:
+        return None
+    hour_str, minute_str = time_part.split(":", 1)
+    try:
+        hour = int(hour_str)
+        minute = int(minute_str)
+    except ValueError:
+        return None
+    is_pm = ampm.upper() == "PM"
+    if is_pm and hour != 12:
+        hour += 12
+    if not is_pm and hour == 12:
+        hour = 0
+    return hour * 60 + minute
+
+
+def _parse_time_range(range_str: str):
+    if not range_str:
+        return None
+    normalized = range_str.replace(" to ", " - ").replace("–", "-").replace("—", "-")
+    if " - " not in normalized:
+        return None
+    start_str, end_str = [s.strip() for s in normalized.split(" - ", 1)]
+    start = _parse_time_to_minutes(start_str)
+    end = _parse_time_to_minutes(end_str)
+    if start is None or end is None:
+        return None
+    return start, end
+
+
+def _is_time_in_range(current_minutes, start_minutes, end_minutes):
+    if end_minutes < start_minutes:
+        return current_minutes >= start_minutes or current_minutes < end_minutes
+    return start_minutes <= current_minutes < end_minutes
+
+
+def _get_hall_current_period(hall):
+    meals = hall.get("meals", []) if isinstance(hall, dict) else []
+    if not meals:
+        return get_current_meal_period()
+
+    now = datetime.now(NY_TZ)
+    current_minutes = now.hour * 60 + now.minute
+
+    for meal in meals:
+        time_range = _parse_time_range(meal.get("time", ""))
+        if not time_range:
+            continue
+        start, end = time_range
+        if _is_time_in_range(current_minutes, start, end):
+            return _normalize_meal_type(meal.get("meal_type"))
+
+    # Fallback: use first meal type if none match or parseable
+    return _normalize_meal_type(meals[0].get("meal_type"))
+
+
+def _load_menu_data():
+    try:
+        with open(MENU_FILE, 'r') as f:
+            return json.load(f)
+    except Exception:
+        return []
+
+
+def _find_hall_entry(hall_name, university=None):
+    data = _load_menu_data()
+    if not hall_name:
+        return None
+
+    def matches(hall):
+        if hall.get("name") != hall_name:
+            return False
+        if not university:
+            return True
+        uni = university.lower()
+        source = (hall.get("source") or hall.get("university") or "").lower()
+        if uni == "columbia":
+            return source in {"columbia", "barnard"}
+        return source == uni
+
+    for hall in data:
+        if matches(hall):
+            return hall
+    return None
+
+
+def _get_hall_period_for_request(hall_name, university=None):
+    hall = _find_hall_entry(hall_name, university)
+    if hall:
+        return _get_hall_current_period(hall)
+    return get_current_meal_period()
 
 def run_scheduler():
     """Run scheduler in background thread"""
@@ -317,8 +430,8 @@ def post_rating():
     # Round to nearest 0.1
     rating = round(rating, 1)
 
-    # Get current meal period and date
-    meal_period = get_current_meal_period()
+    # Get current meal period for this hall and date
+    meal_period = _get_hall_period_for_request(data['hall_name'], data['university'])
     current_date = get_current_date()
 
     try:
@@ -364,15 +477,37 @@ def get_averages():
     if university:
         university = university.lower()
 
-    meal_period = get_current_meal_period()
+    meal_period = _get_hall_period_for_request(hall_name, university)
     current_date = get_current_date()
 
     try:
-        ratings = get_rating_averages(
-            university=university,
-            meal_period=meal_period,
-            date=current_date
-        )
+            hall_periods = {}
+            menu_data = _load_menu_data()
+            for hall in menu_data:
+                source = (hall.get("source") or hall.get("university") or "").lower()
+                if university:
+                    if university == "columbia":
+                        if source not in {"columbia", "barnard"}:
+                            continue
+                    elif source != university:
+                        continue
+
+                key = hall["name"] if university else f"{source}:{hall['name']}"
+                hall_periods[key] = _get_hall_current_period(hall)
+
+            all_ratings = get_all_rating_averages(date=current_date, university=university)
+            ratings = {}
+
+            for key, period in hall_periods.items():
+                period_ratings = all_ratings.get(key, {})
+                if period in period_ratings:
+                    ratings[key] = period_ratings[period]
+
+            return jsonify({
+                "meal_period": meal_period,
+                "date": current_date,
+                "ratings": ratings
+            })
 
         return jsonify({
             "meal_period": meal_period,

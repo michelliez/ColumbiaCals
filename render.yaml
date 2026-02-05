@@ -8,7 +8,13 @@ services:
         value: "3.11.8"
       - key: AUTO_REFRESH_ON_START
         value: "true"
-      - key: PLAYWRIGHT_BROWSERS_PATH
-        value: "/opt/render/.cache/ms-playwright"
-    buildCommand: "pip install -r requirements.txt && playwright install chromium && playwright install-deps chromium"
+      - key: TZ
+        value: "America/New_York"
+      - key: DATABASE_PATH
+        value: "/var/data/ratings.db"
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn server:app --bind 0.0.0.0:$PORT"
+    disk:
+      name: ratings-data
+      mountPath: /var/data
+      sizeGB: 1
