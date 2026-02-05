@@ -771,9 +771,6 @@ def is_static_hall_open(hall_name):
     if hall_name not in STATIC_MENU_LOCATIONS:
         return False
 
-    if hall_name in HALL_MEAL_TIMES:
-        return is_hall_open_now(hall_name)
-
     config = STATIC_MENU_LOCATIONS[hall_name]
     now = now_ny()
     day_name = now.strftime('%A').lower()
@@ -898,24 +895,8 @@ def scrape_static_hall(hall):
     is_open = is_static_hall_open(hall_name)
 
     def build_static_meals():
-        meal_times = get_meal_times_for_hall(hall_name)
-        if meal_times:
-            meals_out = []
-            for meal_name, times in meal_times.items():
-                start = format_time_tuple(*times["start"])
-                end = format_time_tuple(*times["end"])
-                meals_out.append({
-                    "meal_type": meal_name,
-                    "time": f"{start} - {end}",
-                    "stations": [{
-                        "station": "Menu",
-                        "items": config["menu_items"]
-                    }]
-                })
-            return meals_out
-
         return [{
-            "meal_type": "Lunch",
+            "meal_type": "All Day",
             "time": config.get("operating_hours", "Check website for hours"),
             "stations": [{
                 "station": "Menu",
