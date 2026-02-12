@@ -301,23 +301,6 @@ HALL_MEAL_TIMES = {
 # ==============================================================================
 
 STATIC_MENU_LOCATIONS = {
-    "JJ's Place": {
-        "operating_hours": "Open daily 12:00 p.m. - 10:00 a.m. (next day)",
-        "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
-        "hours": {"start": (12, 0), "end": (10, 0)},  # Overnight
-        "menu_items": [
-            {"name": "Hamburger", "description": "Classic beef burger", "allergens": ["Gluten"], "dietary_prefs": []},
-            {"name": "Cheeseburger", "description": "Beef burger with cheese", "allergens": ["Gluten", "Dairy"], "dietary_prefs": []},
-            {"name": "Fried Chicken Burger", "description": "Crispy fried chicken sandwich", "allergens": ["Gluten"], "dietary_prefs": []},
-            {"name": "Chicken Nuggets", "description": "Breaded chicken nuggets", "allergens": ["Gluten"], "dietary_prefs": []},
-            {"name": "Chicken Tenders", "description": "Breaded chicken tenders", "allergens": ["Gluten"], "dietary_prefs": []},
-            {"name": "French Fries", "description": "Crispy golden fries", "allergens": [], "dietary_prefs": ["Vegan", "Gluten Free"]},
-            {"name": "Quesadilla", "description": "Cheese quesadilla", "allergens": ["Dairy", "Gluten"], "dietary_prefs": ["Vegetarian"]},
-            {"name": "Pancakes", "description": "Fluffy pancakes", "allergens": ["Gluten", "Eggs", "Dairy"], "dietary_prefs": ["Vegetarian"]},
-            {"name": "Chocolate Chip Pancakes", "description": "Pancakes with chocolate chips", "allergens": ["Gluten", "Eggs", "Dairy"], "dietary_prefs": ["Vegetarian"]},
-            {"name": "French Toast", "description": "Classic french toast", "allergens": ["Gluten", "Eggs", "Dairy"], "dietary_prefs": ["Vegetarian"]}
-        ]
-    },
     "Blue Java Butler": {
         "operating_hours": "Monday - Thursday, 8 a.m. - 12 a.m. | Friday - Sunday, 9 a.m. - 9 p.m.",
         "weekday": {
@@ -471,11 +454,11 @@ COLUMBIA_DYNAMIC_HALLS = [
     {"name": "Faculty House 2nd Floor", "url": "https://dining.columbia.edu/content/faculty-house-2nd-floor-0"},
     {"name": "Fac Shack", "url": "https://dining.columbia.edu/content/fac-shack-0"},
     {"name": "Chef Mike's", "url": "https://dining.columbia.edu/chef-mikes"},
-    {"name": "Johnny's", "url": "https://dining.columbia.edu/johnnys"}
+    {"name": "Johnny's", "url": "https://dining.columbia.edu/johnnys"},
+    {"name": "JJ's Place", "url": "https://dining.columbia.edu/content/jjs-place-0"}
 ]
 
 COLUMBIA_STATIC_HALLS = [
-    {"name": "JJ's Place", "url": "https://dining.columbia.edu/content/jjs-place-0"},
     {"name": "Blue Java Butler", "url": "https://dining.columbia.edu/content/blue-java-cafe-butler-library-0"},
     {"name": "Blue Java Uris", "url": "https://dining.columbia.edu/content/blue-java-cafe-uris-hall"},
     {"name": "Blue Java Mudd", "url": "https://dining.columbia.edu/content/blue-java-cafe-mudd-hall-0"},
