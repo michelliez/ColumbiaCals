@@ -6,20 +6,20 @@
     "source": "columbia",
     "operating_hours": "Breakfast: 9:30 a.m. - 11:00 a.m. | Lunch: 11:00 a.m. - 2:30 p.m. | Dinner: 5:00 p.m. - 9:00 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:47.220622-04:00"
+    "scraped_at": "2026-03-21T00:22:05.077507-04:00"
   },
   {
     "name": "Ferris Booth Commons",
     "meals": [
       {
         "meal_type": "Breakfast",
-        "time": "7:30 AM - 11:00 AM",
+        "time": "9:00 AM - 11:00 AM",
         "stations": [
           {
             "station": "Main Line",
             "items": [
               {
-                "name": "Waffles",
+                "name": "Apple Turnover",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -31,19 +31,19 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Sweet Potato Wedges",
+                "name": "Tater Tots",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pork Sausage",
+                "name": "Maple Sausage",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Turkey Bacon",
+                "name": "Turkey Sausage",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -60,19 +60,19 @@
             "station": "Vegan Station",
             "items": [
               {
-                "name": "Sweet Potato Wedges",
+                "name": "Hot Berry Quinoa",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Just Egg",
+                "name": "Tofu Scramble",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Garlic Broccoli",
+                "name": "Vegan Sausage",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -100,7 +100,7 @@
             "station": "Main Line",
             "items": [
               {
-                "name": "Waffles",
+                "name": "Apple Turnover",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -112,7 +112,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Sweet Potato Wedges",
+                "name": "Tater Tots",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -124,7 +124,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Turkey Bacon",
+                "name": "Turkey Sausage",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -141,19 +141,19 @@
             "station": "Vegan Station",
             "items": [
               {
-                "name": "Chick'n Katsu",
+                "name": "Stir Fry Seitan",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Edamame Rice",
+                "name": "White Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Garlic Broccoli",
+                "name": "Bok Choy",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -164,7 +164,7 @@
             "station": "Action Station",
             "items": [
               {
-                "name": "Wraps: buffalo chicken, chicken Caesar, buffalo cauliflower",
+                "name": "Chinese Takeout: popcorn shrimp, vegan chicken nuggets, broccoli and carrots, vegetable egg roll, white rice, general tso sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -175,7 +175,7 @@
             "station": "Pasta, Quesadilla & Rice Bowl Station",
             "items": [
               {
-                "name": "Pasta",
+                "name": "Quesadillas",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -192,19 +192,19 @@
             "station": "Main Line",
             "items": [
               {
-                "name": "Lemon Butter Salmon",
+                "name": "Peruvian Chicken",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pasta Primavera",
+                "name": "Spanish Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Couscous Pilaf",
+                "name": "Sweet Plantains",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -216,7 +216,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Broccoli and Tomatoes",
+                "name": "Mixed Vegetables",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -227,19 +227,19 @@
             "station": "Vegan Station",
             "items": [
               {
-                "name": "Vegan Fish",
+                "name": "BBQ Tofu",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pasta Primavera",
+                "name": "Black Eyed Peas",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Broccoli and Tomatoes",
+                "name": "Mixed Vegetables",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -250,7 +250,7 @@
             "station": "Action Station",
             "items": [
               {
-                "name": "Wraps: buffalo chicken, chicken Caesar, buffalo cauliflower",
+                "name": "Reuben Sandwich: corned beef, swiss cheese, sauerkraut, rye bread, pickles, thousand island dressing, assorted chips",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -261,7 +261,7 @@
             "station": "Pasta, Quesadilla & Rice Bowl Station",
             "items": [
               {
-                "name": "Pasta",
+                "name": "Quesadillas",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -275,7 +275,7 @@
     "source": "columbia",
     "operating_hours": "Mon - Fri: 7:30 a.m. - 8:00 p.m. | Sat: 9:00 a.m. - 8:00 p.m. | Sun: 10:00 a.m. - 2:00 p.m., 4:00 - 8:00 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:45.352686-04:00"
+    "scraped_at": "2026-03-21T00:22:03.044644-04:00"
   },
   {
     "name": "Grace Dodge",
@@ -284,7 +284,7 @@
     "source": "columbia",
     "operating_hours": "Mon - Thu: 11:00 a.m. - 7:30 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:49.221013-04:00"
+    "scraped_at": "2026-03-21T00:22:07.077819-04:00"
   },
   {
     "name": "Faculty House 2nd Floor",
@@ -293,7 +293,7 @@
     "source": "columbia",
     "operating_hours": "Mon - Thu: 11:00 a.m. - 2:30 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:50.221245-04:00"
+    "scraped_at": "2026-03-21T00:22:08.078018-04:00"
   },
   {
     "name": "Fac Shack",
@@ -302,7 +302,7 @@
     "source": "columbia",
     "operating_hours": "Mon - Thu: 12:00 p.m. - 8:00 p.m. | Sun: 3:00 p.m. - 8:00 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:51.221483-04:00"
+    "scraped_at": "2026-03-21T00:22:09.078212-04:00"
   },
   {
     "name": "Chef Mike's",
@@ -311,7 +311,7 @@
     "source": "columbia",
     "operating_hours": "Mon - Fri: 10:30 a.m. - 10:00 p.m. | Sat: 11:00 a.m. - 7:00 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:52.221714-04:00"
+    "scraped_at": "2026-03-21T00:22:10.078463-04:00"
   },
   {
     "name": "Johnny's",
@@ -320,7 +320,7 @@
     "source": "columbia",
     "operating_hours": "Mon - Wed: 11:00 a.m. - 2:30 p.m. | Thu - Fri: 11:00 a.m. - 2:30 p.m. & 7:00 p.m. - 11:00 p.m. | Sat: 7:00 p.m. - 11:00 p.m. | Sun: 6:00 p.m. - 10:00 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:53.221961-04:00"
+    "scraped_at": "2026-03-21T00:22:11.078673-04:00"
   },
   {
     "name": "JJ's Place",
@@ -520,7 +520,7 @@
     "source": "columbia",
     "operating_hours": "Open daily 12:00 p.m. - 10:00 a.m.",
     "is_open": true,
-    "scraped_at": "2026-03-20T00:29:45.859421-04:00"
+    "scraped_at": "2026-03-21T00:22:03.559557-04:00"
   },
   {
     "name": "Hewitt Dining Hall",
@@ -539,13 +539,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Scrambled Egg",
+                "name": "Margherita Flat Bread Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Diced Tomatoes",
+                "name": "roasted corn salsa",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -557,7 +557,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Turkey Bacon",
+                "name": "Chicken Sausage Patty",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -568,19 +568,7 @@
             "station": "Homestyle",
             "items": [
               {
-                "name": "Scrambled Eggs",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Buttermilk Biscuit",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Waffles",
+                "name": "Belgian Waffles",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -592,13 +580,19 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Spicy Tofu Scramble",
+                "name": "Crunchy French Toast",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Impossible Sausage Patty",
+                "name": "Hash Brown Patty",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Beef Breakfast Sausage",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -668,31 +662,37 @@
             "station": "Performance Kitchen",
             "items": [
               {
-                "name": "Chicken Tender",
+                "name": "Scrambled Eggs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "White Rice",
+                "name": "Scrambled Eggs with Cheese",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Roasted Vegetable Mix",
+                "name": "Hash Brown Patty",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Chicken Sausage Patty",
+                "name": "Beef Breakfast Sausage",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Tater Tots",
+                "name": "Tofu Scramble",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Veggie Sausage Patty",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -709,7 +709,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Turkey Sausage Links",
+                "name": "Turkey Bacon",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -721,7 +721,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Cauliflower",
+                "name": "Roasted Vegetables",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -750,7 +750,7 @@
             "station": "The Sweet Shoppe",
             "items": [
               {
-                "name": "Double Chocolate Chip Muffin",
+                "name": "Chocolate Cupcake",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -762,25 +762,31 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Cranberry Muffin",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Corn Muffin",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
                 "name": "Croissant",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Mini Chocolate Croissant",
+                "name": "Oreo Dream Bar",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Blondie",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Pumpkin Blondies",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Assorted Donuts",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -792,18 +798,6 @@
             "items": [
               {
                 "name": "Low Fat Strawberry Yogurt",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Low Fat Vanilla Yogurt",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Homemade Granola",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -821,30 +815,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Cubed Cantaloupe",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
                 "name": "Cubed Pineapple",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Fruit Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Salad Bar",
-            "items": [
-              {
-                "name": "Strawberry Chia Oatmeal",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -917,33 +888,28 @@
             ]
           },
           {
-            "station": "Desserts",
-            "items": [
-              {
-                "name": "M&M's",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
             "station": "Soup",
             "items": [
               {
-                "name": "Beef Vegetable Soup",
+                "name": "Vegetable Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Crackers, Saltine, 2 CT, Zesta",
+                "name": "Chicken Vegetable Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
                 "name": "Crackers, Oyster, Zesta, Keebler, 0.5 oz",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Crackers, Saltine, 2 CT, Zesta",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -972,12 +938,6 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Parmesan Cheese",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
                 "name": "Crushed Red Pepper",
                 "description": null,
                 "allergens": [],
@@ -988,6 +948,24 @@
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
+              },
+              {
+                "name": "Parmesan Cheese",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Vegan Cheese Pizza",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "2Mato's Vegan Veggie Pizza",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
               }
             ]
           },
@@ -995,96 +973,31 @@
             "station": "Homestyle",
             "items": [
               {
-                "name": "Jerk Chicken Quarter",
+                "name": "Buttermilk Pancakes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Jerk Tofu",
+                "name": "Waffle",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Vegetarian Red Beans and Rice",
+                "name": "Crunchy French Toast",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Baked Plantains",
+                "name": "Seasoned Hash Browns",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Roasted Vegetable Mix",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Flame",
-            "items": [
-              {
-                "name": "Hamburger Patty",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Whole Wheat Hamburger Bun",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "American Cheese Slice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Hot Dog",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Grilled Chicken",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sliced Red Onion",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Lettuce Leaf",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Meatless Black Bean Burger",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "3/8\" French Fries, Fried",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Grilled Tater Wedges",
+                "name": "Turkey Sausage Links",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1095,37 +1008,37 @@
             "station": "Performance Kitchen",
             "items": [
               {
-                "name": "Scrambled Egg",
+                "name": "Scrambled Eggs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Hash Brown Patty",
+                "name": "Buffalo Chicken",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Chicken Sausage Link",
+                "name": "Rice Pilaf",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Impossible Sausage Patty",
+                "name": "Blanched Green Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Tofu Scramble",
+                "name": "Spicy Tofu Scramble",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Crunchy French Toast",
+                "name": "Veggie Sausage Patty",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1136,25 +1049,7 @@
             "station": "Delicious Without",
             "items": [
               {
-                "name": "Texas BBQ Brisket",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "White Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Vegetables",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Garbanzo Salad",
+                "name": "Roasted Herb Chicken",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1166,25 +1061,43 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Spinach Salad",
+                "name": "Turkey Sausage Links",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cucumber Salad",
+                "name": "Breakfast Potatoes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Oat Milk Chia Seed Pudding",
+                "name": "Roasted Brussels Sprouts",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Strawberry Maple Overnight Oats",
+                "name": "Fresh Fruit Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Kale Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Tomato Cucumber Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cinnamon Maple Overnight Oats",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1195,13 +1108,19 @@
             "station": "The Sweet Shoppe",
             "items": [
               {
-                "name": "Chocolate and Sprinkles Donut",
+                "name": "Chocolate Brownie",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Vanilla and Sprinkle Donut",
+                "name": "Croissant",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Assorted Danish",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1213,13 +1132,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Blueberry Muffin",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cornbread Muffin",
+                "name": "Chocolate Muffin",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1230,19 +1143,19 @@
             "station": "Fuel",
             "items": [
               {
-                "name": "Fresh Carrot Sticks",
+                "name": "Low Fat Strawberry Yogurt",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Celery Sticks",
+                "name": "Low Fat Vanilla Yogurt",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Hummus",
+                "name": "Cottage Cheese",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1336,25 +1249,25 @@
             "station": "The Nooke",
             "items": [
               {
-                "name": "Black Bean Soup",
+                "name": "Tomato Bisque Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Beef Vegetable Soup",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Crackers, Saltine, 2 CT, Zesta",
+                "name": "Chicken Noodle Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
                 "name": "Crackers, Oyster, Zesta, Keebler, 0.5 oz",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Crackers, Saltine, 2 CT, Zesta",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1427,33 +1340,28 @@
             ]
           },
           {
-            "station": "Desserts",
-            "items": [
-              {
-                "name": "M&M's",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
             "station": "Soup",
             "items": [
               {
-                "name": "Beef Vegetable Soup",
+                "name": "Vegetable Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Crackers, Saltine, 2 CT, Zesta",
+                "name": "Chicken Vegetable Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
                 "name": "Crackers, Oyster, Zesta, Keebler, 0.5 oz",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Crackers, Saltine, 2 CT, Zesta",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1476,7 +1384,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Buffalo Chicken Pizza",
+                "name": "Chicken Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1511,31 +1419,31 @@
             "station": "Homestyle",
             "items": [
               {
-                "name": "Texas BBQ Brisket",
+                "name": "Fried Shrimp",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cajun Vegetable Rice",
+                "name": "Cilantro Pesto Tofu",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Grilled Tofu",
+                "name": "Sweet Potato Fries",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Fried Pickles",
+                "name": "White Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Broccoli",
+                "name": "Brussels Sprouts",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1611,7 +1519,7 @@
             "station": "Delicious Without",
             "items": [
               {
-                "name": "Greek Marinated Chicken",
+                "name": "Pepper Steak",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1623,13 +1531,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Stewed Black Beans with Tomatoes and Onions",
+                "name": "Chickpeas and Spinach",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Roasted Brussels Sprouts",
+                "name": "Roasted Broccoli",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1641,7 +1549,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Spinach Salad",
+                "name": "Kale Salad",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1670,37 +1578,19 @@
             "station": "The Sweet Shoppe",
             "items": [
               {
-                "name": "Peppermint Ganache Brownie",
+                "name": "Assorted Donuts",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Black and White Cookies",
+                "name": "Blondie",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Butter Cookie Sandwich",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Chocolate Brownie",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Powdered Donut",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Chocolate Cupcake",
+                "name": "Donut Hole",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1717,13 +1607,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Crackers, Saltine, 2 CT, Zesta",
+                "name": "French Fried Onions",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "French Fried Onions",
+                "name": "Crackers, Saltine, 2 CT, Zesta",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1861,33 +1751,28 @@
             ]
           },
           {
-            "station": "Desserts",
-            "items": [
-              {
-                "name": "M&M's",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
             "station": "Soup",
             "items": [
               {
-                "name": "Beef Vegetable Soup",
+                "name": "Vegetable Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Crackers, Saltine, 2 CT, Zesta",
+                "name": "Chicken Vegetable Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
                 "name": "Crackers, Oyster, Zesta, Keebler, 0.5 oz",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Crackers, Saltine, 2 CT, Zesta",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -1901,7 +1786,7 @@
     "source": "columbia",
     "operating_hours": "10:30 AM to 3:00 PM",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:45.352715-04:00"
+    "scraped_at": "2026-03-21T00:22:03.044669-04:00"
   },
   {
     "name": "Blue Java Butler",
@@ -1910,7 +1795,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8 a.m. - 12 a.m. | Friday - Sunday, 9 a.m. - 9 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:55.222393-04:00"
+    "scraped_at": "2026-03-21T00:22:13.079037-04:00"
   },
   {
     "name": "Blue Java Uris",
@@ -1919,7 +1804,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Friday: 8:00 a.m. - 5:30 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:55.222421-04:00"
+    "scraped_at": "2026-03-21T00:22:13.079063-04:00"
   },
   {
     "name": "Blue Java Mudd",
@@ -1928,7 +1813,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Friday: 8:00 a.m. - 11:00 a.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:55.222436-04:00"
+    "scraped_at": "2026-03-21T00:22:13.079076-04:00"
   },
   {
     "name": "Blue Java Everett",
@@ -1937,7 +1822,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8:00 a.m. - 7:30 p.m. | Friday, 8:00 a.m. - 2:30 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:55.222452-04:00"
+    "scraped_at": "2026-03-21T00:22:13.079093-04:00"
   },
   {
     "name": "Lenfest Cafe",
@@ -1946,7 +1831,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday: 8:00 a.m. - 6:30 p.m. | Friday: 8:00 a.m. - 3:00 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:55.222466-04:00"
+    "scraped_at": "2026-03-21T00:22:13.079106-04:00"
   },
   {
     "name": "Robert F. Smith",
@@ -1955,7 +1840,7 @@
     "source": "columbia",
     "operating_hours": "Monday - Thursday, 8 a.m. - 4:30 p.m. | Friday, 8 a.m. - 4 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:55.222480-04:00"
+    "scraped_at": "2026-03-21T00:22:13.079120-04:00"
   },
   {
     "name": "Chef Don's Pizza Pi",
@@ -1964,29 +1849,36 @@
     "source": "columbia",
     "operating_hours": "Monday - Friday, 11:30 a.m. - 7:00 p.m.",
     "is_open": false,
-    "scraped_at": "2026-03-20T00:29:55.222490-04:00"
+    "scraped_at": "2026-03-21T00:22:13.079132-04:00"
   },
   {
     "name": "104West!",
     "meals": [
       {
         "meal_type": "Lunch",
-        "time": "11:00 AM - 2:00 PM",
+        "time": "12:30 PM - 2:00 PM",
         "stations": [
-          {
-            "station": "Soup",
-            "items": [
-              {
-                "name": "Beef Chili",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
           {
             "station": "Salad",
             "items": [
+              {
+                "name": "House Tossed Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cucumber Tomato Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Smoked Salmon Platter",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
               {
                 "name": "Egg Salad",
                 "description": null,
@@ -1994,19 +1886,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Bulgur Salad With Garbanzo Beans",
+                "name": "Tuna Salad",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
                 "name": "Fresh Cut Fruit",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Salad Bar",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2017,13 +1903,19 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "Buffalo Wings",
+                "name": "Tofu & Vegetable Ratatouille",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Fried Vegan Tenders",
+                "name": "Beef Cholent",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Create Your Own Deli Sandwich",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2034,19 +1926,19 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Herb Roasted Parsnips",
+                "name": "Hummus",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Seasoned Spiral Fries",
+                "name": "Challah Roll",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Baked Beans",
+                "name": "Challah Bread",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2056,6 +1948,12 @@
           {
             "station": "Beverage",
             "items": [
+              {
+                "name": "Concord Grape Juice",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
               {
                 "name": "Assorted Hot & Cold Beverages",
                 "description": null,
@@ -2093,103 +1991,12 @@
             ]
           }
         ]
-      },
-      {
-        "meal_type": "Dinner",
-        "time": "6:30 PM - 7:30 PM",
-        "stations": [
-          {
-            "station": "Soup",
-            "items": [
-              {
-                "name": "Kosher Matzoh Ball Chicken Soup",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Salad",
-            "items": [
-              {
-                "name": "Fresh Cut Fruit",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Tuna Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Chef's Choice Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "House Tossed Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table",
-            "items": [
-              {
-                "name": "Chef's Choice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Challah Roll",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Condiments/Toppings",
-            "items": [
-              {
-                "name": "Tahini Dressing",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Desserts",
-            "items": [
-              {
-                "name": "Chef's Choice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Chocolate Chip Cookies",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
       }
     ],
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:57.791597-04:00"
+    "scraped_at": "2026-03-21T00:22:14.901849-04:00"
   },
   {
     "name": "Amit Bhatia Libe Caf\u00e9",
@@ -2197,7 +2004,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:57.891861-04:00"
+    "scraped_at": "2026-03-21T00:22:15.001994-04:00"
   },
   {
     "name": "Atrium Caf\u00e9",
@@ -2205,7 +2012,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:57.992090-04:00"
+    "scraped_at": "2026-03-21T00:22:15.102146-04:00"
   },
   {
     "name": "Bear Necessities Grill & C-Store",
@@ -2213,20 +2020,32 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.092295-04:00"
+    "scraped_at": "2026-03-21T00:22:15.202307-04:00"
   },
   {
     "name": "Becker House Dining Room",
     "meals": [
       {
-        "meal_type": "Breakfast",
-        "time": "7:00 AM - 10:30 AM",
+        "meal_type": "Lunch",
+        "time": "10:30 AM - 2:00 PM",
         "stations": [
           {
             "station": "Soup",
             "items": [
               {
-                "name": "Morning Zhou Rice Porridge",
+                "name": "Congee",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sambal Chili Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Crispy Fried Onions",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2238,208 +2057,6 @@
             "items": [
               {
                 "name": "Assorted Cereal & Bagels",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Fruit & Yogurt Bar",
-            "items": [
-              {
-                "name": "Fresh Fruit Slices",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Whole Fruit",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cornell Dairy Yogurt",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sliced Peaches in Juice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Applesauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cottage Cheese",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Salad",
-            "items": [
-              {
-                "name": "Healthy Style Salad Station",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Lemon Honey Dressing",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "House Honey Balsamic Vinaigrette",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Buttermilk Ranch Dressing",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Creamy Italian Dressing",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Apple Cinnamon Overnight Oats",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table",
-            "items": [
-              {
-                "name": "Filipino Garlic Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Hard Boiled Eggs",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Kimchi",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Turkey Breakfast Sausage",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Simply Steamed Green Beans",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Grill",
-            "items": [
-              {
-                "name": "Western Scrambled Tofu",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sauteed Vegetable & Potato Frittata",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "French Toast",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Home Fries",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Specialty Station",
-            "items": [
-              {
-                "name": "Create Your Own Waffle",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Beverage Bar",
-            "items": [
-              {
-                "name": "Hot & Cold Beverage Service",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Dessert",
-            "items": [
-              {
-                "name": "Mini Cinnamon Twist",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Baked Assorted Muffins",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "meal_type": "Lunch",
-        "time": "10:30 AM - 2:00 PM",
-        "stations": [
-          {
-            "station": "Soup",
-            "items": [
-              {
-                "name": "Curried Sweet Potato Bisque",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2574,19 +2191,13 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "Chana Saag - Chickpea & Spinach Curry",
+                "name": "Spicy Sweet Chili Tofu & Veggies",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Murgh Kurma - Indian Braised Chicken",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Garlic Naan",
+                "name": "Chinese BBQ Pork",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2597,19 +2208,19 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Fried Battered Cauliflower",
+                "name": "Simply Steamed Broccoli Florets",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Basmati Rice",
+                "name": "Wok Vegetables with Ginger",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Simply Steamed Green Beans",
+                "name": "Steamed Jasmine Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2620,25 +2231,37 @@
             "station": "Grill",
             "items": [
               {
-                "name": "Chicken Bahn Mi",
+                "name": "Sesame Marinated Tofu",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Baguette",
+                "name": "Shrimp",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Asian Sesame Ginger Noodle Salad",
+                "name": "Gochujang Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Broccoli with Sweet Chili Sauce",
+                "name": "Steamed Jasmine Rice",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sambal Chili Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Lettuce Wrap Bar",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2687,121 +2310,6 @@
         ]
       },
       {
-        "meal_type": "Late Lunch",
-        "time": "2:00 PM - 3:30 PM",
-        "stations": [
-          {
-            "station": "Soup",
-            "items": [
-              {
-                "name": "Chef's Choice Soup",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Fruit & Yogurt Bar",
-            "items": [
-              {
-                "name": "Cornell Dairy Yogurt",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Fruit Slices",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Whole Fruit",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sliced Peaches in Juice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Apple Cinnamon Overnight Oats",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Applesauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Salad",
-            "items": [
-              {
-                "name": "Salad Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Tuna Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cranberry Apple Wheat Berry Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Corn & Black Bean Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Crumbled Feta Cheese",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Baked Goods",
-            "items": [
-              {
-                "name": "Fresh Baked Cookies",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Specialty Station",
-            "items": [
-              {
-                "name": "Create Your Own Waffle",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
-      },
-      {
         "meal_type": "Dinner",
         "time": "5:00 PM - 8:00 PM",
         "stations": [
@@ -2809,7 +2317,7 @@
             "station": "Soup",
             "items": [
               {
-                "name": "Curried Sweet Potato Bisque",
+                "name": "Cornell Chicken Noodle Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2838,13 +2346,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Sliced Peaches in Juice",
+                "name": "Applesauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Applesauce",
+                "name": "Sliced Peaches in Juice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2897,12 +2405,6 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Chilled Hard Boiled Eggs",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
                 "name": "Sesame Marinated Tofu",
                 "description": null,
                 "allergens": [],
@@ -2938,13 +2440,13 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "Vegetable Paella",
+                "name": "Tofu & Red Bean Jambalaya",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Grilled Chicken with Pesto & Provolone",
+                "name": "Beef Stroganoff",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2955,19 +2457,19 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Sauteed Yellow Squash",
+                "name": "Fresh Vegetable Saute",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Broccoli Bones with Sweet Chili Sauce",
+                "name": "Buttered Egg Noodles",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Jasmine Rice",
+                "name": "Cumin & Lime Roasted Carrots",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -2978,25 +2480,31 @@
             "station": "Grill",
             "items": [
               {
-                "name": "Eastern North Carolina Smoke Pulled Pork",
+                "name": "Orecchiette Pasta",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Chipotle Macaroni & Cheese",
+                "name": "Beef Meat Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Oven Roasted Brussel Sprouts",
+                "name": "Alfredo Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Traditional Creamy Coleslaw",
+                "name": "Marinara Pasta Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Roasted Corn",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3007,13 +2515,7 @@
             "station": "Specialty Station",
             "items": [
               {
-                "name": "Gourmet Garlic Bread",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Marinara Sauce",
+                "name": "Buffalo Chicken Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3066,7 +2568,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.192745-04:00"
+    "scraped_at": "2026-03-21T00:22:15.302558-04:00"
   },
   {
     "name": "Big Red Barn",
@@ -3074,7 +2576,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.292985-04:00"
+    "scraped_at": "2026-03-21T00:22:15.402708-04:00"
   },
   {
     "name": "Bus Stop Bagels",
@@ -3082,7 +2584,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.393240-04:00"
+    "scraped_at": "2026-03-21T00:22:15.502890-04:00"
   },
   {
     "name": "Caf\u00e9 Jennie",
@@ -3090,7 +2592,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.493460-04:00"
+    "scraped_at": "2026-03-21T00:22:15.603061-04:00"
   },
   {
     "name": "College of Veterinary Medicine Caf\u00e9",
@@ -3098,48 +2600,20 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.593664-04:00"
+    "scraped_at": "2026-03-21T00:22:15.703192-04:00"
   },
   {
     "name": "Cook House Dining Room",
     "meals": [
       {
-        "meal_type": "Breakfast",
-        "time": "7:00 AM - 10:00 AM",
+        "meal_type": "Lunch",
+        "time": "10:30 AM - 2:00 PM",
         "stations": [
-          {
-            "station": "Breakfast Menu Options",
-            "items": [
-              {
-                "name": "Continental Breakfast",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "meal_type": "Dinner",
-        "time": "5:30 PM - 9:00 PM",
-        "stations": [
-          {
-            "station": "Special",
-            "items": [
-              {
-                "name": "Mango Lassi",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
           {
             "station": "Soup",
             "items": [
               {
-                "name": "Cornell Lentil & Tomato Soup",
+                "name": "Hot Oatmeal",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3156,19 +2630,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Assorted Salad Dressings",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Tuna Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Egg Salad",
+                "name": "Fresh Whole Fruit",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3197,13 +2659,13 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "Indian Spiced Lentils",
+                "name": "Chicken & Sesame Garlic Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Chicken Tikka Masala",
+                "name": "Tofu & Sesame Garlic Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3214,19 +2676,19 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Roasted Curried Cauliflower",
+                "name": "Steamed Jasmine Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Peas & Carrots",
+                "name": "Simply Steamed Corn",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Basmati Rice",
+                "name": "Roasted Green Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3237,31 +2699,203 @@
             "station": "Grill",
             "items": [
               {
-                "name": "Burrito Bar",
+                "name": "Scrambled Tofu",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Refried Beans",
+                "name": "Scrambled Eggs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cilantro Rice",
+                "name": "Pork Breakfast Sausage",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Sour Cream",
+                "name": "Fried Potato Puffs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Salsa",
+                "name": "Maple Flavored Syrup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Beverage",
+            "items": [
+              {
+                "name": "Hot & Cold Beverages",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Dessert",
+            "items": [
+              {
+                "name": "Assorted Pastries",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cornell Dairy Ice Cream",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Create Your Own Waffle",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meal_type": "Dinner",
+        "time": "5:30 PM - 9:00 PM",
+        "stations": [
+          {
+            "station": "Special",
+            "items": [
+              {
+                "name": "Strawberry Banana Smoothie",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Soup",
+            "items": [
+              {
+                "name": "Cornell Corn Chowder",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Salad",
+            "items": [
+              {
+                "name": "Salad Bar",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Assorted Salad Dressings",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Fresh Fruit Slices",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Tuna Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Egg Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cornell Dairy Yogurt",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Chef's Table",
+            "items": [
+              {
+                "name": "Rustic Farmstyle Herb Chicken",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Stewed Garbanzo Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Chef's Table - Sides",
+            "items": [
+              {
+                "name": "Roasted Green Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Steamed Corn",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Rosemary Roasted Red Skin Potatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Beef & Tomato Pasta Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Marinara Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Bread Sticks",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Spaghetti",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3306,13 +2940,19 @@
             "station": "Special",
             "items": [
               {
+                "name": "Grains For Brains",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
                 "name": "Cheese Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pepperoni Pizza",
+                "name": "Hawaiian Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3322,12 +2962,6 @@
           {
             "station": "Salad",
             "items": [
-              {
-                "name": "Tuna Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
               {
                 "name": "Salad Bar",
                 "description": null,
@@ -3364,7 +2998,7 @@
             "station": "Vegan/Vegetarian Offerings",
             "items": [
               {
-                "name": "Steamed Peas & Carrots",
+                "name": "Kale, Quinoa & Chickpeas",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3375,31 +3009,31 @@
             "station": "Grill",
             "items": [
               {
-                "name": "Beef & Bean Burritos",
+                "name": "Beef & Tomato Pasta Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cilantro Rice",
+                "name": "Marinara Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Refried Beans",
+                "name": "Spaghetti",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Salsa",
+                "name": "Bread Sticks",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Sour Cream",
+                "name": "Simply Steamed Peas",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3440,7 +3074,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.694030-04:00"
+    "scraped_at": "2026-03-21T00:22:15.803487-04:00"
   },
   {
     "name": "Cornell Dairy Bar",
@@ -3448,7 +3082,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.794259-04:00"
+    "scraped_at": "2026-03-21T00:22:15.903584-04:00"
   },
   {
     "name": "Crossings Caf\u00e9",
@@ -3456,7 +3090,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.894457-04:00"
+    "scraped_at": "2026-03-21T00:22:16.003722-04:00"
   },
   {
     "name": "Franny's",
@@ -3464,7 +3098,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:58.994664-04:00"
+    "scraped_at": "2026-03-21T00:22:16.103867-04:00"
   },
   {
     "name": "Goldie's Caf\u00e9",
@@ -3472,7 +3106,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.094914-04:00"
+    "scraped_at": "2026-03-21T00:22:16.204007-04:00"
   },
   {
     "name": "Green Dragon",
@@ -3480,7 +3114,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.195141-04:00"
+    "scraped_at": "2026-03-21T00:22:16.304167-04:00"
   },
   {
     "name": "Hot Dog Cart",
@@ -3488,7 +3122,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.295335-04:00"
+    "scraped_at": "2026-03-21T00:22:16.404268-04:00"
   },
   {
     "name": "Ice Cream Bike",
@@ -3496,227 +3130,11 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.395561-04:00"
+    "scraped_at": "2026-03-21T00:22:16.504405-04:00"
   },
   {
     "name": "Jansen's Dining Room at Bethe House",
     "meals": [
-      {
-        "meal_type": "Breakfast",
-        "time": "7:00 AM - 10:30 AM",
-        "stations": [
-          {
-            "station": "Breakfast Station - Cold",
-            "items": [
-              {
-                "name": "Flour Tortilla Wraps",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Green Onion",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Thick & Chunky Salsa",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sour Cream",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Grandy Oats Apple Crisp Granola",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Strawberries",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Berry Medley",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Blueberries",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Non Dairy Whipped Topping",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Bagel Bar/Cereal",
-            "items": [
-              {
-                "name": "Assorted Cereal",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Bagels & Baked Goods",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Whole Fruit",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table",
-            "items": [
-              {
-                "name": "Scrambled Tofu",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Scrambled Eggs",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Pork Breakfast Sausage",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fried Potato Puffs",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Steamed Jasmine Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Grill",
-            "items": [
-              {
-                "name": "Cauliflower Florets",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Oatmeal with Brown Sugar & Raisins",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Mushrooms",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "French Toast Sticks",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Specialty Station",
-            "items": [
-              {
-                "name": "Fresh Cut Fruit Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Seedless Red Grapes",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cottage Cheese",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cantaloupe Melon",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Applesauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sliced Peaches in Juice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Mini Cinnamon Twists",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Mini Assorted Danish",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Beverage",
-            "items": [
-              {
-                "name": "Hot & Cold Beverage Service",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
-      },
       {
         "meal_type": "Lunch",
         "time": "10:30 AM - 2:00 PM",
@@ -3725,7 +3143,13 @@
             "station": "Soup",
             "items": [
               {
-                "name": "Cornell New England Clam Chowder",
+                "name": "Broccoli Cheddar Soup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Steamed Jasmine Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3771,19 +3195,13 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "Fried Tofu with Teriyaki Glaze",
+                "name": "Rosemary & White Bean Stew",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Crispy Baked Tofu with Soy Ginger Glaze",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sesame Garlic Chicken Drumstick",
+                "name": "Chicken Piccata",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3794,19 +3212,19 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Snow Peas",
+                "name": "Sauteed Yellow Squash",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Simply Steamed Carrots",
+                "name": "Potatoes Lyonnaise",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Jasmine Rice",
+                "name": "Steamed Broccoli with Garlic Chili Oil",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3817,13 +3235,31 @@
             "station": "Grill",
             "items": [
               {
-                "name": "MSC Breaded Pollock Sandwich",
+                "name": "Scrambled Eggs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "French Fries",
+                "name": "Hard Boiled Eggs",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Hash Brown Potatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Breakfast Ham",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "French Toast",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3851,13 +3287,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Cornell Dairy Ice Cream",
+                "name": "Create Your Own Waffle",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Create Your Own Waffle",
+                "name": "Cornell Dairy Ice Cream",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3874,7 +3310,7 @@
             "station": "Soup",
             "items": [
               {
-                "name": "Cornell New England Clam Chowder",
+                "name": "Broccoli Cheddar Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3891,13 +3327,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Fresh Whole Fruit",
+                "name": "Pasta Salad",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Traditional Creamy Coleslaw",
+                "name": "Fresh Whole Fruit",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3920,13 +3356,13 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "Chinese BBQ Pork Loin",
+                "name": "Chicken & Broccoli",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Black Pepper Tofu & Bok Choy",
+                "name": "Vegan Macaroni & Cheese",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3937,25 +3373,19 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Steamed Baby Carrots with Dill",
+                "name": "Simply Fresh Asparagus Spears",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Mashed Sweet Potatoes",
+                "name": "Steamed Jasmine Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cuban Mashed Sweet Potatoes",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Simply Steamed Broccoli Florets",
+                "name": "Roasted Cauliflower",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3966,13 +3396,31 @@
             "station": "Grill",
             "items": [
               {
-                "name": "Seasoned Wedge Fries",
+                "name": "Dry Rubbed BBQ Tofu",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Chicken Caesar Sandwich",
+                "name": "Pork Sliders with BBQ Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Creamy Traditional Coleslaw",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "BBQ Baked Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "French Fries",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -3983,13 +3431,13 @@
             "station": "Pizza Station",
             "items": [
               {
-                "name": "Cheese Pizza",
+                "name": "Buffalo Chicken Blue Cheese Sheet Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Hawaiian Pizza",
+                "name": "White Garlic & Cheese Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4036,7 +3484,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.495967-04:00"
+    "scraped_at": "2026-03-21T00:22:16.604631-04:00"
   },
   {
     "name": "Jansen's Market",
@@ -4044,20 +3492,160 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.596238-04:00"
+    "scraped_at": "2026-03-21T00:22:16.704824-04:00"
   },
   {
     "name": "Keeton House Dining Room",
     "meals": [
       {
-        "meal_type": "Breakfast",
-        "time": "7:30 AM - 10:00 AM",
+        "meal_type": "Lunch",
+        "time": "10:30 AM - 2:00 PM",
         "stations": [
           {
-            "station": "Breakfast Menu Options",
+            "station": "Salad",
             "items": [
               {
-                "name": "Continental Breakfast",
+                "name": "Salad Bar",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Fruit & Yogurt Bar",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Traditional Hummus",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Chef's Table",
+            "items": [
+              {
+                "name": "Chili Lime Tofu",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Roasted Asparagus",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Oven Roasted Grape Tomatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Turkey Breakfast Sausage",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Home Fries",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sausage Gravy & Biscuits",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Scrambled Eggs",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Pancake Bar with Fruit Toppings & Syrups",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chocolate Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Semi Sweet Chocolate Chips",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Specialty Station",
+            "items": [
+              {
+                "name": "Cornell Dairy Yogurt",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Vanilla Malted Belgian Waffles",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Toasted Coconut Flakes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Apple Crisp Oat Granola",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sliced Apple",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Dried Cranberries",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chocolate Chip Creme Cannoli Filling",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Beverages",
+            "items": [
+              {
+                "name": "Hot & Cold Beverages",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4074,7 +3662,7 @@
             "station": "Soup",
             "items": [
               {
-                "name": "Cornell Corn Chowder",
+                "name": "Cornell Vegetarian Minestrone Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4096,7 +3684,7 @@
             "station": "Specialty Salads",
             "items": [
               {
-                "name": "Carolina Coleslaw",
+                "name": "Cucumber Tomato & Mint Salad",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4107,13 +3695,7 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "BBQ Chicken",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Smoked Tomato BBQ Tofu",
+                "name": "Sofrito Chicken Thighs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4124,25 +3706,37 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Broccoli and Cheddar Bake",
+                "name": "Habichuelas Boricuas",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cornbread",
+                "name": "Bread Sticks",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Parsley Potatoes",
+                "name": "Simply Steamed Green Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Green Beans & Carrots",
+                "name": "Tostones - Fried Green Plantains",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cajun Beans & Rice",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Ketchonnaise",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4153,25 +3747,31 @@
             "station": "Grill",
             "items": [
               {
-                "name": "Baked Macaroni & Cheese",
+                "name": "Tex Mex Sloppy Joe",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Seasoned Wedge Fries",
+                "name": "Jalapeno Peppers",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Breaded Cod Square",
+                "name": "White Hamburger Roll",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Tartar Sauce",
+                "name": "Sharp Cheddar Cheese Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sour Cream",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4182,7 +3782,7 @@
             "station": "Specialty Station",
             "items": [
               {
-                "name": "Shrimp & Grits",
+                "name": "Strawberry Banana Smoothie",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4229,7 +3829,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.696545-04:00"
+    "scraped_at": "2026-03-21T00:22:16.805038-04:00"
   },
   {
     "name": "Mann Caf\u00e9",
@@ -4237,7 +3837,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.796801-04:00"
+    "scraped_at": "2026-03-21T00:22:16.905198-04:00"
   },
   {
     "name": "Martha's Caf\u00e9",
@@ -4245,7 +3845,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.897072-04:00"
+    "scraped_at": "2026-03-21T00:22:17.005333-04:00"
   },
   {
     "name": "Mattin's Caf\u00e9",
@@ -4253,7 +3853,7 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:29:59.997333-04:00"
+    "scraped_at": "2026-03-21T00:22:17.105487-04:00"
   },
   {
     "name": "McCormick's Restaurant",
@@ -4261,14 +3861,14 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.097535-04:00"
+    "scraped_at": "2026-03-21T00:22:17.205634-04:00"
   },
   {
     "name": "Morrison Dining",
     "meals": [
       {
         "meal_type": "Breakfast",
-        "time": "7:00 AM - 10:30 AM",
+        "time": "8:00 AM - 10:30 AM",
         "stations": [
           {
             "station": "Salad",
@@ -4303,7 +3903,13 @@
             "station": "Global ",
             "items": [
               {
-                "name": "Pork Breakfast Sausage",
+                "name": "Hard Boiled Eggs",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Simply Steamed Peas",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4315,13 +3921,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Hard Boiled Eggs",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sauteed Broccoli & Cauliflower",
+                "name": "Sausage Gravy & Biscuits",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4344,13 +3944,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Western Scrambled Tofu",
+                "name": "Pancakes with Syrup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pancakes with Syrup",
+                "name": "Western Scrambled Tofu",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4493,12 +4093,6 @@
             "station": "Salad",
             "items": [
               {
-                "name": "Chili Roasted Cauliflower",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
                 "name": "Assorted Salads, Veggies & Greens",
                 "description": null,
                 "allergens": [],
@@ -4523,13 +4117,19 @@
                 "dietary_prefs": []
               },
               {
+                "name": "Salad Dressing",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
                 "name": "Greek Bulgur Salad",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Salad Dressing",
+                "name": "Chili Roasted Cauliflower",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4540,7 +4140,25 @@
             "station": "Global ",
             "items": [
               {
-                "name": "Gyudon Bowl",
+                "name": "Chicken Cacciatore",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Rosemary Roasted Red Skin Potatoes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Wilted Rainbow Chard",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sun-Dried Tomato & Vegetable Orzo",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4579,7 +4197,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "White Cheese & Garlic Pizza",
+                "name": "Roasted Red Pepper & Artichoke Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4599,33 +4217,28 @@
             ]
           },
           {
-            "station": "Kosher Station",
-            "items": [
-              {
-                "name": "Todays Kosher Menu Includes",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
             "station": "Halal",
             "items": [
               {
-                "name": "Chicken Stew & Biscuits",
+                "name": "Chicken Cacciatore",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Broccoli",
+                "name": "Rosemary Roasted Red Skin Potatoes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Simply Steamed Fresh Cauliflower",
+                "name": "Wilted Rainbow Chard",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sun-Dried Tomato & Vegetable Orzo",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4636,25 +4249,25 @@
             "station": "Wok",
             "items": [
               {
-                "name": "Cornell Egg Drop Soup",
+                "name": "Cambodian Noodle Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Ginger & Scallion MSC Fresh Pollock",
+                "name": "Ho Fun Rice Noodles",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cabbage, Mushroom, Carrot, & Snow Peas",
+                "name": "Chicken & Eggplant Stir Fry",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Jasmine Rice",
+                "name": "Vegetable Fried Rice with Egg",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4675,6 +4288,12 @@
           {
             "station": "Beverages",
             "items": [
+              {
+                "name": "Assorted Salads, Veggies & Greens",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
               {
                 "name": "Assorted Hot & Cold Beverages",
                 "description": null,
@@ -4797,13 +4416,13 @@
             "station": "Fruit & Yogurt Bar",
             "items": [
               {
-                "name": "Coconut Chia Seed Pudding",
+                "name": "Strawberry Banana Overnight Oats",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Strawberry Banana Overnight Oats",
+                "name": "Coconut Chia Seed Pudding",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4825,6 +4444,12 @@
           {
             "station": "Salad",
             "items": [
+              {
+                "name": "Chili Roasted Cauliflower",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
               {
                 "name": "Assorted Salads, Veggies & Greens",
                 "description": null,
@@ -4860,12 +4485,6 @@
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
-              },
-              {
-                "name": "Chili Roasted Cauliflower",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
               }
             ]
           },
@@ -4873,31 +4492,31 @@
             "station": "Global ",
             "items": [
               {
-                "name": "MSC Baked Haddock with Chermoula Sauce",
+                "name": "Peruvian Roasted Chicken",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Buttered Basmati Rice with Cilantro",
+                "name": "Peruvian Quinoa With Peppers & Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Broccoli",
+                "name": "Oven Roasted Potatoes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Chili Roasted Cauliflower",
+                "name": "Mexican Street Corn",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pineapple Mango Salsa",
+                "name": "Peruvian Cheese Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4936,7 +4555,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "White Cheese & Garlic Pizza",
+                "name": "Roasted Red Pepper & Artichoke Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4959,31 +4578,37 @@
             "station": "Halal",
             "items": [
               {
-                "name": "Blackened Catfish Fillet",
+                "name": "Halal Spicy Beef",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Chili Roasted Cauliflower",
+                "name": "Peruvian Quinoa With Peppers & Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Bok Choy with Seared Pineapple",
+                "name": "Oven Roasted Potatoes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pineapple Mango Salsa",
+                "name": "Mexican Street Corn",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Red Curry Rice & Green Lentils",
+                "name": "Fresh Yellow Corn Tortilla",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Peruvian Cheese Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -4994,25 +4619,25 @@
             "station": "Wok",
             "items": [
               {
-                "name": "Vietnamese Style Pork Ribs",
+                "name": "Steamed Jasmine Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Fresh Vegetable Vietnamese Spring Rolls",
+                "name": "Spicy Chili & Basil Chicken",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pickled Daikon Salad",
+                "name": "Cilantro Udon Salad",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Vietnamese Rice Noodle Salad",
+                "name": "Seaweed Salad",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5100,11 +4725,238 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.198127-04:00"
+    "scraped_at": "2026-03-21T00:22:17.305972-04:00"
   },
   {
     "name": "North Star Dining Room",
     "meals": [
+      {
+        "meal_type": "Lunch",
+        "time": "10:30 AM - 2:00 PM",
+        "stations": [
+          {
+            "station": "Green ",
+            "items": [
+              {
+                "name": "Salad Bar",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Fruit & Yogurt Bar",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cornell Potato Leek Soup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sausage Potato Kale Soup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Flavor Infused Water Station",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Chef's Table",
+            "items": [
+              {
+                "name": "Eastern North Carolina Smoke Pulled Pork",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cornmeal Crusted Tofu with Corn Salsa",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Chef's Table - Sides",
+            "items": [
+              {
+                "name": "Black Jack BBQ Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cornbread Sheet",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Smoked Gouda Macaroni & Cheese",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Vegetable Melange Gertrude",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Green Beans with Roasted Garlic",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cornbread",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Traditional Creamy Coleslaw",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Grill",
+            "items": [
+              {
+                "name": "Pancakes with Syrup",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Scrambled Eggs",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Chicken Breakfast Sausage",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Scrambled Tofu",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Fried Potato Puffs",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Grilled Vegetables",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Thick & Chunky Salsa",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Al Forno",
+            "items": [
+              {
+                "name": "Chef's Choice Pizza/Flatbread",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Fried Ravioli with Marinara Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sicilian Style Sheet Pizza",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Breakfast Meat & Cheese Pizza",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Garden Vegetable Pizza",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Pasta with Fresh Marinara",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Pasta Alfredo",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Bread Sticks",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Create",
+            "items": [
+              {
+                "name": "Fresh Fruit Smoothies",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
+            "station": "Dessert",
+            "items": [
+              {
+                "name": "Dole Fruit Soft Serve",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          }
+        ]
+      },
       {
         "meal_type": "Dinner",
         "time": "5:30 PM - 8:30 PM",
@@ -5125,13 +4977,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Lebanese Lentil Soup with Orzo & Lemon",
+                "name": "Sausage Potato Kale Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Zuppa Toscana",
+                "name": "Cornell Potato Leek Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5154,13 +5006,13 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "White Bean Spinach Artichoke Casserole",
+                "name": "Cajun Crusted Tofu with Chimichurri",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cioppino Seafood Stew",
+                "name": "Citrus Chicken with Honey Chipotle Glaze",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5171,31 +5023,19 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Orzo Pasta with Olive Oil & Herbs",
+                "name": "Simply Steamed Broccoli Florets",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Wilted Greens",
+                "name": "Collard Greens with Red Pepper & Onions",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Gourmet Garlic Bread",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Crispy Fried Onions",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Grape Tomatoes & Summer Squash",
+                "name": "Mashed Sweet Potatoes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5206,31 +5046,31 @@
             "station": "Grill",
             "items": [
               {
+                "name": "Veggie Burger",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Kielbasa & Apple Fennel Slaw",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
                 "name": "French Fries",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Beef Cheeseburgers",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Kale & Caramelized Onion",
+                "name": "Fire Seared Roasted Button Mushrooms",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
                 "name": "Grilled Chicken Breast",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Vegan Meatball Sub",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5241,7 +5081,7 @@
             "station": "Al Forno",
             "items": [
               {
-                "name": "Four Cheese, Tomato & Pesto Sheet Pizza",
+                "name": "Tomato Spinach & Feta Sheet Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5253,7 +5093,7 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Meat Lover's Sheet Pizza",
+                "name": "White Garlic Bacon Broccoli Sheet Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5265,13 +5105,13 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Arrabbiata & Broccoli Rabe",
+                "name": "Angus Beef Meat Sauce with Pasta",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Pasta with Roasted Red Pepper Alfredo",
+                "name": "Pasta With Beans & Greens",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5340,25 +5180,25 @@
             "station": "Wok/Asian Station",
             "items": [
               {
-                "name": "Steamed Brown Rice",
+                "name": "Steamed Jasmine Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Vegetable & Mei Fun Noodle Stir Fry",
+                "name": "Lo Mein With Napa Cabbage & Eggs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Greens Stir Fry",
+                "name": "Stir Fried Mixed Greens",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Massaman Chicken Curry",
+                "name": "Shrimp & Broccoli Stir Fry",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5489,7 +5329,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.298464-04:00"
+    "scraped_at": "2026-03-21T00:22:17.406241-04:00"
   },
   {
     "name": "Novick's Caf\u00e9",
@@ -5497,20 +5337,54 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.398714-04:00"
+    "scraped_at": "2026-03-21T00:22:17.506416-04:00"
   },
   {
     "name": "Okenshields",
+    "meals": [],
+    "status": "closed",
+    "source": "cornell",
+    "university": "cornell",
+    "scraped_at": "2026-03-21T00:22:17.606590-04:00"
+  },
+  {
+    "name": "Risley Dining Room",
+    "meals": [],
+    "status": "closed",
+    "source": "cornell",
+    "university": "cornell",
+    "scraped_at": "2026-03-21T00:22:17.706729-04:00"
+  },
+  {
+    "name": "Rose House Dining Room",
     "meals": [
       {
-        "meal_type": "Lunch",
-        "time": "10:30 AM - 2:30 PM",
+        "meal_type": "Breakfast",
+        "time": "8:00 AM - 9:30 AM",
         "stations": [
           {
-            "station": "Soup",
+            "station": "Breakfast Menu Options",
             "items": [
               {
-                "name": "Cornell New England Clam Chowder",
+                "name": "Continental Breakfast at Flora Rose",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Cheddar Spinach & Red Pepper Frittata",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Steamed Green Beans",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Fried Potato Puffs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5518,380 +5392,52 @@
             ]
           },
           {
-            "station": "Salad",
+            "station": "Build Your Own Bowl Choices",
             "items": [
               {
-                "name": "Harvest Salad Bar",
+                "name": "Steel Cut Oatmeal Bowl",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Asparagus & Tomato Pasta Salad",
+                "name": "Semi Sweet Chocolate Chips",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Fresh Fruit Slices",
+                "name": "Rainbow Sprinkles",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Fresh Whole Fruit",
+                "name": "Whipped Cream Topping",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Plain Greek Yogurt",
+                "name": "Seedless Raisins",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cornell Dairy Yogurt",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Vegan/Vegetarian Offerings",
-            "items": [
-              {
-                "name": "Fried Vegan Tenders",
+                "name": "Dark Brown Sugar",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Meatless Meatball & Marinara",
+                "name": "Mini Marshmallows",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Ancho Chili Lime Brown Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Barley Pilaf",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Marinara Sauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Spicy Miso Broth",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Farfalle Pasta",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Toasted  Chickpea",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "GF Soy Marinated Mushrooms",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Artichoke Hearts",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Flame Roasted Cut Corn",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sesame Roasted & Salted Edamame",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Pickled Red Onion",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Pickled Vegetables",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sweet & Sour Pickled Cucumbers",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Jalapeno Pepper",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Red Pepper Strips",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Whole Baby Corn",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Bamboo Shoot Strips",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Kimchi",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Vegan Lime Sriracha Mayo",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Teriyaki Sauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Asian Sesame Dressing",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "HMR Sriracha Candied Pepitas",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Crispy Fried Onions",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Salted Sunflower Seed",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table",
-            "items": [
-              {
-                "name": "Macaroni & Cheese",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Diced Fried Pork",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table - Sides",
-            "items": [
-              {
-                "name": "Haitian Rice & Beans",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Tostones - Fried Green Plantains",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Chef's Choice Seasonal Vegetable",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Haitian Pikliz",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Grill",
-            "items": [
-              {
-                "name": "Beef Cheeseburgers",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Assorted Items from the Grill",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Hamburger Roll",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Grilled Beef Burger",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Veggie Burger Patty",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Whole Grain MSC Fried Breaded Pollock",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Seasoned Spiral Fries",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Pizza Station",
-            "items": [
-              {
-                "name": "White Garlic Broccoli & Cheese Pizza",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Vegan Veggie Supreme Pizza",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Wok/Asian Station",
-            "items": [
-              {
-                "name": "Seaweed Sesame Egg Drop Soup",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sweet & Sour Tofu",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Shrimp & Egg Fried Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Beverage",
-            "items": [
-              {
-                "name": "Beverage Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Dessert",
-            "items": [
-              {
-                "name": "Dessert Bars",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cornell Dairy Ice Cream Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Baked Cookies",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Create Your Own Waffle",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Vegan Chocolate Cake",
+                "name": "Mixed Berries",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5901,14 +5447,14 @@
         ]
       },
       {
-        "meal_type": "Dinner",
-        "time": "4:30 PM - 9:00 PM",
+        "meal_type": "Lunch",
+        "time": "10:30 AM - 2:00 PM",
         "stations": [
           {
             "station": "Soup",
             "items": [
               {
-                "name": "Cornell New England Clam Chowder",
+                "name": "Kettle Cuisine Tuscan Minestrone Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5916,20 +5462,8 @@
             ]
           },
           {
-            "station": "Salad",
+            "station": "Fruit & Yogurt Bar",
             "items": [
-              {
-                "name": "Fresh Fruit Slices",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Asparagus & Tomato Pasta Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
               {
                 "name": "Fresh Whole Fruit",
                 "description": null,
@@ -5937,13 +5471,19 @@
                 "dietary_prefs": []
               },
               {
-                "name": "Harvest Salad Bar",
+                "name": "Fresh Fruit Slices",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Plain Greek Yogurt",
+                "name": "Seedless White Grapes",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Seedless Red Grapes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -5957,85 +5497,45 @@
             ]
           },
           {
+            "station": "Salad",
+            "items": [
+              {
+                "name": "Healthy Style Salad Station",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Green Goddess Dressing",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Roasted Corn & Black Bean Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Tuna Salad",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Sesame Marinated Tofu",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              }
+            ]
+          },
+          {
             "station": "Chef's Table",
             "items": [
               {
-                "name": "Huli Huli Tofu",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Slow Roasted Beef Roast with Au Jus",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table - Sides",
-            "items": [
-              {
-                "name": "Herbed Au Jus",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Steamed Green Beans & Carrots",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Rice Pilaf",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Fresh Carrots & Cauliflower",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Pizza Station",
-            "items": [
-              {
-                "name": "White Garlic Broccoli & Cheese Pizza",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Vegan Veggie Supreme Pizza",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Wok/Asian Station",
-            "items": [
-              {
-                "name": "Seaweed Sesame Egg Drop Soup",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Shrimp & Egg Fried Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Kimchi Pot Sticker Dumpling",
+                "name": "Vegan Fried Spring Roll",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6045,185 +5545,9 @@
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Specialty Station",
-            "items": [
-              {
-                "name": "French Fries",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
               },
               {
-                "name": "Jalapeno Peppers",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Bacon Bits",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Rojo Grande Chipotle Cheese Sauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Horseradish Sauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Beverage",
-            "items": [
-              {
-                "name": "Beverage Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Dessert",
-            "items": [
-              {
-                "name": "Dessert Bars",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Create Your Own Waffle",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cornell Dairy Ice Cream Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Baked Cookies",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "status": "open",
-    "source": "cornell",
-    "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.499194-04:00"
-  },
-  {
-    "name": "Risley Dining Room",
-    "meals": [
-      {
-        "meal_type": "Lunch",
-        "time": "11:00 AM - 2:00 PM",
-        "stations": [
-          {
-            "station": "Soup",
-            "items": [
-              {
-                "name": "Cornell New England Clam Chowder",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Salad",
-            "items": [
-              {
-                "name": "Traditional Hummus",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Fruit Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Salad Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Quinoa",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sesame & Herb Baked Tofu",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Overnight Oats with Blueberry & Banana",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Coconut Chia Seed Pudding",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cornell Dairy Yogurt",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Mexican Station",
-            "items": [
-              {
-                "name": "Nacho Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table",
-            "items": [
-              {
-                "name": "Sylvia's Smothered Pork Chops",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Vegan Jambalaya",
+                "name": "Sweet & Sour Chicken Drumsticks",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6234,19 +5558,31 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Sweet Potato Fries",
+                "name": "Steamed Jasmine Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Catalina Island Vegetables",
+                "name": "Steamed Green Beans",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Balsamic Fennel Roasted Brussel Sprouts",
+                "name": "Roasted Broccoli",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Duck Sauce",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Teriyaki Sauce",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6257,72 +5593,19 @@
             "station": "Grill",
             "items": [
               {
-                "name": "Bacon Cheddar BBQ Smashburger",
+                "name": "Turkey Breakfast Sausage",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Cheddar BBQ Black Bean Burger",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Wok/Asian Station",
-            "items": [
-              {
-                "name": "Mei Fun Rice Noodles",
+                "name": "Cheddar Spinach & Red Pepper Frittata",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Brown Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Steamed Jasmine Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Korean Bulgogi Bowl Toppings",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Korean Red Dragon Sauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "House Made Kimchi",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Pickled Bean Sprout & Carrot Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Bulgogi Tofu",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Beef Bulgogi",
+                "name": "Fried Potato Puffs",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6333,13 +5616,7 @@
             "station": "Specialty Station",
             "items": [
               {
-                "name": "Waffle Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Whole Fruit",
+                "name": "Create Your Own Waffle",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6350,7 +5627,7 @@
             "station": "Beverage",
             "items": [
               {
-                "name": "Hot & Cold Beverages",
+                "name": "Hot & Cold Beverage Service",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6361,258 +5638,13 @@
             "station": "Dessert",
             "items": [
               {
-                "name": "Assorted Desserts",
+                "name": "Lunch Sweets & Treats",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
                 "name": "Cornell Dairy Ice Cream",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "meal_type": "Dinner",
-        "time": "5:00 PM - 7:00 PM",
-        "stations": [
-          {
-            "station": "Soup",
-            "items": [
-              {
-                "name": "Cornell New England Clam Chowder",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Salad",
-            "items": [
-              {
-                "name": "Traditional Hummus",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Quinoa",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Salad Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sesame & Herb Baked Tofu",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Fresh Fruit Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Overnight Oats with Blueberry & Banana",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Coconut Chia Seed Pudding",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Cornell Dairy Yogurt",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Mexican Station",
-            "items": [
-              {
-                "name": "Nacho Bar",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table",
-            "items": [
-              {
-                "name": "Chicken & Hot Pepper Riggies",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Polenta Smoked Gouda & Mushroom Ragout",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Chef's Table - Sides",
-            "items": [
-              {
-                "name": "Hoppin' John - Peas & Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Carrots",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Simply Steamed Broccoli",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Wok/Asian Station",
-            "items": [
-              {
-                "name": "Mei Fun Rice Noodles",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Steamed Brown Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Steamed Jasmine Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Korean Bulgogi Bowl Toppings",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Korean Red Dragon Sauce",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "House Made Kimchi",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Pickled Bean Sprout & Carrot Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Bulgogi Tofu",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Beef Bulgogi",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Specialty Station",
-            "items": [
-              {
-                "name": "Fresh Whole Fruit",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Beverage",
-            "items": [
-              {
-                "name": "Hot & Cold Beverages",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Dessert",
-            "items": [
-              {
-                "name": "Cornell Dairy Ice Cream",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Assorted Desserts",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "status": "open",
-    "source": "cornell",
-    "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.599513-04:00"
-  },
-  {
-    "name": "Rose House Dining Room",
-    "meals": [
-      {
-        "meal_type": "Breakfast",
-        "time": "7:00 AM - 10:00 AM",
-        "stations": [
-          {
-            "station": "Breakfast Menu Options",
-            "items": [
-              {
-                "name": "Continental Breakfast at Flora Rose",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6629,7 +5661,7 @@
             "station": "Soup",
             "items": [
               {
-                "name": "Kettle Cuisine New England Clam Chowder",
+                "name": "Kettle Cuisine Tuscan Minestrone Soup",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6722,13 +5754,13 @@
             "station": "Chef's Table",
             "items": [
               {
-                "name": "General Tso Tofu & Broccoli",
+                "name": "Sweet Potato & Red Lentil Stew",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Mussel Stir Fry",
+                "name": "Chicken & Chickpea Tagine",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6739,19 +5771,25 @@
             "station": "Chef's Table - Sides",
             "items": [
               {
-                "name": "Coconut Jasmine Rice",
+                "name": "Roasted Sweet Potatoes",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Roasted Vegetables",
+                "name": "Peas & Carrots with Seasoned Butter",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Steamed Broccoli",
+                "name": "Simply Steamed Fresh Cauliflower",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Steamed Jasmine Rice",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6762,55 +5800,13 @@
             "station": "Grill",
             "items": [
               {
-                "name": "Baked Potatoes",
+                "name": "Vietnamese Pizza",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
               },
               {
-                "name": "Baked Sweet Potatoes",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "French Fries",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Bacon Bits",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Nacho Cheese",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Sour Cream",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Yellow Cheddar Cheese",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Roasted Broccoli",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Low Fat Cottage Cheese",
+                "name": "Glass Noodles with Sesame & Bean Sprouts",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6821,7 +5817,25 @@
             "station": "Specialty Station",
             "items": [
               {
-                "name": "General Tso Chicken Bowl",
+                "name": "Red Velvet Cookie",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Oatmeal Raisin Cookie",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "S'mores Cookie",
+                "description": null,
+                "allergens": [],
+                "dietary_prefs": []
+              },
+              {
+                "name": "Triple Chocolate Chip Cookie",
                 "description": null,
                 "allergens": [],
                 "dietary_prefs": []
@@ -6868,7 +5882,7 @@
     "status": "open",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.699769-04:00"
+    "scraped_at": "2026-03-21T00:22:17.806980-04:00"
   },
   {
     "name": "Rusty's",
@@ -6876,108 +5890,15 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.799999-04:00"
+    "scraped_at": "2026-03-21T00:22:17.907122-04:00"
   },
   {
     "name": "Straight from the Market",
-    "meals": [
-      {
-        "meal_type": "Available All Day",
-        "time": "11:00 AM - 6:00 PM",
-        "stations": [
-          {
-            "station": "Straight from the Market - Chef's Creations ",
-            "items": [
-              {
-                "name": "Healthy, Flavorful, & Ready to Go",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Composed Salads & Market Greens",
-            "items": [
-              {
-                "name": "Fresh Berry Medley",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Arugula Beet Radish & Goat Cheese Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Citrus Herb & Garlic Marinated Olives",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Entrees - Chef Inspired",
-            "items": [
-              {
-                "name": "Korean BBQ Chicken Wings",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Spicy Gochujang Tofu & Vegetables",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          },
-          {
-            "station": "Distinctive Side Dishes",
-            "items": [
-              {
-                "name": "Seasoned Wedge Fries",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Steamed Jasmine Rice",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Asian Sesame Napa Slaw",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Asian Sesame Ginger Noodle Salad",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              },
-              {
-                "name": "Kimchi",
-                "description": null,
-                "allergens": [],
-                "dietary_prefs": []
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "status": "open",
+    "meals": [],
+    "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:00.900219-04:00"
+    "scraped_at": "2026-03-21T00:22:18.007257-04:00"
   },
   {
     "name": "Trillium",
@@ -6985,6 +5906,6 @@
     "status": "closed",
     "source": "cornell",
     "university": "cornell",
-    "scraped_at": "2026-03-20T00:30:01.000468-04:00"
+    "scraped_at": "2026-03-21T00:22:18.107422-04:00"
   }
 ]
